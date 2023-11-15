@@ -21,8 +21,8 @@ namespace DormitoryApp
             {
                 Console.WriteLine("Выберите действие:");
                 Console.WriteLine("1. Выбрать общежитие");
-                Console.WriteLine("2. Найти комнату по студенту");
-                Console.WriteLine("3. Найти студента по имени");
+                Console.WriteLine("2. Найти комнату, в которой живет студент");
+                Console.WriteLine("3. Найти студента по комнате");
                 Console.WriteLine("4. Выйти");
 
                 string choice = Console.ReadLine();
@@ -39,6 +39,7 @@ namespace DormitoryApp
                         break;
                     case "3":
                         Console.WriteLine("выбор 3");
+                        FindStudentsByRoom(conn2);
                         break;
                     case "4":
                         Environment.Exit(0);
@@ -62,6 +63,7 @@ namespace DormitoryApp
             if (reader.Read())
             {
                 Console.WriteLine($"Общежитие {domitory_number} выбрано.");
+                Console.WriteLine("//потом сюда добавится расселенка по комнатам");
             }
             else
             {
@@ -69,23 +71,86 @@ namespace DormitoryApp
             }
         }
 
+
+
         static void FindStudentByName(NpgsqlConnection conn2)
         {
-            Console.WriteLine("Введите имя студента:");
-            string std_name = Console.ReadLine();
+            Console.WriteLine("Введите название общежития:");
+            string dormitory_number = Console.ReadLine();
 
-            using var cmd = new NpgsqlCommand("SELECT room FROM students WHERE std_name = @std_name", conn2);
-            cmd.Parameters.AddWithValue("std_name", std_name);
+            using var cmd = new NpgsqlCommand("SELECT * FROM students WHERE dormitory_number = @dormitory_number", conn2);
+            cmd.Parameters.AddWithValue("dormitory_number", dormitory_number);
             using var reader = cmd.ExecuteReader();
 
             if (reader.Read())
             {
-                string room = reader.GetString(0);
+                Console.WriteLine($"Общежитие {dormitory_number} выбрано.");
+            }
+            else
+            {
+                Console.WriteLine("Общежитие с таким названием не найдено.");
+                return;
+            }
+            reader.Close();
+
+            Console.WriteLine("Введите имя студента:");
+            string std_name = Console.ReadLine();
+
+            using var cmd2 = new NpgsqlCommand("SELECT room FROM students WHERE std_name = @std_name AND dormitory_number = @dormitory_number", conn2);
+            cmd2.Parameters.AddWithValue("std_name", std_name);
+            cmd2.Parameters.AddWithValue("dormitory_number", dormitory_number);
+            using var reader2 = cmd2.ExecuteReader();
+
+            if (reader2.Read())
+            {
+                string room = reader2.GetString(0);
                 Console.WriteLine($"Студент {std_name} живет в комнате номер {room}.");
             }
             else
             {
                 Console.WriteLine($"Студент с именем {std_name} не найден.");
+            }
+        }
+
+
+        static void FindStudentsByRoom(NpgsqlConnection conn2)
+        {
+            Console.WriteLine("Введите название общежития:");
+            string dormitory_number = Console.ReadLine();
+
+            using var cmd = new NpgsqlCommand("SELECT * FROM students WHERE dormitory_number = @dormitory_number", conn2);
+            cmd.Parameters.AddWithValue("dormitory_number", dormitory_number);
+            using var reader = cmd.ExecuteReader();
+
+            if (reader.Read())
+            {
+                Console.WriteLine($"Общежитие {dormitory_number} выбрано.");
+            }
+            else
+            {
+                Console.WriteLine("Общежитие с таким названием не найдено.");
+                return;
+            }
+            reader.Close();
+
+            Console.WriteLine("Введите номер комнаты:");
+            string room = Console.ReadLine();
+
+            using var cmd2 = new NpgsqlCommand("SELECT std_name FROM students WHERE room = @room AND dormitory_number = @dormitory_number", conn2);
+            cmd2.Parameters.AddWithValue("room", room);
+            cmd2.Parameters.AddWithValue("dormitory_number", dormitory_number);
+            using var reader2 = cmd2.ExecuteReader();
+
+            bool foundAny = false;
+            while (reader2.Read())
+            {
+                string std_name = reader2.GetString(0);
+                Console.WriteLine($"В комнате {room} общежития №{dormitory_number} живет {std_name}.");
+                foundAny = true;
+            }
+            if (!foundAny)
+            {
+                Console.WriteLine($"Студенты в комнате {room} общежития №{dormitory_number} не найдены.");
             }
         }
     }
