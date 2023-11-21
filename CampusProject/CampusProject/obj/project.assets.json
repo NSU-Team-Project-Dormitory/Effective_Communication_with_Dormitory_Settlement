@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/elizavetazhitnik/Downloads/CampusProject/CampusProject/CampusProject.csproj",
+      "projectUniqueName": "/Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/CampusProject.csproj",
       "projectName": "CampusProject",
-      "projectPath": "/Users/elizavetazhitnik/Downloads/CampusProject/CampusProject/CampusProject.csproj",
+      "projectPath": "/Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/CampusProject.csproj",
       "packagesPath": "/Users/elizavetazhitnik/.nuget/packages/",
-      "outputPath": "/Users/elizavetazhitnik/Downloads/CampusProject/CampusProject/obj/",
+      "outputPath": "/Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/elizavetazhitnik/.nuget/NuGet/NuGet.Config"

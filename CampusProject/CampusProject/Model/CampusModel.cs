@@ -10,4 +10,8 @@
         CheckInBook = checkInBook;
         CitizenBook = citizenBook;
     }
+
+    public CampusModel()
+    {
+    }
 }

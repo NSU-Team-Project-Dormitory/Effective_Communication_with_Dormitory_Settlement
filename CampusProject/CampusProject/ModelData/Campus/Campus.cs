@@ -3,7 +3,7 @@
     public string Name { get; }
     public IReadOnlyDictionary<Guid, Building> Buildings { get; }
 
-    public Campus(string name, IReadOnlyDictionary<Guid, Building> buildings)
+    public Campus(CampusModel _model, Guid guid, string name, IReadOnlyDictionary<Guid ,Building> buildings)
     {
         Name = name;
         Buildings = buildings;
