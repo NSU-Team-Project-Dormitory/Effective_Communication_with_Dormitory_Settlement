@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\TestWPF\TestWPF\TestWPF.csproj" />
+  </ItemGroup>
+
 </Project>
