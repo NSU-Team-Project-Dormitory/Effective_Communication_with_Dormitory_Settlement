@@ -8,6 +8,7 @@ public sealed class NsuBuildingsFactory
     {
         _model = model;
     }
+
     public IReadOnlyDictionary<Guid, Building> CreateBuildings()
     {
         var buildings = new Dictionary<Guid, Building>();
