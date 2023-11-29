@@ -1,13 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-using CampusProject;
+﻿using CampusProject;
 
 //Console.WriteLine("Hello, World!");
 
 
-var campusModel = new CampusModel();
-var nsuCampus = new NsuCampusFactory(campusModel);
-
-var campus = nsuCampus.Create();
+//var campusModel = new CampusModel();
+//var nsuCampus = new NsuCampusFactory(campusModel);
+//var campus = nsuCampus.Create();
 
 //Console.WriteLine(campus);
 
