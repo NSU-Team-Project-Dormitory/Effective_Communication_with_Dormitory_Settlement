@@ -13,3 +13,17 @@
 /Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/Debug/net6.0/CampusProject.pdb
 /Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/Debug/net6.0/CampusProject.genruntimeconfig.cache
 /Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/Debug/net6.0/ref/CampusProject.dll
+C:\Users\kozor\Documents\Study\Dormitories\CampusProject\CampusProject\bin\Debug\net6.0\CampusProject.exe
+C:\Users\kozor\Documents\Study\Dormitories\CampusProject\CampusProject\bin\Debug\net6.0\CampusProject.deps.json
+C:\Users\kozor\Documents\Study\Dormitories\CampusProject\CampusProject\bin\Debug\net6.0\CampusProject.runtimeconfig.json
+C:\Users\kozor\Documents\Study\Dormitories\CampusProject\CampusProject\bin\Debug\net6.0\CampusProject.dll
+C:\Users\kozor\Documents\Study\Dormitories\CampusProject\CampusProject\bin\Debug\net6.0\CampusProject.pdb
+C:\Users\kozor\Documents\Study\Dormitories\CampusProject\CampusProject\obj\Debug\net6.0\CampusProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kozor\Documents\Study\Dormitories\CampusProject\CampusProject\obj\Debug\net6.0\CampusProject.AssemblyInfoInputs.cache
+C:\Users\kozor\Documents\Study\Dormitories\CampusProject\CampusProject\obj\Debug\net6.0\CampusProject.AssemblyInfo.cs
+C:\Users\kozor\Documents\Study\Dormitories\CampusProject\CampusProject\obj\Debug\net6.0\CampusProject.csproj.CoreCompileInputs.cache
+C:\Users\kozor\Documents\Study\Dormitories\CampusProject\CampusProject\obj\Debug\net6.0\CampusProject.dll
+C:\Users\kozor\Documents\Study\Dormitories\CampusProject\CampusProject\obj\Debug\net6.0\refint\CampusProject.dll
+C:\Users\kozor\Documents\Study\Dormitories\CampusProject\CampusProject\obj\Debug\net6.0\CampusProject.pdb
+C:\Users\kozor\Documents\Study\Dormitories\CampusProject\CampusProject\obj\Debug\net6.0\CampusProject.genruntimeconfig.cache
+C:\Users\kozor\Documents\Study\Dormitories\CampusProject\CampusProject\obj\Debug\net6.0\ref\CampusProject.dll

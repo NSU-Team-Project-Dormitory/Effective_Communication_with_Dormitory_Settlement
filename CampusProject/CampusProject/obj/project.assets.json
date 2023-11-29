@@ -8,25 +8,31 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/Users/elizavetazhitnik/.nuget/packages/": {}
+    "C:\\Users\\kozor\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/CampusProject.csproj",
+      "projectUniqueName": "C:\\Users\\kozor\\Documents\\Study\\Dormitories\\CampusProject\\CampusProject\\CampusProject.csproj",
       "projectName": "CampusProject",
-      "projectPath": "/Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/CampusProject.csproj",
-      "packagesPath": "/Users/elizavetazhitnik/.nuget/packages/",
-      "outputPath": "/Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/",
+      "projectPath": "C:\\Users\\kozor\\Documents\\Study\\Dormitories\\CampusProject\\CampusProject\\CampusProject.csproj",
+      "packagesPath": "C:\\Users\\kozor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kozor\\Documents\\Study\\Dormitories\\CampusProject\\CampusProject\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/elizavetazhitnik/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\kozor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -60,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.415/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
