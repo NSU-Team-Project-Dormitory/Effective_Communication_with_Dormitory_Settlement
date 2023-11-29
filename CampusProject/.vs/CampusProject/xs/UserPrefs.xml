@@ -1,27 +1,26 @@
 ﻿<Properties StartupConfiguration="{2E7B2FB3-34B2-49CA-B5CB-1AFF1F14C078}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CampusProject/Program.cs">
-    <Files>
-      <File FileName="CampusProject/Program.cs" Line="17" Column="30" />
-      <File FileName="CampusProject/ControlMenu.cs" Line="6" Column="36" />
-      <File FileName="CampusProject/Model/CampusModel.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CampusProject" expanded="True">
+          <Node name="CampusProject">
             <Node name="CampusProject" expanded="True">
               <Node name="Model" expanded="True" />
+              <Node name="ModelData" expanded="True" />
+              <Node name="NsuCampusFactory" expanded="True">
+                <Node name="Building5" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.CampusProject PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CampusProject PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
