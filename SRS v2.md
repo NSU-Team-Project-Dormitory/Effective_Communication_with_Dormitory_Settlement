@@ -2,7 +2,7 @@
 1. ## Authors
 - Zhitnik Elizabeth Vladimirovna
 - Kozoliy Mikhail Mikhailovich
-- Vlasenko Ivan Alexievich
+- Vlasenko Ivan Alexeevich
 - Kozorez Nikita Fedorovich
 
 Mentor: Mokin Konstantin Yuryevich
