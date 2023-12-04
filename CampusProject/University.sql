@@ -1,10 +1,8 @@
-DROP TABLE IF EXISTS students, students_accommodation, campus CASCADE;
+DROP TABLE IF EXISTS students, students_accommodation, rooms_in_5_dormitory CASCADE;
 
 
-CREATE TABLE rooms (
+CREATE TABLE rooms_in_5_dormitory (
     room_id TEXT PRIMARY KEY,
-    dormitory_number TEXT,
-    room_number TEXT,
     capacity INT
 );
 
@@ -19,8 +17,8 @@ CREATE TABLE students(
 
 CREATE TABLE students_accommodation(
 	student_id INT REFERENCES students(student_id), -- связывает с прошлой таблицей по номеру зачётки
-	dormitory_number TEXT REFERENCES campus(dormitory),
-	room_number TEXT,
+	dormitory_number TEXT,
+	room_number text references rooms_in_5_dormitory(room_id),
 	contract_number INT,
 	contract_start_date DATE,
 	contract_expire_date DATE
@@ -30,6 +28,28 @@ CREATE TABLE students_accommodation(
 -- there will also be at least one additional table
 -- that will contain specific information about the student
 
+INSERT INTO rooms_in_5_dormitory (room_id, capacity)
+VALUES
+   	('101B', 3),
+	('201B', 3),
+	('301B', 3),
+	('102M', 1),
+	('202M', 1),
+	('302B', 3),
+	('103M', 1),
+	('203B', 3),
+	('303B', 3),
+	('104M', 1),
+	('204B', 3),
+	('304B', 3),
+	('105B', 3),
+	('205B', 3),
+	('305B', 3),
+	('106M', 1),
+	('206M', 1),
+	('306B', 3),
+	('107B', 3),
+	('207B', 3);
 
 INSERT INTO students (student_id, last_name, first_name, patronymic, faculty, study_group)
 VALUES
@@ -59,23 +79,22 @@ INSERT INTO students_accommodation (student_id, dormitory_number, room_number, c
 VALUES
   (1, '5', '101B', 1234, '2023-01-01', '2023-12-31'),
   (2, '5', '201B', 5678, '2023-01-15', '2023-12-15'),
-  (3, '5', '301B', 9876, '2023-02-01', '2023-11-30'),
+  (3, '5', '201B', 9876, '2023-02-01', '2023-11-30'),
   (4, '5', '102M', 3456, '2023-03-01', '2023-10-31'),
   (5, '5', '202M', 7890, '2023-03-15', '2023-10-15'),
   (6, '5', '302B', 2345, '2023-04-01', '2023-09-30'),
-  (7, '5', '103M', 6789, '2023-05-01', '2023-08-31'),
+  (7, '5', '302B', 6789, '2023-05-01', '2023-08-31'),
   (8, '5', '203B', 4321, '2023-05-15', '2023-08-15'),
-  (9, '5', '303B', 5678, '2023-06-01', '2023-07-31'),
-  (10, '5', '104M', 9012, '2023-07-01', '2023-12-01'),
-  (11, '5', '204B', 1234, '2023-08-15', '2023-12-15'),
-  (12, '5', '304B', 5678, '2023-09-01', '2023-11-30'),
+  (9, '5', '203B', 5678, '2023-06-01', '2023-07-31'),
+  (10, '5', '105B', 9012, '2023-07-01', '2023-12-01'),
+  (11, '5', '101B', 1234, '2023-08-15', '2023-12-15'),
+  (12, '5', '203B', 5678, '2023-09-01', '2023-11-30'),
   (13, '5', '105B', 9012, '2023-10-01', '2023-12-31'),
   (14, '5', '205B', 1234, '2023-11-15', '2023-12-15'),
   (15, '5', '305B', 5678, '2023-12-01', '2023-12-31'),
-  (16, '5', '106M', 9012, '2024-01-01', '2024-06-01'),
-  (17, '5', '206M', 1234, '2024-01-15', '2024-06-15'),
+  (16, '5', '101B', 9012, '2024-01-01', '2024-06-01'),
+  (17, '5', '107B', 1234, '2024-01-15', '2024-06-15'),
   (18, '5', '306B', 5678, '2024-02-01', '2024-05-31'),
   (19, '5', '107B', 9012, '2024-03-01', '2024-05-31'),
-  (20, '5', '207B', 1234, '2024-04-15', '2024-05-15');
-
+  (20, '5', '201B', 1234, '2024-04-15', '2024-05-15');
 
