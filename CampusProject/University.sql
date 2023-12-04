@@ -1,24 +1,37 @@
-DROP TABLE IF EXISTS students, campus, dormitory5 CASCADE;
+DROP TABLE IF EXISTS students, students_accommodation, campus CASCADE;
+
+
+CREATE TABLE rooms (
+    room_id TEXT PRIMARY KEY,
+    dormitory_number TEXT,
+    room_number TEXT,
+    capacity INT
+);
+
 CREATE TABLE students(
-	student_id int,
-	last_name text,
-	first_name text,
-	patronimic text,
-	faculty text,
-	study_group int
+	student_id INT PRIMARY KEY NOT NULL,
+	last_name TEXT NOT NULL,
+	first_name TEXT NOT NULL,
+	patronymic TEXT,
+	faculty TEXT,
+	study_group TEXT	-- TEXT, cause group number may contain addition symbols ('/')
 	);
 
 CREATE TABLE students_accommodation(
 	student_id INT REFERENCES students(student_id), -- связывает с прошлой таблицей по номеру зачётки
-	domitory_number text,
-	room_number text,
-	contract_number int,
-	contract_start_date date,
-	contract_expire_date date
+	dormitory_number TEXT REFERENCES campus(dormitory),
+	room_number TEXT,
+	contract_number INT,
+	contract_start_date DATE,
+	contract_expire_date DATE
 );
 
 
-INSERT INTO students (student_id, last_name, first_name, patronimic, faculty, study_group)
+-- there will also be at least one additional table
+-- that will contain specific information about the student
+
+
+INSERT INTO students (student_id, last_name, first_name, patronymic, faculty, study_group)
 VALUES
   (1, 'Иванов', 'Иван', 'Иванович', 'ФИТ', 22101),
   (2, 'Петров', 'Петр', 'Петрович', 'ФИТ', 22201),
@@ -65,21 +78,4 @@ VALUES
   (19, '5', '107B', 9012, '2024-03-01', '2024-05-31'),
   (20, '5', '207B', 1234, '2024-04-15', '2024-05-15');
 
-CREATE TABLE campus(domitory_number text);
 
---INSERT INTO campus(domitory_number)
---VALUES('1A'), ('1B'), ('4'), ('5'), ('6'), ('7'), ('8/1'), ('8/2'), ('9'), ('10');
-
-
-CREATE TABLE dormitory5 (
-	floor int,
-	room_number text,
-	capacity int,
-	id1 int,
-	id2 int,
-	id3 int,
-	id4 int,
-	id5 int
-);
---INSERT INTO dormitory5(floor, room_number, capacity, id1, id2, id3, id4))
---VALUES(1, '110B', 3, 2, 3), ('110S', 1, 1), ('111B', 3), ('111S',1), ('112S',1), ('112B',3);

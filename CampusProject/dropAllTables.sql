@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS students_accommodation, students, campus, dormitory5 CASCADE;
