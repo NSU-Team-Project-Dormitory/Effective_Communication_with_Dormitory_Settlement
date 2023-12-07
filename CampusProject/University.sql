@@ -1,8 +1,21 @@
-DROP TABLE IF EXISTS students, students_accommodation, rooms_in_5_dormitory CASCADE;
+DROP TABLE IF EXISTS students, students_accommodation, dormitories, floors, rooms CASCADE;
 
+CREATE TABLE dormitories (
+	dorm_id TEXT PRIMARY KEY NOT NULL,
+	floor_count INT NOT NULL,
+	contact_info TEXT
+);
 
-CREATE TABLE rooms_in_5_dormitory (
-    room_id TEXT PRIMARY KEY,
+create table floors (
+	floor_id INT PRIMARY KEY,
+	dorm_id TEXT REFERENCES dormitories(dorm_id),
+	picture BYTEA  -- future feature
+);
+
+CREATE TABLE rooms (
+    room_id text PRIMARY KEY,
+    dorm_id TEXT REFERENCES dormitories(dorm_id),
+    floor_n INT REFERENCES floors(floor_id),
     capacity INT
 );
 
@@ -13,12 +26,12 @@ CREATE TABLE students(
 	patronymic TEXT,
 	faculty TEXT,
 	study_group TEXT	-- TEXT, cause group number may contain addition symbols ('/')
-	);
+);
 
 CREATE TABLE students_accommodation(
 	student_id INT REFERENCES students(student_id), -- связывает с прошлой таблицей по номеру зачётки
-	dormitory_number TEXT,
-	room_number text references rooms_in_5_dormitory(room_id),
+	dorm_n text references dormitories(dorm_id),
+	room_n text references rooms(room_id),
 	contract_number INT,
 	contract_start_date DATE,
 	contract_expire_date DATE
@@ -28,28 +41,41 @@ CREATE TABLE students_accommodation(
 -- there will also be at least one additional table
 -- that will contain specific information about the student
 
-INSERT INTO rooms_in_5_dormitory (room_id, capacity)
-VALUES
-   	('101B', 3),
-	('201B', 3),
-	('301B', 3),
-	('102M', 1),
-	('202M', 1),
-	('302B', 3),
-	('103M', 1),
-	('203B', 3),
-	('303B', 3),
-	('104M', 1),
-	('204B', 3),
-	('304B', 3),
-	('105B', 3),
-	('205B', 3),
-	('305B', 3),
-	('106M', 1),
-	('206M', 1),
-	('306B', 3),
-	('107B', 3),
-	('207B', 3);
+insert into dormitories (dorm_id, floor_count)
+values
+	('5', 5);
+
+insert into floors (floor_id, dorm_id)
+values
+	(1, '5'),
+	(2, '5'),
+	(3, '5'),
+	(4, '5'),
+	(5, '5');
+
+insert into rooms (room_id, dorm_id, floor_n, capacity)
+values
+	('101B', '5', 1, 3),
+	('201B', '5', 2, 3),
+	('301B', '5', 3, 3),
+	('102M', '5', 1, 1),
+	('202M', '5', 2, 1),
+	('302B', '5', 3, 3),
+	('103M', '5', 1, 1),
+	('203B', '5', 2, 3),
+	('303B', '5', 3, 3),
+	('104M', '5', 1, 1),
+	('204B', '5', 2, 3),
+	('304B', '5', 3, 3),
+	('105B', '5', 1, 3),
+	('205B', '5', 2, 3),
+	('305B', '5', 3, 3),
+	('106M', '5', 1, 1),
+	('206M', '5', 2, 1),
+	('306B', '5', 3, 3),
+	('107B', '5', 1, 3),
+	('207B', '5', 2, 3);
+
 
 INSERT INTO students (student_id, last_name, first_name, patronymic, faculty, study_group)
 VALUES
@@ -75,7 +101,7 @@ VALUES
   (20, 'Соловьев', 'Артур', 'Александрович', 'ФИТ', 22001);
 
 
-INSERT INTO students_accommodation (student_id, dormitory_number, room_number, contract_number, contract_start_date, contract_expire_date)
+INSERT INTO students_accommodation (student_id, dorm_n, room_n, contract_number, contract_start_date, contract_expire_date)
 VALUES
   (1, '5', '101B', 1234, '2023-01-01', '2023-12-31'),
   (2, '5', '201B', 5678, '2023-01-15', '2023-12-15'),
