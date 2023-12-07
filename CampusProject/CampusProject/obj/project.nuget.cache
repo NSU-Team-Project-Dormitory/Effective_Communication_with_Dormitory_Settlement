@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "PL2w7s4znOwdOpMAKhtQeFkhLahpMXgJj61OP6OQwd3c8+SOEcq8jNfueebW+UeViqM5CHseMjtGaDe8l/ji7w==",
+  "dgSpecHash": "vMLvzBLqhd7aBO9e+MPiXIBob35/hV+Y17XcTwXBpn4UqMlk20fjiKXlK1dHWIW9jkpka9SrKhPmbAlB7nGMzw==",
   "success": true,
-  "projectFilePath": "/Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/CampusProject.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/elizavetazhitnik/PROJ/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/CampusProject.csproj",
+  "expectedPackageFiles": [
+    "/Users/elizavetazhitnik/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/elizavetazhitnik/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/Users/elizavetazhitnik/.nuget/packages/npgsql/8.0.1/npgsql.8.0.1.nupkg.sha512",
+    "/Users/elizavetazhitnik/.nuget/packages/system.diagnostics.diagnosticsource/8.0.0/system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "/Users/elizavetazhitnik/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/elizavetazhitnik/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
+    "/Users/elizavetazhitnik/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
