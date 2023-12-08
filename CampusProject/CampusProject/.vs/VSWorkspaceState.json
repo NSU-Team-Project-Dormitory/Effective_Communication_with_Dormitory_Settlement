@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\InitialMenu",
+    "\\Model",
+    "\\ModelData",
+    "\\ModelData\\Campus",
+    "\\ModelData\\CheckInBook",
+    "\\ModelData\\Data",
+    "\\ModelData\\Persons",
+    "\\NsuCampusFactory",
+    "\\StudentsFactory"
+  ],
+  "SelectedNode": "\\ModelData\\Persons\\Person.cs",
+  "PreviewInSolutionExplorer": false
+}
