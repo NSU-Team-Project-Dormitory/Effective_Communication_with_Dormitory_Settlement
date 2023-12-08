@@ -22,4 +22,9 @@
 
         return floorName;
     }
+
+    internal List<Room> GetRooms()
+    {
+        throw new NotImplementedException();
+    }
 }

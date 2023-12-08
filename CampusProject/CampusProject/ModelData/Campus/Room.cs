@@ -1,5 +1,8 @@
 ﻿public sealed class Room : ModelObject
 {
+    internal string RoomId;
+    internal string RoomName;
+
     public string Name { get; }
     public int Сapacity { get; }
     public string V { get; }
@@ -20,3 +23,4 @@
         return Name;
     }
 }
+
