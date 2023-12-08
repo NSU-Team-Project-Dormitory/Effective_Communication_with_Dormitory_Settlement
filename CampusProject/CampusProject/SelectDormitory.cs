@@ -6,10 +6,10 @@ namespace CampusProject
         public void Message()
         {
             var model = new CampusModel();
-            var nsuFactory = new NsuCampusFactory(model);
-            var nsuCampus = nsuFactory.Create();
+            //var nsuFactory = new NsuCampusFactory(model);
+            //var nsuCampus = nsuFactory.Create();
 
-            Console.WriteLine(nsuCampus.Name);
+            //Console.WriteLine(nsuCampus.Name);
 
             Console.WriteLine("Выберите общежитие");
 

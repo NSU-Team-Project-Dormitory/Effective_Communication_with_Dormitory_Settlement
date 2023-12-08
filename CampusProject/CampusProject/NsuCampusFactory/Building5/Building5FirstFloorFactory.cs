@@ -14,17 +14,20 @@ public sealed class Building5FirstFloorFactory
     {
         _model = model;
 
-        string connectionString = "Host=localhost;Username=elizavetazhitnik;Password=your_password;Database=University";
+        string connectionString = "Host=localhost;Username=ivan;Password=;Database=postgres";
         using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
         {
+            Console.WriteLine("Connected!");
             try
             {
                 connection.Open();
-
-                using (NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM rooms WHERE dorm_id = 5 AND floor_n = 1", connection))
+                Console.WriteLine("Opened!");
+                using (NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM rooms WHERE dorm_id = '5' AND floor_n = 1", connection))
                 {
+                    Console.WriteLine("Commanded!");
                     using (NpgsqlDataReader reader = command.ExecuteReader())
                     {
+                        Console.WriteLine("Reader!");
                         while (reader.Read())
                         {
                             string roomId = reader.GetString(reader.GetOrdinal("room_id"));
@@ -34,6 +37,7 @@ public sealed class Building5FirstFloorFactory
 
                             Room room = new Room(_model, Guid.NewGuid(), roomId, capacity);
                             Console.WriteLine($"Created Room: {room}");
+                            Console.WriteLine("Readed read");
                         }
                     }
                 }

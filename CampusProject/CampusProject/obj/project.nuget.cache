@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "vMLvzBLqhd7aBO9e+MPiXIBob35/hV+Y17XcTwXBpn4UqMlk20fjiKXlK1dHWIW9jkpka9SrKhPmbAlB7nGMzw==",
+  "dgSpecHash": "Ya2r/qfFzWYf3PX4oW7qJHdc8MpkbgXxmv3cdObV/Efl5E5h7Z0NuFLml8Z3Rds3X7tXWHFXrUYsLe6W9sr7gw==",
   "success": true,
-  "projectFilePath": "/Users/elizavetazhitnik/PROJ/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/CampusProject.csproj",
+  "projectFilePath": "/Users/ivan/Documents/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/CampusProject.csproj",
   "expectedPackageFiles": [
-    "/Users/elizavetazhitnik/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "/Users/elizavetazhitnik/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "/Users/elizavetazhitnik/.nuget/packages/npgsql/8.0.1/npgsql.8.0.1.nupkg.sha512",
-    "/Users/elizavetazhitnik/.nuget/packages/system.diagnostics.diagnosticsource/8.0.0/system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
-    "/Users/elizavetazhitnik/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "/Users/elizavetazhitnik/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
-    "/Users/elizavetazhitnik/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512"
+    "/Users/ivan/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/ivan/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/Users/ivan/.nuget/packages/npgsql/8.0.1/npgsql.8.0.1.nupkg.sha512",
+    "/Users/ivan/.nuget/packages/system.diagnostics.diagnosticsource/8.0.0/system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "/Users/ivan/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/ivan/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
+    "/Users/ivan/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
