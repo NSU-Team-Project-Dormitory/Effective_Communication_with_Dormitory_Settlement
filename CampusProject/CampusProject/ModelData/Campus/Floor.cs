@@ -22,4 +22,9 @@
 
         return floorName;
     }
+
+    internal object GetRoomByNumber(string? roomNumber)
+    {
+        throw new NotImplementedException();
+    }
 }

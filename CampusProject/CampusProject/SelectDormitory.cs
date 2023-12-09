@@ -1,8 +1,8 @@
 ﻿using System;
 namespace CampusProject
 {
-	public struct SelectDormitory
-	{
+    public struct SelectDormitory
+    {
         public void Message()
         {
             var model = new CampusModel();
@@ -16,7 +16,6 @@ namespace CampusProject
             var nsuBuildingsFactory = new NsuBuildingsFactory(model);
             var buildings = nsuBuildingsFactory.CreateBuildings();
 
-
             foreach (var building in buildings.Values)
             {
                 Console.WriteLine(building.Name);
@@ -28,20 +27,15 @@ namespace CampusProject
             switch (inputNumberDormitory)
             {
                 case "Общежитие 4":
-                    Console.WriteLine("Выбрано общежитие 4");
-                    break;
-                case "Общежитие 5":
-                    Console.WriteLine("Выбрано общежитие 5");
-                    break;
-                case "Общежитие 7":
-                    Console.WriteLine("Выбрано общежитие 7");
-                    break;
                 case "4":
                     Console.WriteLine("Выбрано общежитие 4");
                     break;
+                case "Общежитие 5":
                 case "5":
                     Console.WriteLine("Выбрано общежитие 5");
+                    SelectRoom.Select();
                     break;
+                case "Общежитие 7":
                 case "7":
                     Console.WriteLine("Выбрано общежитие 7");
                     break;
