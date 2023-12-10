@@ -1,29 +1,25 @@
-﻿public sealed class StudentsFactory
-{
-    private readonly Students _model;
+using System.Collections.ObjectModel;
 
-    public StudentsFactory(Students model)
+public sealed class StudentsFactory
+{
+    private readonly CampusModel _model;
+
+    public StudentsFactory(CampusModel model)
     {
         _model = model;
     }
-    public Students Create()
+
+    public IReadOnlyDictionary<Guid, Student> CreateStudents()
     {
-        var floors = new Dictionary<Guid, Floor>();
-        var firstFloor = new Building5FirstFloorFactory(_model).Create();
+        var students = new Dictionary<Guid, Student>();
 
-        var rooms = new Dictionary<Guid, Room>();
+        //var student1 = new NewStudentFactory(_model).Create();
+        var student1 = new Student(_model, new Guid("{83202A0D-66E8-4A1E-AD45-EEDFFC5F7C48}"),
+            new PersonDocument("Santa", "Klaus", "DedMorozovich", "passport", "7776969777"),
+            "123321", new StudyGroup("00201", "FIT"));
 
-        var room100 = new Room(_model, new Guid("{d904752a-0867-4207-866e-1b54d0db5c44}"),
-            "100");
-       
-        rooms.Add(room100.Id, room100);
-        
-        return new Floor(_model, new Guid("{DD656AAB-EFC8-4E35-947B-89284E781A6B}")
-            , "Этаж 1", rooms);
+        students.Add(student1.Id, student1);
 
-        var building = new Students(_model, new Guid("{C52285D0-6164-410E-83A2-BC4C2001191D}"),
-            "Общежитие 5", floors);
-
-        return studets;
+        return students;
     }
 }

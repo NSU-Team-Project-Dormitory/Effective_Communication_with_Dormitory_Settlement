@@ -2,13 +2,13 @@
 {
     public Campus Campus { get; }
     public CheckInBook CheckInBook { get; }
-    public CitizenBook CitizenBook { get; }
+    public StudentBook StudentBook { get; }
 
-    public CampusModel(Campus campus, CheckInBook checkInBook, CitizenBook citizenBook)
+    public CampusModel(Campus campus, CheckInBook checkInBook, StudentBook studentBook)
     {
         Campus = campus;
         CheckInBook = checkInBook;
-        CitizenBook = citizenBook;
+        StudentBook = studentBook;
     }
 
     public CampusModel()

@@ -1,15 +1,33 @@
 ﻿using CampusProject;
+using System.Text;
 
-//Console.WriteLine("Hello, World!");
+Console.OutputEncoding = Encoding.UTF8;
+
+//ControlMenu WelcomeText = new ControlMenu();
+//WelcomeText.WelcomeMessage();
+
+var model = new CampusModel();
+var nsuFactory = new NsuCampusFactory(model);
+var nsuCampus = nsuFactory.Create();
+
+Console.WriteLine(nsuCampus.Name);
+
+Console.WriteLine("Выберите общежитие");
+
+var nsuBuildingsFactory = new NsuBuildingsFactory(model);
+var buildings = nsuBuildingsFactory.CreateBuildings();
 
 
-//var campusModel = new CampusModel();
-//var nsuCampus = new NsuCampusFactory(campusModel);
-//var campus = nsuCampus.Create();
+foreach (var building in buildings.Values)
+{
+    Console.WriteLine(building.Name);
+}
 
-//Console.WriteLine(campus);
 
-//Console.ReadLine();
-
-ControlMenu WelcomeText = new ControlMenu();
-WelcomeText.WelcomeMessage();
+var StudentsFactory = new StudentsFactory(model);
+var students = StudentsFactory.CreateStudents();
+foreach (var student in students.Values)
+{
+    Console.WriteLine(student.CampusBookId);
+}
+Console.ReadLine();
