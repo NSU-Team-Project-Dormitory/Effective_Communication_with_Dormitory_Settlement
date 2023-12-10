@@ -19,9 +19,4 @@
         DocumentType = documentType;
         DocumentId = documentId;
     }
-    public override string ToString()
-    {
-        string documToStr = LastName + "\n" + FirstName + "\n";
-        return documToStr;
-    }
 }
