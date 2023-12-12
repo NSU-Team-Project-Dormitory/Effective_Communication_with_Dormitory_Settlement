@@ -12,16 +12,23 @@ public sealed class FindingStudents
     public IReadOnlyDictionary<Guid, Student> FindStudents(string inputName, IReadOnlyDictionary<Guid, Student> allStudents)
     {
         var foundStudents = new Dictionary<Guid, Student>();
-
+        var found = false;
         foreach (var student in allStudents.Values)
         {
             if (student.Document.LastName == inputName)
             {
                 foundStudents.Add(student.Id, student);
+                found = true;
             }
         }
-
-        return foundStudents;
+        if (found)
+        {
+            return foundStudents;
+        }
+        else 
+        { 
+            return null;
+        }
     }
 
 }

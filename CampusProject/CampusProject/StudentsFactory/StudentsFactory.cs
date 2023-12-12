@@ -1,4 +1,5 @@
 using System.Collections.ObjectModel;
+using System.Globalization;
 
 public sealed class StudentsFactory
 {
@@ -8,10 +9,10 @@ public sealed class StudentsFactory
     {
         _model = model;
     }
+    private Dictionary<Guid, Student> students = new Dictionary<Guid, Student>();
 
     public IReadOnlyDictionary<Guid, Student> CreateStudents()
     {
-        var students = new Dictionary<Guid, Student>();
 
         //var student1 = new NewStudentFactory(_model).Create();
         var student1 = new Student(_model, new Guid("{83202A0D-66E8-4A1E-AD45-EEDFFC5F7C48}"),
@@ -35,6 +36,17 @@ public sealed class StudentsFactory
         students.Add(student3.Id, student3);
         students.Add(student4.Id, student4);
 
+        return students;
+    }
+
+    public IReadOnlyDictionary<Guid, Student> AddStudents(string lastName,
+        string firstName, string patronimyc, string documentType, string documentNumber, 
+        string campusBookId, string studyGroup, string faculty)
+    {
+        var newStudent = new Student(_model, System.Guid.NewGuid(),
+            new PersonDocument(lastName, firstName, patronimyc, documentType, documentNumber), campusBookId,
+            new StudyGroup(studyGroup, faculty));
+        students.Add(newStudent.Id, newStudent);
         return students;
     }
 }
