@@ -1,37 +1,27 @@
 ﻿<Properties StartupConfiguration="{2E7B2FB3-34B2-49CA-B5CB-1AFF1F14C078}|Default">
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CampusProject/NsuCampusFactory/Building5/Building5FirstFloorFactory.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CampusProject/StudentsFactory/CitizenBookFactory.cs">
     <Files>
-      <File FileName="CampusProject/Program.cs" Line="28" Column="3" IsPinned="True" />
-      <File FileName="CampusProject/NsuCampusFactory/Building5/Building5FirstFloorFactory.cs" Line="20" Column="42" />
-      <File FileName="CampusProject/ModelData/Campus/Room.cs" Line="16" Column="2" />
-      <File FileName="CampusProject/SelectDormitory.cs" />
-      <File FileName="CampusProject/NsuCampusFactory/Building5/Building5FifthFacory.cs" Line="8" Column="6" />
-      <File FileName="CampusProject/NsuCampusFactory/Building5/Building5FourthFactory.cs" Line="8" Column="6" />
-      <File FileName="CampusProject/NsuCampusFactory/Building5/Building5SecondFloorFactory.cs" Line="8" Column="6" />
-      <File FileName="CampusProject/NsuCampusFactory/Building5/Building5ThirdFloorFactory.cs" Line="8" Column="6" />
-      <File FileName="CampusProject/NsuCampusFactory/Building5/Building5Factory.cs" Line="12" Column="68" />
-      <File FileName="CampusProject/NsuCampusFactory/NsuBuildingsFactory.cs" Line="17" Column="61" />
-      <File FileName="CampusProject/CampusConnection.cs" Line="1" Column="1" />
-      <File FileName="CampusProject/ModelData/Campus/Building.cs" Line="10" Column="25" />
-      <File FileName="CampusProject/ModelData/Campus/Floor.cs" Line="1" Column="1" />
+      <File FileName="CampusProject/StudentsFactory/CitizenBookFactory.cs" Line="12" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CampusProject" expanded="True">
+          <Node name="CampusProject">
             <Node name="CampusProject">
+              <Node name="InitialMenu" expanded="True" />
+              <Node name="Model" expanded="True" />
               <Node name="ModelData" expanded="True">
                 <Node name="Campus" expanded="True" />
+                <Node name="Data" expanded="True" />
+                <Node name="Persons" expanded="True" />
               </Node>
-              <Node name="NsuCampusFactory" expanded="True">
-                <Node name="Building5" expanded="True">
-                  <Node name="Building5FirstFloorFactory.cs" selected="True" />
-                </Node>
+              <Node name="NsuCampusFactory" expanded="True" />
+              <Node name="StudentsFactory" expanded="True">
+                <Node name="CitizenBookFactory.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -39,6 +29,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.CampusProject PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

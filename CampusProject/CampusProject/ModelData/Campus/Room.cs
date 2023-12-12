@@ -1,11 +1,10 @@
 ﻿public sealed class Room : ModelObject
 {
-    internal string RoomId;
-    internal string RoomName;
+    //internal string RoomId;
+    //internal string RoomName;
 
     public string Name { get; }
     public int Сapacity { get; }
-    public string V { get; }
 
     public Room(IModel model, Guid id, string name,int capacity) : base(model, id)
     {
@@ -13,14 +12,9 @@
         Сapacity = capacity;
     }
 
-    public Room(IModel model, Guid id, string v) : base(model, id)
-    {
-        V = v;
-    }
-
     public override string ToString()
     {
-        return Name;
+        return "Комната " + Name;
     }
 }
 

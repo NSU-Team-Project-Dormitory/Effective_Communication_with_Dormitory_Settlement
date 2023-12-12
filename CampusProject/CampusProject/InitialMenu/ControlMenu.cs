@@ -1,13 +1,16 @@
-﻿using System;
-namespace CampusProject
+﻿namespace CampusProject
 {
 	public struct ControlMenu
 	{
         public void WelcomeMessage()
 		{
-            SelectDormitory selectdormitory = new SelectDormitory();
+            
             Console.WriteLine("Добро пожаловать в меню общежитий");
-            selectdormitory.Message();
+
+            var model = new CampusModel();
+            var nsuCampus = new NsuCampusFactory(model).Create();
+
+            Console.WriteLine(nsuCampus.ToString());
         }
 	}
 }

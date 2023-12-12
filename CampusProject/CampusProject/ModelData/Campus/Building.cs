@@ -12,7 +12,7 @@
 
     public override string ToString()
     {
-        string buildingInfo = Name + "\n";
+        string buildingInfo = "Общежитие " + Name + "\n";
 
         foreach (var floor in Floors)
         {

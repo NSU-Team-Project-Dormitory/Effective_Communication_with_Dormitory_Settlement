@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿
+using Npgsql;
 
 public sealed class NsuBuildingsFactory
 {
@@ -9,17 +10,38 @@ public sealed class NsuBuildingsFactory
         _model = model;
     }
 
-    public IReadOnlyDictionary<Guid, Building> CreateBuildings()
+    public IReadOnlyDictionary<Guid, Building> CreateBuildings(NpgsqlConnection connection)
     {
         var buildings = new Dictionary<Guid, Building>();
+        List<string> builds = new List<string>();
 
-        var hostel4 = new Building4Factory(_model).Create();
-        var hostel5 = new Building5Factory(_model).Create();
-        var hostel7 = new Building7Factory(_model).Create();
+        try
+        {
+            using (NpgsqlCommand command = new NpgsqlCommand("select dorm_id from dormitories order by dorm_id", connection))
+            {
+                using (NpgsqlDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        builds.Add(reader.GetString(reader.GetOrdinal("dorm_id")));
+                    }
+                }
+            }
+        }
+        catch (NpgsqlException ex)
+        {
+            Console.WriteLine("SQL exception in BuildingsFactory: " + ex.Message);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Other exception in BuildingsFactory: " + ex.Message);
+        }
 
-        buildings.Add(hostel4.Id, hostel4);
-        buildings.Add(hostel5.Id, hostel5);
-        buildings.Add(hostel7.Id, hostel7);
+        foreach (string i in builds)
+        {
+            var unit = new BuildingFactory(_model).Create(i, connection);
+            buildings.Add(unit.Id, unit);
+        }
 
         return buildings;
     }
