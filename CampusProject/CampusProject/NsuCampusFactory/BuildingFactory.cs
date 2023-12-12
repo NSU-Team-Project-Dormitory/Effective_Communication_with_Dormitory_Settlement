@@ -18,7 +18,7 @@ public sealed class BuildingFactory
 
         try
         {
-            using (NpgsqlCommand command = new NpgsqlCommand($"select floor_id from floors where dorm_id = '{buildName}'", connection))
+            using (NpgsqlCommand command = new NpgsqlCommand($"select floor_id from floors where dorm_id = '{buildName}' order by floor_id", connection))
             {
                 using (NpgsqlDataReader reader = command.ExecuteReader())
                 {

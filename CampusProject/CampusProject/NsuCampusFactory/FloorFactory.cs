@@ -15,7 +15,7 @@ public class FloorFactory
 
         try
         {
-            using (NpgsqlCommand command = new NpgsqlCommand($"select room_id, capacity from rooms where dorm_id = '{currDorm}' and floor_n = {currFloor}", connection))
+            using (NpgsqlCommand command = new NpgsqlCommand($"select room_id, capacity from rooms where dorm_id = '{currDorm}' and floor_n = {currFloor} order by room_id", connection))
             {
                 using (NpgsqlDataReader reader = command.ExecuteReader())
                 {
