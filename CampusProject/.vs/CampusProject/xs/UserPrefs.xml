@@ -1,35 +1,30 @@
 ﻿<Properties StartupConfiguration="{2E7B2FB3-34B2-49CA-B5CB-1AFF1F14C078}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.CampusProject PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CampusProject/SelectRoom.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CampusProject/StudentsInterface.cs">
     <Files>
-      <File FileName="CampusProject/Program.cs" Line="1" Column="1" IsPinned="True" />
-      <File FileName="CampusProject/SelectDormitory.cs" Line="48" Column="2" />
-      <File FileName="CampusProject/NsuCampusFactory/NsuCampusFactory.cs" />
-      <File FileName="CampusProject/NsuCampusFactory/Building5/Building5FifthFacory.cs" Line="1" Column="1" />
-      <File FileName="CampusProject/NsuCampusFactory/Building5/Building5FirstFloorFactory.cs" Line="27" Column="21" />
-      <File FileName="CampusProject/NsuCampusFactory/Building5/Building5FourthFactory.cs" />
-      <File FileName="CampusProject/NsuCampusFactory/Building5/Building5Factory.cs" Line="1" Column="1" />
-      <File FileName="CampusProject/SelectRoom.cs" Line="36" Column="10" />
+      <File FileName="CampusProject/Program.cs" Line="1" Column="21" IsPinned="True" />
+      <File FileName="CampusProject/SelectRoom.cs" Line="11" Column="58" />
+      <File FileName="CampusProject/StudentsInterface.cs" Line="60" Column="14" />
+      <File FileName="CampusProject/SelectDormitory.cs" Line="36" Column="41" />
+      <File FileName="CampusProject/InitialMenu/ControlMenu.cs" Line="13" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CampusProject">
-            <Node name="CampusProject" expanded="True">
-              <Node name="NsuCampusFactory" expanded="True">
-                <Node name="Building5" expanded="True" />
-              </Node>
-              <Node name="SelectRoom.cs" selected="True" />
+          <Node name="CampusProject" expanded="True">
+            <Node name="CampusProject">
+              <Node name="InitialMenu" expanded="True" />
+              <Node name="Remarks" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CampusProject PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>

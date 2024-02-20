@@ -33,8 +33,22 @@ namespace CampusProject
                 case "Общежитие 5":
                 case "5":
                     Console.WriteLine("Выбрано общежитие 5");
-                    SelectRoom.Select();
+                    Console.WriteLine("Выберите следующее действие: room/student");
+                    string way = Console.ReadLine();
+                    if (way == "room")
+                    {
+                        SelectRoom.Select();
+                    }
+                    else if (way == "student")
+                    {
+                        StudentsInterface.Select();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Неправильный выбор.");
+                    }
                     break;
+
                 case "Общежитие 7":
                 case "7":
                     Console.WriteLine("Выбрано общежитие 7");
