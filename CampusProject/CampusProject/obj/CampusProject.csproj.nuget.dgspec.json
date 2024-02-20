@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/CampusProject.csproj": {}
+    "D:\\NSU\\Second Course\\Effective_Communication_with_Dormitory_Settlement\\CampusProject\\CampusProject\\CampusProject.csproj": {}
   },
   "projects": {
-    "/Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/CampusProject.csproj": {
+    "D:\\NSU\\Second Course\\Effective_Communication_with_Dormitory_Settlement\\CampusProject\\CampusProject\\CampusProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/CampusProject.csproj",
+        "projectUniqueName": "D:\\NSU\\Second Course\\Effective_Communication_with_Dormitory_Settlement\\CampusProject\\CampusProject\\CampusProject.csproj",
         "projectName": "CampusProject",
-        "projectPath": "/Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/CampusProject.csproj",
-        "packagesPath": "/Users/elizavetazhitnik/.nuget/packages/",
-        "outputPath": "/Users/elizavetazhitnik/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/",
+        "projectPath": "D:\\NSU\\Second Course\\Effective_Communication_with_Dormitory_Settlement\\CampusProject\\CampusProject\\CampusProject.csproj",
+        "packagesPath": "C:\\Users\\misha\\.nuget\\packages\\",
+        "outputPath": "D:\\NSU\\Second Course\\Effective_Communication_with_Dormitory_Settlement\\CampusProject\\CampusProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/elizavetazhitnik/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\misha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.415/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
