@@ -9,7 +9,7 @@ namespace CampusProject
             var model = new CampusModel();
             var studentsFactory = new StudentsFactory(model);
             var students = studentsFactory.CreateStudents();
-            Console.WriteLine("Введите операцию:");
+            Console.WriteLine("Введите операцию:all/find/add");
             var operation = Console.ReadLine();
 
             switch (operation)

@@ -2,29 +2,29 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.CampusProject PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="CampusProject/StudentsInterface.cs">
     <Files>
-      <File FileName="CampusProject/Program.cs" Line="1" Column="21" IsPinned="True" />
-      <File FileName="CampusProject/SelectRoom.cs" Line="11" Column="58" />
-      <File FileName="CampusProject/StudentsInterface.cs" Line="60" Column="14" />
-      <File FileName="CampusProject/SelectDormitory.cs" Line="36" Column="41" />
-      <File FileName="CampusProject/InitialMenu/ControlMenu.cs" Line="13" Column="2" />
+      <File FileName="CampusProject/Program.cs" Line="5" Column="1" IsPinned="True" />
+      <File FileName="CampusProject/StudentsInterface.cs" Line="52" Column="37" />
+      <File FileName="CampusProject/Remarks/Remarks.cs" Line="111" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CampusProject" expanded="True">
-            <Node name="CampusProject">
-              <Node name="InitialMenu" expanded="True" />
+            <Node name="CampusProject" expanded="True">
+              <Node name="ModelData" expanded="True" />
+              <Node name="NsuCampusFactory" expanded="True" />
               <Node name="Remarks" expanded="True" />
+              <Node name="StudentsInterface.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.CampusProject PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
 </Properties>
