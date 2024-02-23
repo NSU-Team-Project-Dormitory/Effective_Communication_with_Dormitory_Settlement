@@ -6,14 +6,14 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="CampusProject/StudentsInterface.cs">
     <Files>
       <File FileName="CampusProject/Program.cs" Line="5" Column="1" IsPinned="True" />
-      <File FileName="CampusProject/StudentsInterface.cs" Line="52" Column="37" />
-      <File FileName="CampusProject/Remarks/Remarks.cs" Line="111" Column="1" />
+      <File FileName="CampusProject/StudentsInterface.cs" Line="12" Column="36" />
+      <File FileName="CampusProject/StudentsFactory.cs" Line="17" Column="49" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CampusProject" expanded="True">
-            <Node name="CampusProject" expanded="True">
+          <Node name="CampusProject">
+            <Node name="CampusProject">
               <Node name="ModelData" expanded="True" />
               <Node name="NsuCampusFactory" expanded="True" />
               <Node name="Remarks" expanded="True" />

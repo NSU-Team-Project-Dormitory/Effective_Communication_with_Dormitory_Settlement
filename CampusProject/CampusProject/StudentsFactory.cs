@@ -16,8 +16,8 @@ public sealed class StudentsFactory
 
         //var student1 = new NewStudentFactory(_model).Create();
         var student1 = new Student(_model, new Guid("{83202A0D-66E8-4A1E-AD45-EEDFFC5F7C48}"),
-            new PersonDocument("Klaus", "Santa", "DedMorozovich", "passport", "7776969777"),
-            "1", new StudyGroup("00201", "FIT"));
+    new PersonDocument("Klaus", "Santa", "DedMorozovich", "passport", "7776969777"),
+    "1", new StudyGroup("00201", "FIT"));
 
         var student2 = new Student(_model, new Guid("{402B250D-EE9B-4CE4-91C9-FD705C80E21B}"),
             new PersonDocument("White", "Walter", "Chemistrovich", "passport", "420420420"),
