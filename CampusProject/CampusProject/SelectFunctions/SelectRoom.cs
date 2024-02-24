@@ -9,14 +9,21 @@ namespace CampusProject
             var model = new CampusModel();
             var building5FirstFloorFactory = new Building5FirstFloorFactory(model);
             Console.WriteLine("Введите номер комнаты: ");
+            Console.WriteLine("Выйти ");
             var roomNumber = Console.ReadLine();
 
-            if (RoomExists(building5FirstFloorFactory, roomNumber))
+            if (roomNumber.ToLower() == "Выйти" | roomNumber.ToLower() == "выйти")
+            {
+                return;
+               
+            }
+            else if (RoomExists(building5FirstFloorFactory, roomNumber))
             {
                 Console.WriteLine($"Выбрана комната {roomNumber}");
                 RemarksMenu.ShowRemarksMenu(roomNumber); // Access the public method to show the remarks menu
             }
-            else
+
+            else if (roomNumber.ToLower() != "Выйти")
             {
                 Console.WriteLine($"Комната {roomNumber} не существует.");
             }

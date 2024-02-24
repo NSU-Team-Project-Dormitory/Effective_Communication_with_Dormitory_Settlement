@@ -10,21 +10,21 @@ namespace CampusProject
             RoomRemarks remarks = new RoomRemarks();
             while (true)
             {
-                Console.WriteLine("1. Добавить замечание");
-                Console.WriteLine("2. Просмотреть замечания");
-                Console.WriteLine("3. Выйти");
+                Console.WriteLine("add - Добавить замечание");
+                Console.WriteLine("view - Просмотреть замечания");
+                Console.WriteLine("Выйти");
                 Console.WriteLine("Выберите действие: ");
                 var choice = Console.ReadLine();
 
                 switch (choice)
                 {
-                    case "1":
+                    case "add":
                         AddRemark(remarks);
                         break;
-                    case "2":
+                    case "view":
                         ViewRemarks(remarks);
                         break;
-                    case "3":
+                    case "Выйти":
                         return;
                     default:
                         Console.WriteLine("Некорректный выбор. Попробуйте еще раз.");

@@ -29,6 +29,10 @@ namespace CampusProject
             while (true)
             {
                 Console.WriteLine("Введите операцию:");
+                Console.WriteLine("all - просмотреть всех студентов");
+                Console.WriteLine("find - поиск судентов");
+                Console.WriteLine("add - добавить студента");
+                Console.WriteLine("Выйти");
                 var operation = Console.ReadLine();
 
                 switch (operation)
@@ -65,14 +69,15 @@ namespace CampusProject
                         break;
 
                     case "add": //добавить студента
-                        Console.WriteLine("\nВведите имя и фамилию студента:");
-                        var input = Console.ReadLine().Split(" ");
-                        var firstName = input[0];
-                        var lastName = input[1];
-                        students = StudentsFactory.AddStudents(lastName, firstName, "1", "1", "1", "1", "1", "1");
-                        Console.WriteLine();
+                        Console.WriteLine("\nВведите имя студента:");
+                        var firstName = Console.ReadLine();
+                        Console.WriteLine("Введите фамилию студента:");
+                        var lastName = Console.ReadLine();
+                        students = StudentsFactory.AddStudents(firstName, lastName, "1", "1", "1", "1", "1", "1");
+                        Console.WriteLine("Студент добавлен");
                         break;
-                    case "exit":
+                    case "Выйти":
+                        return;
                         
                     default:
                         Console.WriteLine("\nСписок доступных операций:\n" +
