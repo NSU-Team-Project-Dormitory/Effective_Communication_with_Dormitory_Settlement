@@ -12,7 +12,7 @@ namespace CampusProject
             {
                 Console.WriteLine("add - Добавить замечание");
                 Console.WriteLine("view - Просмотреть замечания");
-                Console.WriteLine("Выйти");
+                Console.WriteLine("exit");
                 Console.WriteLine("Выберите действие: ");
                 var choice = Console.ReadLine();
 
@@ -24,10 +24,10 @@ namespace CampusProject
                     case "view":
                         ViewRemarks(remarks);
                         break;
-                    case "Выйти":
+                    case "exit":
                         return;
                     default:
-                        Console.WriteLine("Некорректный выбор. Попробуйте еще раз.");
+                        Console.WriteLine("Некорректный выбор. Попробуйте еще раз.\n");
                         break;
                 }
             }
@@ -46,11 +46,11 @@ namespace CampusProject
                 var noteNumber = Convert.ToInt32(Console.ReadLine());
 
                 remarks.AddRemark(type, content, noteNumber);
-                Console.WriteLine("Замечание добавлено");
+                Console.WriteLine("Замечание добавлено\n");
             }
             else
             {
-                Console.WriteLine("Недопустимый тип замечания");
+                Console.WriteLine("Недопустимый тип замечания\n");
             }
         }
 

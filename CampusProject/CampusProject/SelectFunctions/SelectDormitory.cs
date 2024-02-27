@@ -22,7 +22,6 @@ namespace CampusProject
                 Console.WriteLine(building.Name);
             }
 
-            //Console.WriteLine("Выйти");
             Console.WriteLine("Введите номер общежития:");
             string inputNumberDormitory = Console.ReadLine();
             while (true)
@@ -31,21 +30,21 @@ namespace CampusProject
                 {
                     case "Общежитие 4":
                     case "4":
-                        Console.WriteLine("Выбрано общежитие 4");
+                        Console.WriteLine("Выбрано общежитие 4\n");
                         OtherDormitoryInterface.Message();
                         break;
                     case "Общежитие 5":
                     case "5":
-                        Console.WriteLine("Выбрано общежитие 5");
+                        Console.WriteLine("Выбрано общежитие 5\n");
                         MainInterface.Select();
                         break;
                     case "Общежитие 7":
                     case "7":
-                        Console.WriteLine("Выбрано общежитие 7");
+                        Console.WriteLine("Выбрано общежитие 7\n");
                         OtherDormitoryInterface.Message();
                         break;
                     default:
-                        Console.WriteLine("Неправильный выбор");
+                        Console.WriteLine("Выбранного общежития не существует\n");
                         Message();
                         break;
                 }

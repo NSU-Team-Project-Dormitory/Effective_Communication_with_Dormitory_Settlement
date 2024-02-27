@@ -29,7 +29,7 @@ namespace CampusProject
         {
             if (remarks.Count == 0)
             {
-                Console.WriteLine("Замечаний пока нет");
+                Console.WriteLine("Замечаний пока нет\n");
             }
             else
             {

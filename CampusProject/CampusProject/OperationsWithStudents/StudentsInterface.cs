@@ -28,11 +28,8 @@ namespace CampusProject
             var students = StudentsFactory.CreateStudents();
             while (true)
             {
-                Console.WriteLine("Введите операцию:");
-                Console.WriteLine("all - просмотреть всех студентов");
-                Console.WriteLine("find - поиск судентов");
-                Console.WriteLine("add - добавить студента");
-                Console.WriteLine("Выйти");
+                Console.WriteLine("\nСписок доступных операций:\n" +
+                    "all\nfind\nadd\nexit\n");
                 var operation = Console.ReadLine();
 
                 switch (operation)
@@ -76,7 +73,7 @@ namespace CampusProject
                         students = StudentsFactory.AddStudents(firstName, lastName, "1", "1", "1", "1", "1", "1");
                         Console.WriteLine("Студент добавлен");
                         break;
-                    case "Выйти":
+                    case "exit":
                         return;
                         
                     default:

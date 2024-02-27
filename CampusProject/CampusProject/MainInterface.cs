@@ -1,27 +1,31 @@
 ﻿using System;
 namespace CampusProject
 {
-	public struct MainInterface
-	{
-		public static void Select()
-		{
-            Console.WriteLine("Выберите следующее действие: room/student");
-            Console.WriteLine("Выйти");
-            string way = Console.ReadLine();
-            if (way == "room")
+    public struct MainInterface
+    {
+        public static void Select()
+        {
+            Console.WriteLine("\nСписок доступных операций:\n" +
+                "room\nstudent\nexit\n");
+            string operation = Console.ReadLine();
+            switch (operation)
             {
-                SelectRoom.Select();
+                case "room":
+                    SelectRoom.Select();
+                    break;
+                case "student":
+                    StudentsInterface.Select();
+                    break;
+                case "exit":
+                    SelectDormitory.Message();
+                    return;
+                default:
+                    Console.WriteLine("\nСписок доступных операций:\n" +
+                        "room\nstudent\nexit\n");
+                    break;
             }
-            else if (way == "student")
-            {
-                StudentsInterface.Select();
-            }
-            else if (way == "Выйти")
-            {
-                SelectDormitory.Message();
-                return;
-            }
+
         }
-	}
+    }
 }
 

@@ -11,6 +11,11 @@
         Rooms = rooms;
     }
 
+    internal object GetRoomByNumber(string? roomNumber)
+    {
+        throw new NotImplementedException();
+    }
+
     public override string ToString()
     {
         string floorName = Name + "\n";
@@ -21,10 +26,5 @@
         }
 
         return floorName;
-    }
-
-    internal object GetRoomByNumber(string? roomNumber)
-    {
-        throw new NotImplementedException();
     }
 }
