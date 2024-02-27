@@ -13,7 +13,7 @@ public sealed class NsuCampusFactory
     {
         Campus? campus = null;
 
-        string connectionString = "Host=localhost;Username=ivan;Password=;Database=postgres";
+        string connectionString = "Host=localhost;Username=postgres;Password=;Database=postgres";
         using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
         {
             try

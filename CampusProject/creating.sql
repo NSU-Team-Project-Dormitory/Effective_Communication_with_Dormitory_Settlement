@@ -1,45 +1,57 @@
-DROP TABLE IF EXISTS students, students_accommodation, dormitories, floors, rooms CASCADE;
+drop table if exists Dormitory,
+Floor,
+Room,
+Student,
+Resident,
+Notification
+cascade;
 
-CREATE TABLE dormitories (
-	dorm_id TEXT PRIMARY KEY NOT NULL,
-	floor_count INT NOT NULL,
-	contact_info TEXT
+create table Dormitory (
+	dormitory_id SERIAL primary key,
+	name VARCHAR(100),
+	address VARCHAR(255),
+	floor_count INT not null,
+	contact_info VARCHAR(255)
 );
 
-create table floors (
-	id serial PRIMARY KEY,
-	floor_id INT,
-	dorm_id TEXT REFERENCES dormitories(dorm_id),
-	picture BYTEA  -- future feature
+create table Floor (
+	floor_id SERIAL primary key,
+	dormitory_id INT references Dormitory(dormitory_id),
+	number INT,
+	image_path VARCHAR(255) -- future feature
 );
 
-
-CREATE TABLE rooms (
-	id serial primary key,
-    room_id text,
-    dorm_id TEXT REFERENCES dormitories(dorm_id),
-    floor_n INT,
+create table Room (
+	room_id SERIAL primary key,
+    floor_id INT references Floor(floor_id),
+    name VARCHAR(100),
     capacity INT
 );
 
-CREATE TABLE students(
-	student_id INT PRIMARY KEY NOT NULL,
-	last_name TEXT NOT NULL,
-	first_name TEXT NOT NULL,
-	patronymic TEXT,
-	faculty TEXT,
-	study_group TEXT	-- TEXT, cause group number may contain addition symbols ('/')
+create table Student (
+	student_id INT primary key not null,
+	last_name VARCHAR(100) not null,
+	first_name VARCHAR(100) not null,
+	patronymic VARCHAR(100),
+	faculty VARCHAR(100),
+	study_group VARCHAR(100),
+	email VARCHAR(100)
 );
 
-CREATE TABLE students_accommodation(
-	student_id INT REFERENCES students(student_id), -- связывает с прошлой таблицей по номеру зачётки
-	dorm_n text references dormitories(dorm_id),
-	room_n text,
-	contract_number INT,
+create table Resident (
+	note_id SERIAL primary key,
+	student_id INT references Student(student_id),
+	room_id INT references Room(room_id),
+	contract_number VARCHAR(50),
 	contract_start_date DATE,
 	contract_expire_date DATE
 );
-
-
 -- there will also be at least one additional table
 -- that will contain specific information about the student
+
+CREATE TABLE Notification (
+    notification_id SERIAL PRIMARY KEY,
+    message TEXT,
+    time VARCHAR(20) DEFAULT TO_CHAR(CURRENT_TIMESTAMP, 'DD-MM-YYYY HH24:MI:SS')
+);
+

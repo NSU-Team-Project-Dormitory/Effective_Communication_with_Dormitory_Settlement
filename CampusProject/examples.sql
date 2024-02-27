@@ -22,8 +22,8 @@ SELECT * FROM rooms WHERE dorm_id = '5' AND floor_n = 1;
 
 select floor_count from dormitories where dorm_id = '5'
 
-select dorm_id from dormitories order by dorm_id 
+select dorm_id from dormitories order by dorm_id;
 
-select floor_id from floors where dorm_id = '5'
+select floor_id from floors where dorm_id = '5';
 
-select room_id, capacity from rooms where dorm_id = '5' and floor_n = 1 
+select room_id, capacity from rooms where dorm_id = '5' and floor_n = 1; 
