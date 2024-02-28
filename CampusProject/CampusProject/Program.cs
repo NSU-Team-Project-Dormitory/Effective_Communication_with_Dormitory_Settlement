@@ -1,15 +1,7 @@
 ﻿using CampusProject;
+using System.Text;
 
-//Console.WriteLine("Hello, World!");
-
-
-//var campusModel = new CampusModel();
-//var nsuCampus = new NsuCampusFactory(campusModel);
-//var campus = nsuCampus.Create();
-
-//Console.WriteLine(campus);
-
-//Console.ReadLine();
+Console.OutputEncoding = Encoding.UTF8;
 
 ControlMenu WelcomeText = new ControlMenu();
 WelcomeText.WelcomeMessage();

@@ -5,9 +5,8 @@ namespace CampusProject
 	{
         public void WelcomeMessage()
 		{
-            SelectDormitory selectdormitory = new SelectDormitory();
             Console.WriteLine("Добро пожаловать в меню общежитий");
-            selectdormitory.Message();
+            SelectDormitory.Message();
         }
 	}
 }
