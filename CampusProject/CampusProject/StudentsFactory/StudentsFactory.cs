@@ -1,4 +1,4 @@
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Globalization;
 
 public sealed class StudentsFactory
@@ -49,4 +49,55 @@ public sealed class StudentsFactory
         students.Add(newStudent.Id, newStudent);
         return students;
     }
+
+    public IReadOnlyDictionary<Guid, Student> UpdadeName(string lastName, string firstName,
+    string newLastName, string newFirstName)
+    {
+        var foundStudents = new Dictionary<Guid, Student>();
+        var found = false;
+        foreach (var student in students.Values)
+        {
+            if (student.Document.LastName == lastName && student.Document.FirstName == firstName)
+            {
+                var updatedStudent = new Student(_model, student.Id, new PersonDocument(newLastName, newFirstName, student.Document.Patronimic,
+                    student.Document.DocumentType, student.Document.DocumentId),student.CampusBookId ,student.StGroup);
+
+                students[student.Id] = updatedStudent;
+                found = true;
+            }
+        }
+        if (found)
+        {
+            Console.WriteLine("Данные о студенте успешно обновлены\n");
+        }
+        else
+        {
+            Console.WriteLine("Студент не найдет\n");
+        }
+        return students;
+    }
+
+    public IReadOnlyDictionary<Guid, Student> RemoveStudent(string lastName, string firstName)
+    {
+        var foundStudents = new Dictionary<Guid, Student>();
+        var found = 0;
+        foreach (var student in students.Values)
+        {
+            if (student.Document.LastName == lastName && student.Document.FirstName == firstName)
+            {
+                students.Remove(student.Id);
+                found++;
+            }
+        }
+        if (found > 0)
+        {
+            Console.WriteLine($"Удаленно {found} студентов\n");
+        }
+        else
+        {
+            Console.WriteLine("Студент не найдет\n");
+        }
+        return students;
+    }
+
 }
