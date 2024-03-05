@@ -11,7 +11,7 @@ public sealed class StudentsFactory
     }
     private Dictionary<Guid, Student> students = new Dictionary<Guid, Student>();
 
-    public IReadOnlyDictionary<Guid, Student> CreateStudents()
+    public Dictionary<Guid, Student> CreateStudents()
     {
 
         //var student1 = new NewStudentFactory(_model).Create();
@@ -39,7 +39,7 @@ public sealed class StudentsFactory
         return students;
     }
 
-    public IReadOnlyDictionary<Guid, Student> AddStudents(string lastName,
+    public Dictionary<Guid, Student> AddStudents(string lastName,
         string firstName, string patronimyc, string documentType, string documentNumber, 
         string campusBookId, string studyGroup, string faculty)
     {
@@ -50,16 +50,29 @@ public sealed class StudentsFactory
         return students;
     }
 
-    public IReadOnlyDictionary<Guid, Student> UpdadeName(string lastName, string firstName,
-    string newLastName, string newFirstName)
+    public Dictionary<Guid, Student> UpdadeName(string lastName, string firstName, string patronimyc,
+    string newLastName, string newFirstName, string newPatronimyc)
     {
         var foundStudents = new Dictionary<Guid, Student>();
         var found = false;
         foreach (var student in students.Values)
         {
-            if (student.Document.LastName == lastName && student.Document.FirstName == firstName)
+            if (student.Document.LastName == lastName 
+                && student.Document.FirstName == firstName
+                && student.Document.Patronimic == patronimyc)
             {
-                var updatedStudent = new Student(_model, student.Id, new PersonDocument(newLastName, newFirstName, student.Document.Patronimic,
+                if(newLastName == null)
+                {
+                    newLastName = student.Document.LastName;
+                }
+                if(newFirstName == null) { 
+                    newFirstName = student.Document.FirstName;
+                }
+
+                if (newPatronimyc == null) {
+                    newPatronimyc = student.Document.Patronimic; 
+                }
+                var updatedStudent = new Student(_model, student.Id, new PersonDocument(newLastName, newFirstName, newPatronimyc,
                     student.Document.DocumentType, student.Document.DocumentId),student.CampusBookId ,student.StGroup);
 
                 students[student.Id] = updatedStudent;
@@ -77,13 +90,15 @@ public sealed class StudentsFactory
         return students;
     }
 
-    public IReadOnlyDictionary<Guid, Student> RemoveStudent(string lastName, string firstName)
+    public Dictionary<Guid, Student> RemoveStudent(string lastName, string firstName, string patronimyc)
     {
         var foundStudents = new Dictionary<Guid, Student>();
         var found = 0;
         foreach (var student in students.Values)
         {
-            if (student.Document.LastName == lastName && student.Document.FirstName == firstName)
+            if (student.Document.LastName == lastName 
+                && student.Document.FirstName == firstName
+                && student.Document.Patronimic == patronimyc)
             {
                 students.Remove(student.Id);
                 found++;

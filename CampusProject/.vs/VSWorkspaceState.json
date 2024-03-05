@@ -2,12 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\CampusProject",
-    "\\CampusProject\\ModelData",
-    "\\CampusProject\\ModelData\\Campus",
-    "\\CampusProject\\ModelData\\Persons",
-    "\\CampusProject\\OperationsWithStudents",
     "\\CampusProject\\StudentsFactory"
   ],
-  "SelectedNode": "\\CampusProject\\StudentsFactory\\StudentsFactory.cs",
+  "SelectedNode": "\\CampusProject\\ModelData",
   "PreviewInSolutionExplorer": false
 }

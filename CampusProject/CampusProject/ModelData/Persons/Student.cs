@@ -17,7 +17,7 @@ public Student(IModel model, Guid id, PersonDocument document, string campusBook
     }
     public override string ToString()
     {
-        var student = Document.FirstName + " " + Document.LastName;
+        var student = Document.FirstName + " " + Document.LastName + " " + Document.Patronimic;
         return student;
     }
 }

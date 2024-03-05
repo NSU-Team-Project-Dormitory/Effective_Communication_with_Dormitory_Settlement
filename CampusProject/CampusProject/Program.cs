@@ -17,12 +17,6 @@ var nsuBuildingsFactory = new NsuBuildingsFactory(model);
 var buildings = nsuBuildingsFactory.CreateBuildings();
 
 
-foreach (var building in buildings.Values)
-{
-    //Console.WriteLine(building.Name);
-}
-
-
 //вывод всех студентов кампуса
 
 var StudentsFactory = new StudentsFactory(model);
@@ -30,7 +24,7 @@ var students = StudentsFactory.CreateStudents();
 while (true)
 {
     Console.WriteLine("\nСписок доступных операций:\n" +
-    "all\nfind\nadd\nupdate\nexit\n");
+    "all\nfind\nadd\nupdate\nremove\nexit\n");
     Console.WriteLine("Введите операцию:");
     var operation = Console.ReadLine();
 
@@ -48,7 +42,7 @@ while (true)
             //поиск студента по фамилии
 
             var findingStudents = new FindingStudents(model);
-            Console.WriteLine("\nВведите фамилию студента:");
+            Console.WriteLine("\nВведите имя студента:");
             string inputName = Console.ReadLine();
             var foundStudens = findingStudents.FindStudents(inputName, students);
             if (foundStudens != null)
@@ -76,32 +70,42 @@ while (true)
             Console.WriteLine();
             break;
         case "update":
-            Console.WriteLine("\nВведите имя и фамилию студента:");
+            Console.WriteLine("\nВведите ФИО студента:");
             var inputFind = Console.ReadLine().Split(" ");
             var firstNameUpd = inputFind[0];
             var lastNameUpd = inputFind[1];
+            var patronimycUpd = inputFind[2];
 
-            Console.WriteLine("\nВведите новые имя и фамилию студента:");
-            var inputUpdate = Console.ReadLine().Split(" ");
-            var newFirstName = inputUpdate[0];
-            var newLastName = inputUpdate[1];
+            Console.WriteLine("\nВведите новое имя студента:");
+            var newFirstName = Console.ReadLine();
+            if (newFirstName == "\n") newFirstName = null;
 
-            students = StudentsFactory.UpdadeName(lastNameUpd, firstNameUpd, newLastName, newFirstName);
+            Console.WriteLine("\nВведите новую фамилию студента:");
+            var newLastName = Console.ReadLine();
+            if(newLastName == "\n") newLastName = null;
+
+            Console.WriteLine("\nВведите новое отчество студента:");
+            var newPatronimyc = Console.ReadLine();
+            if(newPatronimyc == "\n") newPatronimyc = null;
+
+
+            students = StudentsFactory.UpdadeName(lastNameUpd, firstNameUpd,patronimycUpd, newLastName, newFirstName, newPatronimyc);
             //var updateStudents = new UpdateStudenInfo(model);
             //students = updateStudents.updadeName(lastNameUpd, firstNameUpd, newLastName, newFirstName, students);
             break;
         case "remove":
-            Console.WriteLine("\nВведите имя и фамилию студента:");
+            Console.WriteLine("\nВведите ФИО студента:");
             var inputRem = Console.ReadLine().Split(" ");
             var firstNameRem = inputRem[0];
             var lastNameRem = inputRem[1];
-            students = StudentsFactory.RemoveStudent(lastNameRem, firstNameRem);
+            var patronimycRem = inputRem[2];
+            students = StudentsFactory.RemoveStudent(lastNameRem, firstNameRem, patronimycRem);
             break;
         case "exit":
             return 0;
         default:
             Console.WriteLine("\nСписок доступных операций:\n" +
-                "all\nfind\nadd\nupdate\nexit\n");
+            "all\nfind\nadd\nupdate\nremove\nexit\n");
             break;
     }
 }

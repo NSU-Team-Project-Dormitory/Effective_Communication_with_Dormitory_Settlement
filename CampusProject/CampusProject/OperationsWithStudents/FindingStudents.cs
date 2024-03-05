@@ -15,7 +15,9 @@ public sealed class FindingStudents
         var found = false;
         foreach (var student in allStudents.Values)
         {
-            if (student.Document.LastName == inputName)
+            if (student.Document.LastName.Contains(inputName) 
+                || student.Document.FirstName.Contains(inputName)
+                || student.Document.Patronimic.Contains(inputName))
             {
                 foundStudents.Add(student.Id, student);
                 found = true;
