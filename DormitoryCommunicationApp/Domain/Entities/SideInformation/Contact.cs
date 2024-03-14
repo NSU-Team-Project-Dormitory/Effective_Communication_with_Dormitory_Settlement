@@ -1,5 +1,7 @@
 ﻿
 
+using System.Text.RegularExpressions;
+
 namespace Domain.Entities.SideInformation;
 
 public enum ContactType
@@ -13,7 +15,9 @@ public sealed class Contact
 {
     public string? Email { get; set; }
     public string? PhoneNumber { get; set;}
-    public int ID { get; }
+    public int ID { get; set; }
+
+    public Contact() { }
 
     public Contact(string? email, string? phoneNumber, int id)
     {
@@ -25,5 +29,5 @@ public sealed class Contact
 
 public class ContactException : EndOfStreamException
 {
-    public ContactException(string message) : base(message { }
+    public ContactException(string message) : base(message) { }
 }

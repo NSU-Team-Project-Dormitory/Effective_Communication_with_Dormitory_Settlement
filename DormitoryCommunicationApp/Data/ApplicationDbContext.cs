@@ -1,26 +1,47 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Domain.Entities.App.Role;
+using System.Security.Cryptography.X509Certificates;
+using Domain.Entities.Campus;
+using Domain.Entities.People;
+using Domain.Entities.Model;
 
 namespace Data
 {
-    public class ApplicationDbContext : DbContext 
+    public class ApplicationDbContext : DbContext
     {
-        protected readonly IConfiguration Configuration;
 
-        public ApplicationDbContext(IConfiguration configuration)
+        static void Main()
         {
-            Configuration = configuration;
+
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
+
+        public ApplicationDbContext()
         {
-            // connect to postgres with connection string from app settings
-            options.UseNpgsql(Configuration.GetConnectionString("Host=localhost; Database=DormitoryAppDatabase; Username=postgres; Password=3791"));
+            Database.EnsureCreated();
         }
 
-        
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseNpgsql("Host=localhost; Database=DormitoryDatabase; Username=postgres; Password=3791");
+        }
+
+
+
+        public DbSet<Student> Students { get; set; }
+
+        public DbSet<Building> Dormitories { get; set; }   
+
+        public DbSet<Floor> Floors { get; set; }    
+
+        public DbSet<Room> Rooms { get; set; }
+
+        public DbSet<StudentAccomodation> StudentAccomodations { get; set; }
+
     }
+
 }
 
 

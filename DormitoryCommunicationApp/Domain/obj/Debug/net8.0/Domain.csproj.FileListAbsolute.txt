@@ -10,3 +10,5 @@ D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\Dormitory
 D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Domain\obj\Debug\net8.0\refint\Domain.dll
 D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Domain\obj\Debug\net8.0\Domain.pdb
 D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
+D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache

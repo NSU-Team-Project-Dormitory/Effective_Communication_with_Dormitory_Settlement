@@ -1,22 +1,23 @@
-﻿using System.Xml.Linq;
+﻿
 using Domain.Entities.SideInformation;
-
+using Domain.Entities.People.Attribute;
 
 namespace Domain.Entities.People;
 
 public class Human 
 {
-    public int ID { get; }
-    public string  FirstName { get; }
-    public string  SecondName { get; }
-    public string? PatronymicName {  get; }
+    public int ID { get; set; }
+    public string?  FirstName { get; set; }
+    public string?  SecondName { get; set; }
+    public string? PatronymicName {  get; set; }
     public Sex Sex { get; set; }
-    public DateTime DateOfBirth { get; }
+    public DateTime DateOfBirth { get; set; }
 
-    public Address Address { get; set; }
+    public Address? Address { get; set; }
 
 
 
+    public Human() { }
     public Human (int id,
         string firstName,
         string secondName,

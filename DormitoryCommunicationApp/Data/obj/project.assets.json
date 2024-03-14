@@ -875,6 +875,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
       }
     }
   },
@@ -2285,10 +2295,16 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.2",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.2"
@@ -2320,7 +2336,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\NSU\\Second Course\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\NSU\\Second Course\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Domain\\Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

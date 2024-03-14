@@ -97,3 +97,5 @@ D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\Dormitory
 D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Data\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Data\obj\Debug\net8.0\Data.csproj.AssemblyReference.cache
 D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Data\obj\Debug\net8.0\Data.csproj.CopyComplete
+D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Data\bin\Debug\net8.0\Domain.dll
+D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Data\bin\Debug\net8.0\Domain.pdb
