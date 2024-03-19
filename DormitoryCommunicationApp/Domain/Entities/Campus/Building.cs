@@ -12,16 +12,20 @@ public sealed class Building
 
     public Contact? Contact { get; set; }
 
+    public int FloorsCount { get; set; }    
     public IEnumerable<Floor>? Floors { get; }
+
+
 
     public Building() { }
 
-   public Building(Address address, int id, Contact contact, string name)
+   public Building(Address address, int id, Contact contact, string name, Building dormitory, int floorsCount)
     {
         Address = address ?? throw new NullReferenceException("Address is null");
         ID = id;
         Contact = contact;
         Name = name;
+        FloorsCount = floorsCount;
     }
 
     public override string ToString()

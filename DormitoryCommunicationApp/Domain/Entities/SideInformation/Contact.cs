@@ -13,13 +13,13 @@ public enum ContactType
 
 public sealed class Contact
 {
-    public string? Email { get; set; }
-    public string? PhoneNumber { get; set;}
+    public string Email { get; set; }
+    public string PhoneNumber { get; set;}
     public int ID { get; set; }
 
     public Contact() { }
 
-    public Contact(string? email, string? phoneNumber, int id)
+    public Contact(string email, string phoneNumber, int id)
     {
         Email = email;
         PhoneNumber = phoneNumber;

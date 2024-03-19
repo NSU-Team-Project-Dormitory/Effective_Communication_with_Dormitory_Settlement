@@ -7,22 +7,24 @@ namespace Domain.Entities.Campus;
 
 public sealed class Room 
 {
+    public string? ID { get; set; }
     public string? Number { get; set; }
 
-    public string? ID { get; set; }
-
     public int? Capacity { get; set; }
+    public int FloorID {  get; set; }
+    public Floor Floor {  get; set; }
+    public List<Student> Students { get; set; }
 
-    public List<Student>? students { get; set; }
-
-    public Room() { }
+    public Room() {
+        Students = new List<Student>();
+    }
 
     public Room (string number, string id, int capacity)
     {
         Number = number;
         ID = id;
         Capacity = capacity;
-        students = new List<Student> ();    
+        Students = new List<Student>();    
     }
 
 

@@ -5,13 +5,12 @@ namespace Domain.Entities.SideInformation;
 public sealed class StudentGroup
 {
     public int ID { get; set; } 
-    public string? Number { get; }
     public string? Faculty { get; }
 
     StudentGroup() { }
-    public StudentGroup(string number, string faculty)
+    public StudentGroup(int id, string faculty)
     {
-        Number = number;
+        ID = id;
         Faculty = faculty;
     }
 }

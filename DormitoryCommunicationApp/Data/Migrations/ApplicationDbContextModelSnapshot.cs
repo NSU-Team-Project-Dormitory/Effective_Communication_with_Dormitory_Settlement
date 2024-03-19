@@ -85,6 +85,9 @@ namespace Data.Migrations
                     b.Property<int?>("ContactID")
                         .HasColumnType("integer");
 
+                    b.Property<int>("FloorsCount")
+                        .HasColumnType("integer");
+
                     b.HasKey("ID");
 
                     b.HasIndex("AddressID");
@@ -96,24 +99,28 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Domain.Entities.Campus.Floor", b =>
                 {
-                    b.Property<int?>("ID")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int?>("ID"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
 
-                    b.Property<int?>("BuildingID")
+                    b.Property<int>("Ad")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("Height")
+                    b.Property<int>("DormitoryID")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Height")
                         .HasColumnType("integer");
 
                     b.Property<string>("Number")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("BuildingID");
+                    b.HasIndex("DormitoryID");
 
                     b.ToTable("Floors");
                 });
@@ -126,7 +133,7 @@ namespace Data.Migrations
                     b.Property<int?>("Capacity")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("FloorID")
+                    b.Property<int>("FloorID")
                         .HasColumnType("integer");
 
                     b.Property<string>("Number")
@@ -196,7 +203,7 @@ namespace Data.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Address");
+                    b.ToTable("Addresses");
                 });
 
             modelBuilder.Entity("Domain.Entities.SideInformation.Contact", b =>
@@ -238,7 +245,7 @@ namespace Data.Migrations
                         .HasForeignKey("AddressID");
 
                     b.HasOne("Domain.Entities.Campus.Room", null)
-                        .WithMany("students")
+                        .WithMany("Students")
                         .HasForeignKey("RoomID");
 
                     b.HasOne("Domain.Entities.SideInformation.StudentGroup", "StudentGroup")
@@ -267,16 +274,24 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Domain.Entities.Campus.Floor", b =>
                 {
-                    b.HasOne("Domain.Entities.Campus.Building", null)
+                    b.HasOne("Domain.Entities.Campus.Building", "Dormitory")
                         .WithMany("Floors")
-                        .HasForeignKey("BuildingID");
+                        .HasForeignKey("DormitoryID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Dormitory");
                 });
 
             modelBuilder.Entity("Domain.Entities.Campus.Room", b =>
                 {
-                    b.HasOne("Domain.Entities.Campus.Floor", null)
+                    b.HasOne("Domain.Entities.Campus.Floor", "Floor")
                         .WithMany("Rooms")
-                        .HasForeignKey("FloorID");
+                        .HasForeignKey("FloorID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Floor");
                 });
 
             modelBuilder.Entity("Domain.Entities.Model.StudentAccomodation", b =>
@@ -306,7 +321,7 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Domain.Entities.Campus.Room", b =>
                 {
-                    b.Navigation("students");
+                    b.Navigation("Students");
                 });
 #pragma warning restore 612, 618
         }

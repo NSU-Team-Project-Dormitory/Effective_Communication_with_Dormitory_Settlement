@@ -6,6 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using Domain.Entities.Campus;
 using Domain.Entities.People;
 using Domain.Entities.Model;
+using Domain.Entities.SideInformation;
 
 namespace Data
 {
@@ -18,10 +19,6 @@ namespace Data
         }
 
 
-        public ApplicationDbContext()
-        {
-            Database.EnsureCreated();
-        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -29,7 +26,7 @@ namespace Data
         }
 
 
-
+        public DbSet<Address>Addresses { get; set; }    
         public DbSet<Student> Students { get; set; }
 
         public DbSet<Building> Dormitories { get; set; }   

@@ -1,15 +1,14 @@
-﻿
+﻿using Domain.Entities.Campus;
 
-using Domain.Entities.Campus;
-
-namespace Domain.Repositories.Campus;
-
-public interface IFloorRepository : IDatabaseRepository<Floor>
+namespace Domain.Repositories.Campus
 {
-    Task<IEnumerable<Floor>> ReadFloorByBuildingIdAsync(int id);
-    IEnumerable<Floor> ReadFloorByBuildingId(int id)
+    public interface IFloorRepository
     {
-        return ReadFloorByBuildingIdAsync(id).GetAwaiter().GetResult();
+
+        public string Add(Floor floor);
+        public string Update(Floor oldFloor, string newNumber, int newHeight, Building newBuilding);
+
+        public string Delete(Floor floor);
+
     }
 }
-

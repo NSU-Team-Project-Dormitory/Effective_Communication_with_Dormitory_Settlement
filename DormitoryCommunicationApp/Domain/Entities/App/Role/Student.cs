@@ -5,7 +5,7 @@ using Domain.Entities.SideInformation;
 
 namespace Domain.Entities.App.Role;
 
-public sealed class Student : User
+public sealed class Student : User 
 {
     public StudentGroup? StudentGroup { get; set; }
 

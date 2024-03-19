@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using Domain.Entities.Campus;
 
 namespace Domain.Repositories.Campus
 {
-    internal interface IRoomRepository
+    public interface IRoomRepository
     {
+        public string Add(string number, int capacity, Floor floor);
+        public string Delete(Room room);
+
+        public string Update(Room oldRoom, string number, int capacity, Floor floor);
+
     }
 }
