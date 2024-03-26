@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Presentation\App.xaml
-121925449051
+13-2023234960
 
-172086465221
+181016949230
 2141765646409
-MainWindow.xaml;View\AddNewDormitoryWindow.xaml;View\AddNewFloorWindow.xaml;View\AddNewRoomWindow.xaml;View\AddNewStudentWindow.xaml;View\DataBaseManage.xaml;View\EditDormitoryWindow.xaml;View\EditFloorWindow.xaml;View\EditRoomWindow.xaml;View\EditStudentWindow.xaml;View\MessageView.xaml;View\Window1.xaml;
+MainWindow.xaml;View\AddNewAddressWindow.xaml;View\AddNewDormitoryWindow.xaml;View\AddNewFloorWindow.xaml;View\AddNewRoomWindow.xaml;View\AddNewStudentWindow.xaml;View\DataBaseManage.xaml;View\EditDormitoryWindow.xaml;View\EditFloorWindow.xaml;View\EditRoomWindow.xaml;View\EditStudentWindow.xaml;View\MessageView.xaml;View\Window1.xaml;
 
 False
 

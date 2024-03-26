@@ -47,16 +47,16 @@
                         <TextBlock Text="Students" FontSize="20" />
 
                     </TabItem.Header>
-                    <ListView ItemsSource="{Binding Students}" FontSize="20" SelectionChanged="ListView_SelectionChanged">
+                    <ListView ItemsSource="{Binding Students}" FontSize="20" >
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="ID"/>
-                                <GridViewColumn Header="Last Name"/>
-                                <GridViewColumn Header="First Name"/>
-                                <GridViewColumn Header="Patronymic"/>
-                                <GridViewColumn Header="Faculty"/>
-                                <GridViewColumn Header="Study Group"/>
-                                <GridViewColumn Header="Email"/>
+                                <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" />
+                                <GridViewColumn Header="Last Name" DisplayMemberBinding="{Binding LastName}" />
+                                <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}" />
+                                <GridViewColumn Header="Patronymic" DisplayMemberBinding="{Binding Patronymic}" />
+                                <GridViewColumn Header="Faculty" DisplayMemberBinding="{Binding Faculty}" />
+                                <GridViewColumn Header="Study Group" DisplayMemberBinding="{Binding StudyGroup}" />
+                                <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}" />
                             </GridView>
                         </ListView.View>
                     </ListView>
@@ -67,7 +67,7 @@
                         <TextBlock Text="Dormitories" FontSize="20" />
                     </TabItem.Header>
 
-                    <ListView FontSize="20" SelectionChanged="ListView_SelectionChanged">
+                    <ListView FontSize="20" >
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="ID"/>
@@ -84,7 +84,7 @@
                     <TabItem.Header >
                         <TextBlock Text="Floors" FontSize="20" />
                     </TabItem.Header>
-                    <ListView FontSize="20" SelectionChanged="ListView_SelectionChanged">
+                    <ListView FontSize="20" >
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="ID"/>
@@ -101,7 +101,7 @@
                         <TextBlock Text="Rooms" FontSize="20" />
                     </TabItem.Header>
 
-                    <ListView FontSize="20" SelectionChanged="ListView_SelectionChanged">
+                    <ListView FontSize="20" >
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="ID"/>
@@ -117,7 +117,7 @@
                     <TabItem.Header >
                         <TextBlock Text="Residents" FontSize="20" />
                     </TabItem.Header>
-                    <ListView FontSize="20" SelectionChanged="ListView_SelectionChanged">
+                    <ListView FontSize="20" >
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Note ID"/>
@@ -136,7 +136,7 @@
                         <TextBlock Text="Notifications" FontSize="20" />
                     </TabItem.Header>
 
-                    <ListView FontSize="20" SelectionChanged="ListView_SelectionChanged">
+                    <ListView FontSize="20" >
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Notification ID"/>
@@ -152,10 +152,29 @@
                         <TextBlock Text="ExtraInfo" FontSize="20" />
                     </TabItem.Header>
 
-                    <ListView FontSize="20" SelectionChanged="ListView_SelectionChanged">
+                    <ListView FontSize="20" >
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="INFO"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </TabItem>
+
+                <TabItem Name = "AddressesTab" >
+                    <TabItem.Header >
+                        <TextBlock Text="Addresses" FontSize="20" />
+                    </TabItem.Header>
+
+                    <ListView x:Name="AddressesListView" FontSize="20"  ItemsSource="{Binding Addresses}" ContextMenuOpening="ListView_ContextMenuOpening" MouseRightButtonUp="ListView_MouseRightButtonUp">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}"/>
+                                <GridViewColumn Header="Street" DisplayMemberBinding="{Binding Street}"/>
+                                <GridViewColumn Header="City" DisplayMemberBinding="{Binding City}"/>
+                                <GridViewColumn Header="Region" DisplayMemberBinding="{Binding Region}"/>
+                                <GridViewColumn Header="PostalCode" DisplayMemberBinding="{Binding PostalCode}"/>
+                                <GridViewColumn Header="Country" DisplayMemberBinding="{Binding Country}"/>
                             </GridView>
                         </ListView.View>
                     </ListView>
@@ -166,8 +185,9 @@
             
         </Grid>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Content="Новый Студент" Command="{Binding OpenAddNewStudentWindow}"/>
-            <Button Content="Новое  Общежитие" Command="{Binding OpenAddNewDormitoryWindow}"/>
+            <Button Content="Новый Студент" />
+            <Button Content="Новое  Общежитие" />
+            <Button Content="Добавить адресс" Click="AddAddressButton_Click"/>
         </StackPanel>
 
     </Grid>

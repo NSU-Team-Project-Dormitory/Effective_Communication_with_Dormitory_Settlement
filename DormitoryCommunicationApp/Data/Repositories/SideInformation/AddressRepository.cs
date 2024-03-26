@@ -7,11 +7,19 @@ using Domain.Repositories.SideInformation;
 using Domain.Entities.Campus;
 using Domain.Entities.Model;
 using System.Diagnostics.Contracts;
+using Data.Repositories.App.Role;
 
 namespace Data.Repositories.SideInformation
 {
     public class AddressRepository : IAddressRepoisitory
     {
+
+        private static AddressRepository? addressRepository = null;
+        private AddressRepository() { }
+        public static AddressRepository GetRepository()
+        {
+            return addressRepository ??= new AddressRepository();
+        }
         public string Add(Address address)
         {
             string result = "Already exist";

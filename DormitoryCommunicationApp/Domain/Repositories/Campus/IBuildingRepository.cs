@@ -17,6 +17,8 @@ namespace Domain.Repositories.Campus
 
         public string Delete(Building building);
 
+        public List<Building> GetAll();
+
     }
 
 }

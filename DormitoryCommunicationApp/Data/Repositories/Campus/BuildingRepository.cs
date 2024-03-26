@@ -69,7 +69,7 @@ namespace Data.Repositories.Campus
             return result;
         }
 
-        public static List<Building> GetAll()
+        public List<Building> GetAll()
         {
             using (ApplicationDbContext dbContext = new ApplicationDbContext())
             {

@@ -71,7 +71,7 @@ namespace Data.Repositories.Campus
             return result;
         }
 
-        public static IEnumerable<Room> GetAll()
+        public List<Room> GetAll()
         {
             using (ApplicationDbContext dbContext = new ApplicationDbContext())
             {
@@ -79,6 +79,7 @@ namespace Data.Repositories.Campus
                 return result;
             }
         }
+
     }
 }
 

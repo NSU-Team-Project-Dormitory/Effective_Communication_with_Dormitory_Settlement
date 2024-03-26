@@ -10,5 +10,7 @@ namespace Domain.Repositories.Campus
 
         public string Update(Room oldRoom, string number, int capacity, Floor floor);
 
+        public List<Room> GetAll();
+
     }
 }

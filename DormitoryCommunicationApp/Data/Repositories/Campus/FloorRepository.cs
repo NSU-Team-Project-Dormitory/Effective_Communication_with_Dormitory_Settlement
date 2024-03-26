@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using System.Xml.Linq;
+using Data.Repositories.App.Role;
 using Domain.Entities.Campus;
 using Domain.Entities.SideInformation;
 using Domain.Repositories.Campus;
@@ -43,7 +44,7 @@ namespace Data.Repositories.Campus
             return result;
         }
 
-        public static List<Floor> GetAll()
+        public List<Floor> GetAll()
         {
             using (ApplicationDbContext dbContext = new ApplicationDbContext())
             {
@@ -70,5 +71,10 @@ namespace Data.Repositories.Campus
             }
             return result;
         }
+
     }
 }
+
+
+
+

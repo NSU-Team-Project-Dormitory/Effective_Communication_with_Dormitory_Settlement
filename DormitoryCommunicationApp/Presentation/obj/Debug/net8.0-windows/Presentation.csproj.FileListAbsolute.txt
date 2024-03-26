@@ -64,3 +64,5 @@ D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\Dormitory
 D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Presentation\obj\Debug\net8.0-windows\MainWindow.g.cs
 D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Presentation\obj\Debug\net8.0-windows\MainWindow.baml
 D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Presentation\obj\Debug\net8.0-windows\Presentation.csproj.CopyComplete
+D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Presentation\obj\Debug\net8.0-windows\View\AddNewAddressWindow.g.cs
+D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Presentation\obj\Debug\net8.0-windows\View\AddNewAddressWindow.baml

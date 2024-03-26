@@ -15,6 +15,9 @@ namespace Data.Repositories.App.Role
         {
             return studentRepository ??= new StudentRepository();
         }
+
+
+
         public string Add(string login, string password, string name, string surname, string patronymic, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup)
         {
             string result = "Already exist";
@@ -60,7 +63,7 @@ namespace Data.Repositories.App.Role
             return result;
         }
 
-        public static List<Student> GetAll()
+        public List<Student> GetAll()
         {
             using ApplicationDbContext dbContext = new ApplicationDbContext();
             var result = dbContext.Students.ToList();

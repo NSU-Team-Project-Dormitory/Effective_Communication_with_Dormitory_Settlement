@@ -10,5 +10,8 @@ namespace Domain.Repositories.Campus
 
         public string Delete(Floor floor);
 
+        public List<Floor> GetAll();
+
+
     }
 }
