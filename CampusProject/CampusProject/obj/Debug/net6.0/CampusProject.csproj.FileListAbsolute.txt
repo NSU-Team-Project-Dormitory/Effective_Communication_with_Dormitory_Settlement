@@ -53,9 +53,10 @@
 /Users/ivan/Documents/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/Debug/net6.0/CampusProject.AssemblyInfoInputs.cache
 /Users/ivan/Documents/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/Debug/net6.0/CampusProject.AssemblyInfo.cs
 /Users/ivan/Documents/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/Debug/net6.0/CampusProject.csproj.CoreCompileInputs.cache
-/Users/ivan/Documents/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/Debug/net6.0/CampusProject.csproj.CopyComplete
 /Users/ivan/Documents/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/Debug/net6.0/CampusProject.dll
 /Users/ivan/Documents/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/Debug/net6.0/refint/CampusProject.dll
 /Users/ivan/Documents/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/Debug/net6.0/CampusProject.pdb
 /Users/ivan/Documents/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/Debug/net6.0/CampusProject.genruntimeconfig.cache
 /Users/ivan/Documents/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/Debug/net6.0/ref/CampusProject.dll
+/Users/ivan/Documents/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/Debug/net6.0/CampusProject.sourcelink.json
+/Users/ivan/Documents/Effective_Communication_with_Dormitory_Settlement/CampusProject/CampusProject/obj/Debug/net6.0/CampusPr.176F3BDF.Up2Date
