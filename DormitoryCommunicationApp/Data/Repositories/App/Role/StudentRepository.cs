@@ -1,5 +1,6 @@
 ﻿
 using Domain.Entities.App.Role;
+using Domain.Entities.Campus;
 using Domain.Entities.People.Attribute;
 using Domain.Entities.SideInformation;
 using Domain.Repositories.App.Role;
@@ -48,6 +49,15 @@ namespace Data.Repositories.App.Role
                 
             }
             return result;
+        }
+
+        public void Add(Student student)
+        {
+            using (ApplicationDbContext db = new())
+            {
+                db.Students.Add(student);
+                db.SaveChanges();
+            }
         }
 
         public string Delete(Student student)
@@ -110,6 +120,75 @@ namespace Data.Repositories.App.Role
                 var students = db.Students.Where(el => surname.Equals(el.SecondName)).ToList();
                 return students;
             }
+        }
+
+        //returns success or fail
+        public Boolean CheckIn(Student student, Room room)
+        {
+            using (ApplicationDbContext db = new())
+            {
+                room.Students.Add(student);
+                if (db.Rooms.Update(room) != null)
+                {
+                    db.SaveChanges();
+                    return true;
+                }
+                Console.WriteLine("Room not found");
+            }
+            return false;
+        }
+        
+        //returns success or fail
+        public Boolean CheckOut(Student student, Room room)
+        {
+            using (ApplicationDbContext db = new())
+            {
+                if (room.Students.Contains(student))
+                {
+                    room.Students.Remove(student);
+                }
+                else
+                {
+                    Console.WriteLine("No such student in this room!");
+                    return false;
+                }
+
+                if (db.Rooms.Update(room) != null)
+                {
+                    db.SaveChanges();
+                    return true;
+                }
+                Console.WriteLine("Room not found");
+            }
+            return false;
+        }
+        
+        //returns success or fail
+        public Boolean SwapStudents(Student student1, Student student2)
+        {
+            using (ApplicationDbContext db = new())
+            {
+                if (student1.Rooms.Count < 1)
+                {
+                    Console.WriteLine("Student:" + student1 + "does not have a room");
+                    return false;
+                }
+                if (student2.Rooms.Count < 1)
+                {
+                    Console.WriteLine("Student:" + student2 + "does not have a room");
+                    return false;
+                }
+                student1.Rooms.Add(student2.Rooms[0]);
+                student2.Rooms.Add(student1.Rooms[0]);
+
+                student1.Rooms.Remove(student1.Rooms[0]);
+                student2.Rooms.Remove(student2.Rooms[0]);
+
+
+                db.SaveChanges();
+                return true;
+            }
+            return false;
         }
 
 

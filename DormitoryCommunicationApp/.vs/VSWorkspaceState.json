@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\Data",
-    "\\Data\\bin\\Debug",
-    "\\Data\\bin\\Debug\\net8.0",
+    "\\Data\\Migrations",
     "\\Data\\Repositories",
+    "\\Data\\Repositories\\Campus",
     "\\Domain",
-    "\\Domain\\Entities\\People\\Attribute",
-    "\\Domain\\Repositories",
-    "\\Domain\\Repositories\\App",
-    "\\Domain\\Repositories\\App\\Role"
+    "\\Domain\\Entities",
+    "\\Domain\\Entities\\App",
+    "\\Domain\\Entities\\App\\Role",
+    "\\Presentation"
   ],
-  "SelectedNode": "\\Data\\Repositories\\App\\Role\\StudentRepository.cs",
+  "SelectedNode": "\\Domain\\Repositories\\App\\Role\\IStudentRepository.cs",
   "PreviewInSolutionExplorer": false
 }

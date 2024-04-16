@@ -30,8 +30,14 @@ namespace Data
             Console.WriteLine("123");
             ApplicationDbContext appContext = new ApplicationDbContext();
 
+            //Student student = new Student("Login", "pass", "Name" , "Surname", "Patr", new Address("Street","City","No, thank you", "696969", "Mars"),DateTime.UtcNow, Domain.Entities.People.Attribute.Sex.Male,1337, new StudentGroup(777, "VIP"));
+            //appContext._studentRepository.Add(student);
+            appContext._studentRepository.Add("Login", "pass", "Name", "Surname", "Patr", DateTime.UtcNow, Domain.Entities.People.Attribute.Sex.Male
+                , new StudentGroup(777, "VIP"));
             List<Student> students = appContext._studentRepository.GetAll();
-            Console.WriteLine();
+
+            Console.WriteLine(students[0].ToString);
+            Console.ReadLine();
         }
 
 
