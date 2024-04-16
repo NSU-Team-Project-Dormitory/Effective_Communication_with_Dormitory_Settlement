@@ -1,14 +1,14 @@
 ﻿
 using System.Reflection.Metadata;
-using Domain.Entities.People.Attribute;
 using Domain.Entities.SideInformation;
 
 namespace Domain.Entities.App.Role;
 
-public sealed class Student : User 
+public class Student : User 
 {
-    public StudentGroup? StudentGroup { get; set; }
+    public virtual StudentGroup? StudentGroup { get; set; }
 
+    public int ContactNumber {  get; set; }
 
     public Student() { }
     public Student(string login,
@@ -18,8 +18,9 @@ public sealed class Student : User
                   string patronymic,
                   Address address,
                   DateTime dateOfBirth,
-                  Sex sex,
+                  String sex,
                   int id,
+                  int contactNumber,
                   StudentGroup studentGroup) 
                             : base(login,
                                  password,
@@ -32,6 +33,7 @@ public sealed class Student : User
                                  id)
     {
         StudentGroup = studentGroup;
+        ContactNumber = contactNumber;
     }
 
 

@@ -1,6 +1,5 @@
 ﻿
 using Domain.Entities.SideInformation;
-using Domain.Entities.People.Attribute;
 
 namespace Domain.Entities.People;
 
@@ -10,10 +9,10 @@ public class Human
     public string?  FirstName { get; set; }
     public string?  SecondName { get; set; }
     public string? PatronymicName {  get; set; }
-    public Sex Sex { get; set; }
+    public String Sex { get; set; }
     public DateTime DateOfBirth { get; set; }
 
-    public Address? Address { get; set; }
+    public virtual Address? Address { get; set; }
 
 
 
@@ -22,7 +21,7 @@ public class Human
         string firstName,
         string secondName,
         string? patronymicName,
-        Sex sex,
+        String sex,
         DateTime dateOfBirth,
         Address address
         )

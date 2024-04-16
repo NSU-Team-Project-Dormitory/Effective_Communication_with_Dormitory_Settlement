@@ -12,5 +12,7 @@ namespace Domain.Repositories.Campus
 
         public List<Room> GetAll();
 
+
+
     }
 }

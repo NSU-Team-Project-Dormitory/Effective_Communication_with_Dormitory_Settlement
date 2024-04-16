@@ -47,7 +47,7 @@
                         <TextBlock Text="Students" FontSize="20" />
 
                     </TabItem.Header>
-                    <ListView ItemsSource="{Binding Students}" FontSize="20" >
+                    <ListView x:Name="ViewAllStudents" ItemsSource="{Binding Students}" FontSize="20" >
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" />
@@ -67,14 +67,14 @@
                         <TextBlock Text="Dormitories" FontSize="20" />
                     </TabItem.Header>
 
-                    <ListView FontSize="20" >
+                    <ListView x:Name="ViewAllDormitories" ItemsSource="{Binding Dormitories}" FontSize="20" >
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="ID"/>
-                                <GridViewColumn Header="Name"/>
-                                <GridViewColumn Header="Adsress"/>
-                                <GridViewColumn Header="Floors"/>
-                                <GridViewColumn Header="Info"/>
+                                <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ID}"/>
+                                <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                                <GridViewColumn Header="Address" DisplayMemberBinding="{Binding AddressID}"/>
+                                <GridViewColumn Header="Floors" DisplayMemberBinding="{Binding FloorsCount}"/>
+                                <GridViewColumn Header="Info" DisplayMemberBinding="{Binding Contact.Email}"/>
                             </GridView>
                         </ListView.View>
                     </ListView>
@@ -166,10 +166,10 @@
                         <TextBlock Text="Addresses" FontSize="20" />
                     </TabItem.Header>
 
-                    <ListView x:Name="AddressesListView" FontSize="20"  ItemsSource="{Binding Addresses}" ContextMenuOpening="ListView_ContextMenuOpening" MouseRightButtonUp="ListView_MouseRightButtonUp">
+                    <ListView x:Name="ViewAllAddresses" FontSize="20"  ItemsSource="{Binding Addresses}" ContextMenuOpening="ListView_ContextMenuOpening" MouseRightButtonUp="ListView_MouseRightButtonUp">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}"/>
+                                <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ID}"/>
                                 <GridViewColumn Header="Street" DisplayMemberBinding="{Binding Street}"/>
                                 <GridViewColumn Header="City" DisplayMemberBinding="{Binding City}"/>
                                 <GridViewColumn Header="Region" DisplayMemberBinding="{Binding Region}"/>
@@ -185,8 +185,8 @@
             
         </Grid>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button Content="Новый Студент" />
-            <Button Content="Новое  Общежитие" />
+            <Button Content="Новый Студент" Click="AddStudentButton_Click"/>
+            <Button Content="Новое  Общежитие" Click="AddDormitoryButton_Click"/>
             <Button Content="Добавить адресс" Click="AddAddressButton_Click"/>
         </StackPanel>
 

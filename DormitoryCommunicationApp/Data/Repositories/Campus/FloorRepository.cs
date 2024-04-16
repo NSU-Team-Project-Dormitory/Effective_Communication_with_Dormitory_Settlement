@@ -53,6 +53,11 @@ namespace Data.Repositories.Campus
             }
         }
 
+        public string GetStudentBYRoomNumber(int roomNumber)
+        {
+            throw new NotImplementedException();
+        }
+
         public string Update(Floor floor, string newNumber, int newHeight, Building newBuilding)
         {
             string result = "This floor doesn't exist";

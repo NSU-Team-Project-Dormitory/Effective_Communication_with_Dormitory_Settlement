@@ -1,7 +1,7 @@
 ﻿
+using Data.Repositories.SideInformation;
 using Domain.Entities.App.Role;
 using Domain.Entities.Campus;
-using Domain.Entities.People.Attribute;
 using Domain.Entities.SideInformation;
 using Domain.Repositories.Campus;
 
@@ -9,25 +9,28 @@ namespace Data.Repositories.Campus
 {
     public class BuildingRepository : IBuildingRepository
     {
-        public BuildingRepository()
+        private static BuildingRepository? buildingRepository = null;
+        private BuildingRepository() { }
+        public static BuildingRepository GetRepository()
         {
+            return buildingRepository ??= new BuildingRepository();
         }
 
-        public string Add(string name, Address address, Contact contact, int floorsCount)
+        public string Add(Building building)
         {
             string result = "Already exist";
 
             using (ApplicationDbContext db = new ApplicationDbContext())
             {
                 //Check if student already exists
-                bool checkIfExist = db.Dormitories.Any(el => el.Name == name);
+                bool checkIfExist = db.Dormitories.Any(el => el.Name == building.Name);
 
                 //Вопрос, является ли это плохой практикой, что если будет здание, а не репозиторий? Нужен ли guid, для того чтобы отличать общежития с одним именем, но разным адресом например?
 
                 if (!checkIfExist)
                 {
-                    Building newDormitory = new() { Name = name, Address = address, Contact = contact, FloorsCount = floorsCount };
-                    db.Dormitories.Add(newDormitory);
+                    
+                    db.Dormitories.Add(building);
                     db.SaveChanges();
                     result = "Done";
                 }

@@ -1,6 +1,17 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
+using Data.Repositories.App.Role;
+using Data.Repositories.Campus;
+using Data.Repositories.SideInformation;
+using Domain.Entities.Campus;
+using Domain.Entities.SideInformation;
+using Domain.Repositories.App.Role;
+using Domain.Repositories.Campus;
+using Domain.Repositories.SideInformation;
 
 namespace Presentation.View
 {
@@ -9,9 +20,39 @@ namespace Presentation.View
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        public static ItemsControl AllDormitoriesView;
+
+        private IStudentRepository _studentRepository;
+        private IAddressRepoisitory _addressRepository;
+        private IBuildingRepository _dormitoryRepository;
+
+        public List<Building> Dormitories { get; set; }
+
         public MainWindow()
         {
             InitializeComponent();
+
+            AllDormitoriesView = ViewAllDormitories;
+
+
+            _studentRepository = StudentRepository.GetRepository();
+            _addressRepository = AddressRepository.GetRepository();
+            _dormitoryRepository = BuildingRepository.GetRepository();
+
+            RefreshDormitories();
+
+            DataContext = this;
+
+        }
+
+        private void RefreshDormitories()
+        {
+            Dormitories = _dormitoryRepository.GetAll();
+            AllDormitoriesView.ItemsSource = null;
+            AllDormitoriesView.Items.Clear();
+            AllDormitoriesView.ItemsSource = Dormitories;
+            AllDormitoriesView.Items.Refresh();
         }
 
         private void Hide_Window_Click(object sender, RoutedEventArgs e)
@@ -48,10 +89,38 @@ namespace Presentation.View
             DataBaseManage dataBaseManage = new DataBaseManage();  
             dataBaseManage.Show();
             Hide();
+
         }
 
-        
+        private void Add_DormitoryButton_Click(object sender, RoutedEventArgs e)
+        {
+            AddNewDormitoryWindow addNewDormitoryWindow = new AddNewDormitoryWindow(_dormitoryRepository);
+            addNewDormitoryWindow.ShowDialog();
 
+            RefreshDormitories();
+        }
+
+
+
+        private void DeleteDormitoryButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            // Получаем имя общежития для удаления
+            string dormitoryNameToDelete = "1234";
+
+            Building dormitoryToDelete = Dormitories.FirstOrDefault(d => d.Name == dormitoryNameToDelete);
+
+            Address addressToDelete = dormitoryToDelete.Address;
+
+            _addressRepository.Delete(addressToDelete);
+
+                // Удаляем студента из базы данных
+            _dormitoryRepository.Delete(dormitoryToDelete);
+
+                // Обновляем список студентов
+            RefreshDormitories();
+
+        }
     }
 
 

@@ -2,7 +2,7 @@
 
 namespace Domain.Entities.Campus;
 
-public sealed class Floor 
+public  class Floor 
 {
     public string Number {  get; set; }
     public int Height { get; set; }
@@ -10,9 +10,9 @@ public sealed class Floor
     public int ID { get; set;  }
 
     public int Ad { get; set; }
-    public Building Dormitory { get; set; }
+    public virtual Building Dormitory { get; set; }
 
-    public List<Room> Rooms { get; }
+    public virtual List<Room> Rooms { get; }
 
     public Floor() { }
 

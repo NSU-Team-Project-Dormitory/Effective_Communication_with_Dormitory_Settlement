@@ -4,10 +4,13 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using Data.Repositories.App.Role;
+using Data.Repositories.Campus;
 using Data.Repositories.SideInformation;
 using Domain.Entities.App.Role;
+using Domain.Entities.Campus;
 using Domain.Entities.SideInformation;
 using Domain.Repositories.App.Role;
+using Domain.Repositories.Campus;
 using Domain.Repositories.SideInformation;
 using Presentation.ViewModel;
 
@@ -20,17 +23,34 @@ namespace Presentation.View
     {
         private IStudentRepository _studentRepository;
         private IAddressRepoisitory _addressRepository;
+        private IBuildingRepository _buildingRepository;
+
+        public static ListView AllAddressesView;
+        public static ListView AllDormitoriesView;
+        public static ListView AllStudentsView;
 
 
         public List<Student> Students { get; set; }
         public List<Address> Addresses { get; set; }
+        public List<Building> Dormitories { get; set; }   
         public DataBaseManage()
         {
             InitializeComponent();
 
+            AllAddressesView = ViewAllAddresses;
+            AllStudentsView = ViewAllStudents;
+            AllDormitoriesView = ViewAllDormitories;
+
+
             _studentRepository = StudentRepository.GetRepository();
             _addressRepository = AddressRepository.GetRepository();
-            RefreshAddressTableWindow();
+            _buildingRepository = BuildingRepository.GetRepository();
+            RefreshAllTablesWindow();
+
+
+
+
+       
             DataContext = this;
         }
 
@@ -42,11 +62,55 @@ namespace Presentation.View
             RefreshAddressTableWindow();
         }
 
+        private void AddStudentButton_Click(Object sender, RoutedEventArgs e)
+        {
+            var addNewStudentWindow = new AddNewStudentWindow();
+            addNewStudentWindow.ShowDialog();
+
+            RefreshAddressTableWindow();
+        }
+
+        private void AddDormitoryButton_Click(Object sender, RoutedEventArgs e)
+        {
+            var addNewDormitoryWindow = new AddNewDormitoryWindow(_buildingRepository);
+            addNewDormitoryWindow.ShowDialog();
+
+            RefreshAddressTableWindow();
+        }
+
         private void RefreshAddressTableWindow()
         {
             Addresses = _addressRepository.GetAll();
+            AllAddressesView.ItemsSource = null;
+            AllAddressesView.Items.Clear();
+            AllAddressesView.ItemsSource = Addresses;
+            AllAddressesView.Items.Refresh();
         }
 
+        private void RefreshDormitoryTableWindow()
+        {
+            Dormitories = _buildingRepository.GetAll();
+            AllDormitoriesView.ItemsSource = null;
+            AllDormitoriesView.Items.Clear();
+            AllDormitoriesView.ItemsSource = Dormitories;
+            AllDormitoriesView.Items.Refresh();
+        }
+
+        private void RefreshStudentTableWindow()
+        {
+            Students = _studentRepository.GetAll();
+            AllStudentsView.ItemsSource = null;
+            AllStudentsView.Items.Clear();
+            AllStudentsView.ItemsSource = Dormitories;
+            AllStudentsView.Items.Refresh();
+        }
+
+        private void RefreshAllTablesWindow()
+        {
+            RefreshAddressTableWindow();
+            RefreshDormitoryTableWindow();
+            RefreshStudentTableWindow();
+        }
         private void Hide_Window_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
@@ -102,7 +166,7 @@ namespace Presentation.View
 
                     // Создаем пункт меню для удаления студента
                     MenuItem deleteMenuItem = new MenuItem();
-                    deleteMenuItem.Header = "Delete Student";
+                    deleteMenuItem.Header = "Delete";
                     deleteMenuItem.Click += DeleteMenuItem_Click;
 
                     // Добавляем пункт меню в контекстное меню
@@ -167,7 +231,7 @@ namespace Presentation.View
         private void DeleteMenuItem_Click(object sender, RoutedEventArgs e)
         {
             // Получаем выбранный элемент в списке
-            Address selectedAddress = (Address)AddressesListView.SelectedItem;
+            Address selectedAddress = (Address)ViewAllAddresses.SelectedItem;
 
             // Удаляем студента из базы данных
             _addressRepository.Delete(selectedAddress);

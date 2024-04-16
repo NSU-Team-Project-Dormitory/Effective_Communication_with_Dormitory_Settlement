@@ -1,6 +1,5 @@
 ﻿
 using Domain.Entities.App.Role;
-using Domain.Entities.People.Attribute;
 using Domain.Entities.SideInformation;
 using Domain.Repositories.App.Role;
 
@@ -18,7 +17,7 @@ namespace Data.Repositories.App.Role
 
 
 
-        public string Add(string login, string password, string name, string surname, string patronymic, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup)
+        public string Add(string login, string password, string name, string surname, string patronymic, DateTime dateOfBirth, String sex, StudentGroup studentGroup, int contactNumber)
         {
             string result = "Already exist";
 
@@ -38,7 +37,8 @@ namespace Data.Repositories.App.Role
                         PatronymicName = patronymic,
                         DateOfBirth = dateOfBirth,
                         Sex = sex,
-                        StudentGroup = studentGroup
+                        StudentGroup = studentGroup,
+                        ContactNumber = contactNumber
                     };
 
                     db.Students.Add(newStudent);
@@ -70,7 +70,12 @@ namespace Data.Repositories.App.Role
             return result;
         }
 
-        public string Update(Student oldStudent, string login, string password, string name, string surname, string patronymic, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup)
+        public List<Student> GetStudentByRoomNumber(int roomNumber)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Update(Student oldStudent, string login, string password, string name, string surname, string patronymic, DateTime dateOfBirth, String sex, StudentGroup studentGroup)
         {
             string result = "This student doesn't exist";
 

@@ -4,14 +4,9 @@ using System.Text.RegularExpressions;
 
 namespace Domain.Entities.SideInformation;
 
-public enum ContactType
-{
-        Email,
-        PhoneNumber,
-}
 
 
-public sealed class Contact
+public class Contact
 {
     public string Email { get; set; }
     public string PhoneNumber { get; set;}

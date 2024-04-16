@@ -1,6 +1,5 @@
 ﻿using Data;
 using Domain.Entities.App.Role;
-using Domain.Entities.People.Attribute;
 using System.Xml.Linq;
 using Domain.Entities.SideInformation;
 using Domain.Repositories.SideInformation;

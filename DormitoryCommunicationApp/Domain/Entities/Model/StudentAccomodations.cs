@@ -6,12 +6,12 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace Domain.Entities.Model;
 
 
-public sealed class StudentAccomodation
+public class StudentAccomodation
 {
     public int ID { get; set; }
-    public Building? Dormitory { get; set; }
+    public virtual Building? Dormitory { get; set; }
     
-    public Room? Room { get; set; }
+    public virtual Room? Room { get; set; }
 
     public string? Contract { get; set; }
 

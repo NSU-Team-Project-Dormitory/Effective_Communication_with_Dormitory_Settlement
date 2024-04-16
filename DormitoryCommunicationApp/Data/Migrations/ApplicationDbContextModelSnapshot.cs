@@ -17,7 +17,10 @@ namespace Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.2")
+                .HasAnnotation("ProductVersion", "8.0.4")
+                .HasAnnotation("Proxies:ChangeTracking", false)
+                .HasAnnotation("Proxies:CheckEquality", false)
+                .HasAnnotation("Proxies:LazyLoading", true)
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -31,6 +34,9 @@ namespace Data.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
 
                     b.Property<int?>("AddressID")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("ContactNumber")
                         .HasColumnType("integer");
 
                     b.Property<DateTime>("DateOfBirth")
@@ -54,8 +60,9 @@ namespace Data.Migrations
                     b.Property<string>("SecondName")
                         .HasColumnType("text");
 
-                    b.Property<int>("Sex")
-                        .HasColumnType("integer");
+                    b.Property<string>("Sex")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<int?>("StudentGroupID")
                         .HasColumnType("integer");
@@ -87,6 +94,9 @@ namespace Data.Migrations
 
                     b.Property<int>("FloorsCount")
                         .HasColumnType("integer");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("text");
 
                     b.HasKey("ID");
 
@@ -199,6 +209,7 @@ namespace Data.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Street")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("ID");
@@ -215,9 +226,11 @@ namespace Data.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("PhoneNumber")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("ID");

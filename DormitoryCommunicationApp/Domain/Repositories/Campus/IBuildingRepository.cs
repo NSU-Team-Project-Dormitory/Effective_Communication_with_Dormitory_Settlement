@@ -11,7 +11,7 @@ namespace Domain.Repositories.Campus
 {
     public interface IBuildingRepository
     {
-        public string Add(string name, Address address, Contact contact, int floorsCount);
+        public string Add(Building building);
 
         public string Update(Building oldbBuilding, string name, Address address, Contact contact, int floorsCount);
 

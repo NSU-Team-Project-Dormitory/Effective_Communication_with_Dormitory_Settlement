@@ -1,6 +1,5 @@
 ﻿using Domain.Entities.SideInformation;
 using Domain.Entities.People;
-using Domain.Entities.People.Attribute;
 
 
 namespace Domain.Entities.App;
@@ -18,7 +17,7 @@ public class User : Human
                 string patronymicName,
                 Address address,
                 DateTime dateOfBirth,
-                Sex sex,
+                String sex,
                 int id) : base(id, firstName,secondName,patronymicName,sex,dateOfBirth,address)
     {
         Login = login ?? throw new NullReferenceException("Login is null");

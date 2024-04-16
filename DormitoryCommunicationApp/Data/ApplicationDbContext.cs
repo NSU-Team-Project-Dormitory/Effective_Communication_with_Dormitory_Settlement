@@ -1,10 +1,7 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Domain.Entities.App.Role;
-using System.Security.Cryptography.X509Certificates;
 using Domain.Entities.Campus;
-using Domain.Entities.People;
 using Domain.Entities.Model;
 using Domain.Entities.SideInformation;
 
@@ -13,17 +10,28 @@ namespace Data
     public class ApplicationDbContext : DbContext
     {
 
+
         static void Main()
         {
 
         }
 
+        public ApplicationDbContext()
+        {
+            Database.EnsureCreated();
+        }
 
 
+
+        //Изменить под свой PostgresSQL сервер
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql("Host=localhost; Database=DormitoryDatabase; Username=postgres; Password=3791");
+            optionsBuilder.UseLazyLoadingProxies();
         }
+
+
+
 
 
         public DbSet<Address>Addresses { get; set; }    
@@ -36,6 +44,11 @@ namespace Data
         public DbSet<Room> Rooms { get; set; }
 
         public DbSet<StudentAccomodation> StudentAccomodations { get; set; }
+
+
+
+
+        //Not.data not.date not.
 
     }
 

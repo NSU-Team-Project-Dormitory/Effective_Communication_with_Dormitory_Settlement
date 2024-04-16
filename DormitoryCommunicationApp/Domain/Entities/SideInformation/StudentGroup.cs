@@ -2,7 +2,7 @@
 
 namespace Domain.Entities.SideInformation;
 
-public sealed class StudentGroup
+public class StudentGroup
 {
     public int ID { get; set; } 
     public string? Faculty { get; }
