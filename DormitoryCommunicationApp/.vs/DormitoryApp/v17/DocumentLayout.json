@@ -1,0 +1,161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\effective_communication_with_dormitory_settlement\\dormitorycommunicationapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\effective_communication_with_dormitory_settlement\\dormitorycommunicationapp\\data\\repositories\\app\\role\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|solutionrelative:data\\repositories\\app\\role\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB8F71B1-A9CB-4A41-B06C-729693E25A0F}|Domain\\Domain.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\effective_communication_with_dormitory_settlement\\dormitorycommunicationapp\\domain\\repositories\\app\\role\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB8F71B1-A9CB-4A41-B06C-729693E25A0F}|Domain\\Domain.csproj|solutionrelative:domain\\repositories\\app\\role\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\effective_communication_with_dormitory_settlement\\dormitorycommunicationapp\\data\\repositories\\campus\\buildingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|solutionrelative:data\\repositories\\campus\\buildingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\effective_communication_with_dormitory_settlement\\dormitorycommunicationapp\\data\\repositories\\campus\\floorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|solutionrelative:data\\repositories\\campus\\floorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB8F71B1-A9CB-4A41-B06C-729693E25A0F}|Domain\\Domain.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\effective_communication_with_dormitory_settlement\\dormitorycommunicationapp\\domain\\entities\\app\\role\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB8F71B1-A9CB-4A41-B06C-729693E25A0F}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\app\\role\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB8F71B1-A9CB-4A41-B06C-729693E25A0F}|Domain\\Domain.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\effective_communication_with_dormitory_settlement\\dormitorycommunicationapp\\domain\\entities\\app\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB8F71B1-A9CB-4A41-B06C-729693E25A0F}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\app\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB8F71B1-A9CB-4A41-B06C-729693E25A0F}|Domain\\Domain.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\effective_communication_with_dormitory_settlement\\dormitorycommunicationapp\\domain\\entities\\sideinformation\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB8F71B1-A9CB-4A41-B06C-729693E25A0F}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\sideinformation\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T02:16:01.554Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FloorRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Data\\Repositories\\Campus\\FloorRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\Campus\\FloorRepository.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Data\\Repositories\\Campus\\FloorRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\Campus\\FloorRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwBAAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T17:09:08.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BuildingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Data\\Repositories\\Campus\\BuildingRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\Campus\\BuildingRepository.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Data\\Repositories\\Campus\\BuildingRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\Campus\\BuildingRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T17:09:01.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Domain\\Entities\\App\\Role\\Student.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\App\\Role\\Student.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Domain\\Entities\\App\\Role\\Student.cs",
+              "RelativeToolTip": "Domain\\Entities\\App\\Role\\Student.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAgwBEAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T16:49:15.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Data\\Repositories\\App\\Role\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\App\\Role\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Data\\Repositories\\App\\Role\\StudentRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\App\\Role\\StudentRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:50:58.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IStudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Domain\\Repositories\\App\\Role\\IStudentRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Repositories\\App\\Role\\IStudentRepository.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Domain\\Repositories\\App\\Role\\IStudentRepository.cs",
+              "RelativeToolTip": "Domain\\Repositories\\App\\Role\\IStudentRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:49:20.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Domain\\Entities\\App\\User.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\App\\User.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Domain\\Entities\\App\\User.cs",
+              "RelativeToolTip": "Domain\\Entities\\App\\User.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAABBwBEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:49:10.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Domain\\Entities\\SideInformation\\Address.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\SideInformation\\Address.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Domain\\Entities\\SideInformation\\Address.cs",
+              "RelativeToolTip": "Domain\\Entities\\SideInformation\\Address.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T15:48:36.329Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

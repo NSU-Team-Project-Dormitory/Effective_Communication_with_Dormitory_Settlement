@@ -15,6 +15,8 @@ namespace Domain.Repositories.App.Role
 
         public string Delete(Student student);
 
+        public List<Student> Find(string name, string surname, string patronymic);
+
 
         public List<Student> GetAll();
 

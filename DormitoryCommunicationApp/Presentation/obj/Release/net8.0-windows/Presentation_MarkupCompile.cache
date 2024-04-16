@@ -1,0 +1,20 @@
+﻿Presentation
+
+
+winexe
+C#
+.cs
+C:\Users\kozor\Documents\Study\NSU\2nd course\Dormitories\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Presentation\obj\Release\net8.0-windows\
+Presentation
+none
+false
+TRACE;RELEASE;NET;NET8_0;NETCOREAPP
+C:\Users\kozor\Documents\Study\NSU\2nd course\Dormitories\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Presentation\App.xaml
+13-2023234960
+
+181712013891
+214-1447116078
+MainWindow.xaml;View\AddNewAddressWindow.xaml;View\AddNewDormitoryWindow.xaml;View\AddNewFloorWindow.xaml;View\AddNewRoomWindow.xaml;View\AddNewStudentWindow.xaml;View\DataBaseManage.xaml;View\EditDormitoryWindow.xaml;View\EditFloorWindow.xaml;View\EditRoomWindow.xaml;View\EditStudentWindow.xaml;View\MessageView.xaml;View\Window1.xaml;
+
+True
+

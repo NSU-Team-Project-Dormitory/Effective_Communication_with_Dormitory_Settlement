@@ -92,5 +92,26 @@ namespace Data.Repositories.App.Role
             }
             return result;
         }
+
+        public List<Student> Find(string name, string surname, string patronymic)
+        {
+            using (ApplicationDbContext db = new())
+            {
+                var students = db.Students.Where(el => name.Equals(el.FirstName)
+                && surname.Equals(el.SecondName) && patronymic.Equals(el.PatronymicName)).ToList();
+                return students;
+            }
+        }
+
+        public List<Student> Find(string surname)
+        {
+            using (ApplicationDbContext db = new())
+            {
+                var students = db.Students.Where(el => surname.Equals(el.SecondName)).ToList();
+                return students;
+            }
+        }
+
+
     }
 }

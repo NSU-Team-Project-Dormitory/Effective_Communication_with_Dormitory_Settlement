@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Data",
+    "\\Data\\bin\\Debug",
+    "\\Data\\bin\\Debug\\net8.0",
+    "\\Data\\Repositories",
+    "\\Domain",
+    "\\Domain\\Entities\\People\\Attribute",
+    "\\Domain\\Repositories",
+    "\\Domain\\Repositories\\App",
+    "\\Domain\\Repositories\\App\\Role"
+  ],
+  "SelectedNode": "\\Data\\Repositories\\App\\Role\\StudentRepository.cs",
+  "PreviewInSolutionExplorer": false
+}
