@@ -74,7 +74,7 @@
                                 <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
                                 <GridViewColumn Header="Address" DisplayMemberBinding="{Binding AddressID}"/>
                                 <GridViewColumn Header="Floors" DisplayMemberBinding="{Binding FloorsCount}"/>
-                                <GridViewColumn Header="Info" DisplayMemberBinding="{Binding Contact.Email}"/>
+                                <GridViewColumn Header="Info" DisplayMemberBinding="{Binding ContactID}"/>
                             </GridView>
                         </ListView.View>
                     </ListView>

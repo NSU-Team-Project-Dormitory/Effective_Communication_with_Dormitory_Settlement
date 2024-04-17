@@ -1,0 +1,20 @@
+﻿Presentation
+1.0.0.0
+
+winexe
+C#
+.cs
+D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Presentation\obj\Debug\net7.0-windows\
+Presentation
+none
+false
+TRACE;DEBUG;NET;NET7_0;NETCOREAPP
+D:\NSU\Second Course\Effective_Communication_with_Dormitory_Settlement\DormitoryCommunicationApp\Presentation\App.xaml
+12-1798939949
+
+191620275838
+224560681836
+MainWindow.xaml;View\AddNewAddressWindow.xaml;View\AddNewDormitoryWindow.xaml;View\AddNewFloorWindow.xaml;View\AddNewRoomWindow.xaml;View\AddNewStudentWindow.xaml;View\DataBaseManage.xaml;View\EditDormitoryWindow.xaml;View\EditFloorWindow.xaml;View\EditRoomWindow.xaml;View\EditStudentWindow.xaml;View\MessageView.xaml;
+
+False
+

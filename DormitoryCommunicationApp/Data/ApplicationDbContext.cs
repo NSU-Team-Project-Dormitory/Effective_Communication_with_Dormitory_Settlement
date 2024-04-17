@@ -27,7 +27,7 @@ namespace Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql("Host=localhost; Database=DormitoryDatabase; Username=postgres; Password=3791");
-            optionsBuilder.UseLazyLoadingProxies();
+
         }
 
 

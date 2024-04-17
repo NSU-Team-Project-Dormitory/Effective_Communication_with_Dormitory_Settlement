@@ -18,9 +18,6 @@ namespace Data.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "8.0.4")
-                .HasAnnotation("Proxies:ChangeTracking", false)
-                .HasAnnotation("Proxies:CheckEquality", false)
-                .HasAnnotation("Proxies:LazyLoading", true)
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -86,10 +83,10 @@ namespace Data.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int?>("ID"));
 
-                    b.Property<int?>("AddressID")
+                    b.Property<int>("AddressID")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("ContactID")
+                    b.Property<int>("ContactID")
                         .HasColumnType("integer");
 
                     b.Property<int>("FloorsCount")
@@ -140,13 +137,14 @@ namespace Data.Migrations
                     b.Property<string>("ID")
                         .HasColumnType("text");
 
-                    b.Property<int?>("Capacity")
+                    b.Property<int>("Capacity")
                         .HasColumnType("integer");
 
                     b.Property<int>("FloorID")
                         .HasColumnType("integer");
 
                     b.Property<string>("Number")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("ID");
@@ -190,11 +188,11 @@ namespace Data.Migrations
 
             modelBuilder.Entity("Domain.Entities.SideInformation.Address", b =>
                 {
-                    b.Property<int?>("ID")
+                    b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int?>("ID"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
 
                     b.Property<string>("City")
                         .HasColumnType("text");
@@ -274,11 +272,15 @@ namespace Data.Migrations
                 {
                     b.HasOne("Domain.Entities.SideInformation.Address", "Address")
                         .WithMany()
-                        .HasForeignKey("AddressID");
+                        .HasForeignKey("AddressID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Domain.Entities.SideInformation.Contact", "Contact")
                         .WithMany()
-                        .HasForeignKey("ContactID");
+                        .HasForeignKey("ContactID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Address");
 

@@ -10,9 +10,13 @@ public class Building
     public int? ID { get; set; }
 
     public string? Name { get; set; }
-    public virtual Address? Address { get; set; }
 
-    public virtual Contact? Contact { get; set; }
+    public int AddressID { get; set; }
+
+    public Address? Address { get; set; }
+
+    public int ContactID {  get; set; }
+    public Contact? Contact { get; set; }
 
     public int FloorsCount { get; set; }    
     public virtual IEnumerable<Floor>? Floors { get; }

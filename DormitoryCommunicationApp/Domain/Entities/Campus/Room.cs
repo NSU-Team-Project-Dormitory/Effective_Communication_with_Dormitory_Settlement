@@ -8,9 +8,9 @@ namespace Domain.Entities.Campus;
 public class Room 
 {
     public string? ID { get; set; }
-    public string? Number { get; set; }
+    public string Number { get; set; }
 
-    public int? Capacity { get; set; }
+    public int Capacity { get; set; }
     public int FloorID {  get; set; }
     public virtual Floor Floor {  get; set; }
     public virtual List<Student> Students { get; set; }

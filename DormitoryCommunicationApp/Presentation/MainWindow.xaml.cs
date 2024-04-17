@@ -23,8 +23,6 @@ namespace Presentation.View
 
         public static ItemsControl AllDormitoriesView;
 
-        private IStudentRepository _studentRepository;
-        private IAddressRepoisitory _addressRepository;
         private IBuildingRepository _dormitoryRepository;
 
         public List<Building> Dormitories { get; set; }
@@ -36,8 +34,6 @@ namespace Presentation.View
             AllDormitoriesView = ViewAllDormitories;
 
 
-            _studentRepository = StudentRepository.GetRepository();
-            _addressRepository = AddressRepository.GetRepository();
             _dormitoryRepository = BuildingRepository.GetRepository();
 
             RefreshDormitories();
@@ -110,9 +106,6 @@ namespace Presentation.View
 
             Building dormitoryToDelete = Dormitories.FirstOrDefault(d => d.Name == dormitoryNameToDelete);
 
-            Address addressToDelete = dormitoryToDelete.Address;
-
-            _addressRepository.Delete(addressToDelete);
 
                 // Удаляем студента из базы данных
             _dormitoryRepository.Delete(dormitoryToDelete);
