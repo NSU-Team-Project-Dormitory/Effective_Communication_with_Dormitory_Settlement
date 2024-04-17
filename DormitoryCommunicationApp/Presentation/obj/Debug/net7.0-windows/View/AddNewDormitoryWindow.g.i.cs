@@ -93,7 +93,7 @@ namespace Presentation.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Presentation;component/view/addnewdormitorywindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Presentation;V1.0.0.0;component/view/addnewdormitorywindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\AddNewDormitoryWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
