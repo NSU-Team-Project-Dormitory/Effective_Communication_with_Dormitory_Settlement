@@ -16,10 +16,11 @@ public class User : Human
                 string firstName,
                 string secondName,
                 string patronymicName,
+                int contactNumber,
                 Address address,
                 DateTime dateOfBirth,
                 Sex sex,
-                int id) : base(id, firstName,secondName,patronymicName,sex,dateOfBirth,address)
+                int id) : base(id, firstName,secondName,patronymicName,contactNumber,sex,dateOfBirth,address)
     {
         Login = login ?? throw new NullReferenceException("Login is null");
         Password = password ?? throw new NullReferenceException("Password is null");

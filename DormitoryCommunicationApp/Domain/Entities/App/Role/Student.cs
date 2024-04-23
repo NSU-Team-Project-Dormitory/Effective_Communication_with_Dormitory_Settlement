@@ -8,6 +8,7 @@ namespace Domain.Entities.App.Role;
 
 public sealed class Student : User 
 {
+
     public StudentGroup? StudentGroup { get; set; }
     public List<Room>? Rooms { get; set; }
 
@@ -18,6 +19,7 @@ public sealed class Student : User
                   string name,
                   string surname,
                   string patronymic,
+                  int contactNumber,
                   Address address,
                   DateTime dateOfBirth,
                   Sex sex,
@@ -29,6 +31,7 @@ public sealed class Student : User
                                  name,
                                  surname,
                                  patronymic,
+                                 contactNumber,
                                  address,
                                  dateOfBirth,
                                  sex,
@@ -38,13 +41,12 @@ public sealed class Student : User
         Rooms = rooms;
     }
 
-    public string ToString()
+    public new string ToString
     {
-        string result = "Name: " + this.FirstName + "Surname: " + this.SecondName;
-        return result;
+        get
+        {
+            string result = "Name: " + this.FirstName + "Surname: " + this.SecondName;
+            return result;
+        }
     }
-
-
-
-
 }

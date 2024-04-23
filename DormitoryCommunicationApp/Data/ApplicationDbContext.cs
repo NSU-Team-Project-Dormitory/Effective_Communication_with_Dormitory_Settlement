@@ -32,11 +32,11 @@ namespace Data
 
             //Student student = new Student("Login", "pass", "Name" , "Surname", "Patr", new Address("Street","City","No, thank you", "696969", "Mars"),DateTime.UtcNow, Domain.Entities.People.Attribute.Sex.Male,1337, new StudentGroup(777, "VIP"));
             //appContext._studentRepository.Add(student);
-            appContext._studentRepository.Add("Login", "pass", "Name", "Surname", "Patr", DateTime.UtcNow, Domain.Entities.People.Attribute.Sex.Male
+            appContext._studentRepository.Add("Login", "pass", "Name", "Surname", "Patr", 123, DateTime.UtcNow, Domain.Entities.People.Attribute.Sex.Male
                 , new StudentGroup(777, "VIP"));
-            List<Student> students = appContext._studentRepository.GetAll();
+            //List<Student> students = appContext._studentRepository.GetAll();
 
-            Console.WriteLine(students[0].ToString);
+            //Console.WriteLine(students[0].ToString);
             Console.ReadLine();
         }
 

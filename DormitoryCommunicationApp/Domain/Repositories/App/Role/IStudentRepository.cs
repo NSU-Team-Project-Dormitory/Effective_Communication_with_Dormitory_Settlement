@@ -9,7 +9,7 @@ namespace Domain.Repositories.App.Role
 {
     public interface IStudentRepository
     {
-        public string Add(string login, string password, string name, string surname, string patronymic, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup);
+        public string Add(string login, string password, string name, string surname, string patronymic, int contactNumber, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup);
         
         public void Add(Student student);
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8eAuEIuGvp0NEiAvAl2umOpQV9HfX50i17bYk+VOC0uwXDFZ97uEUD28qWMEogqC09V9sdv6gAyAa36RerDj4g==",
+  "dgSpecHash": "BOjswAoJzjz23HgJUtkOvRs7WZ9u/Dx0qjksRxOi6RpHZ1DUwuldBA89H+67+EG1SEXm508hRsF7aTsdbR+B2Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Presentation\\Presentation.csproj",
+  "projectFilePath": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kozor\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
     "C:\\Users\\kozor\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",

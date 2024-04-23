@@ -19,7 +19,7 @@ namespace Data.Repositories.App.Role
 
 
 
-        public string Add(string login, string password, string name, string surname, string patronymic, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup)
+        public string Add(string login, string password, string name, string surname, string patronymic, int contactNumber, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup)
         {
             string result = "Already exist";
 
@@ -37,6 +37,7 @@ namespace Data.Repositories.App.Role
                         FirstName = name,
                         SecondName = surname,
                         PatronymicName = patronymic,
+                        ContactNumber = contactNumber,
                         DateOfBirth = dateOfBirth,
                         Sex = sex,
                         StudentGroup = studentGroup
@@ -76,7 +77,8 @@ namespace Data.Repositories.App.Role
         public List<Student> GetAll()
         {
             using ApplicationDbContext dbContext = new ApplicationDbContext();
-            var result = dbContext.Students.ToList();
+            List<Student> result = new();
+            //var result = dbContext.Students.ToList();
             return result;
         }
 

@@ -10,6 +10,7 @@ public class Human
     public string?  FirstName { get; set; }
     public string?  SecondName { get; set; }
     public string? PatronymicName {  get; set; }
+    public int? ContactNumber {  get; set; }
     public Sex Sex { get; set; }
     public DateTime DateOfBirth { get; set; }
 
@@ -22,6 +23,7 @@ public class Human
         string firstName,
         string secondName,
         string? patronymicName,
+        int contactNumber,
         Sex sex,
         DateTime dateOfBirth,
         Address address
@@ -31,6 +33,7 @@ public class Human
         FirstName = new string(firstName) ?? throw new NullReferenceException("Name is null");
         SecondName = new string(secondName) ?? throw new NullReferenceException("Surname is null");
         PatronymicName = patronymicName;
+        ContactNumber = contactNumber;
         DateOfBirth = dateOfBirth;
         Address = address;
         Sex = sex;

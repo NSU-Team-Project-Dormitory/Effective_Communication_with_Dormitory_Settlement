@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u5Z5WoAvyLtQzF0GU3Sea0G74ILz/Sd0tWRJSiGlJ32wLRanbtSPsz1a42wEoqXvOlqVu3PgvlDweMWVAmHtFA==",
+  "dgSpecHash": "5lzTNc2bmui5i6birZwmmy9hEXC/jJ5UYxSd/AQMFXQAwoj6HEIifTLE56k7bwtZzoxtJbrTo6TiCMYqQDO4vA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\Effective_Communication_with_Dormitory_Settlement\\DormitoryCommunicationApp\\Data\\Data.csproj",
+  "projectFilePath": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Data\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kozor\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\kozor\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
