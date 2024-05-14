@@ -16,6 +16,8 @@ namespace Presentation.View
     public partial class AddNewAddressWindow : Window
     {
         private readonly IAddressRepoisitory _addressRepository;
+
+        public Address SelectedAddress { get; private set; }
         public AddNewAddressWindow(IAddressRepoisitory addressRepoisitory)
         {
             InitializeComponent();
@@ -31,6 +33,7 @@ namespace Presentation.View
             string postalCode = addressPostalCode.Text;
             string country = addressCountry.Text;
             string region = addressRegion.Text;
+            string houseNumber = addressHouseNumber.Text;
 
             if (string.IsNullOrWhiteSpace(street) || string.IsNullOrWhiteSpace(city) || string.IsNullOrWhiteSpace(postalCode) || string.IsNullOrWhiteSpace(country) || string.IsNullOrWhiteSpace(region))
             {
@@ -38,15 +41,22 @@ namespace Presentation.View
                 return; 
             }
 
-            // TODO: Проверка наличия данных, обработка исключений и другие проверки
+            var newAddress = new Address(street, houseNumber, city, region, postalCode, country); 
 
-            // Создаем нового студента
-            var newAddress = new Address(street, city, region, postalCode, country); 
 
-            // Добавляем студента в базу данных
-            _addressRepository.Add(newAddress);
 
-            // Закрываем окно добавления студента
+
+            SelectedAddress = new Address
+            {
+                HouseNumber = newAddress.HouseNumber,
+                Street = newAddress.Street,
+                City = newAddress.City,
+                PostalCode = newAddress.PostalCode,
+                Country = newAddress.Country,
+                Region = newAddress.Region
+            };
+
+
             Close();
         }
 

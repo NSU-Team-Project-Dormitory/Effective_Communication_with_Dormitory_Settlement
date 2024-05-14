@@ -101,18 +101,39 @@ namespace Presentation.View
         private void DeleteDormitoryButton_Click(object sender, RoutedEventArgs e)
         {
 
-            // Получаем имя общежития для удаления
-            string dormitoryNameToDelete = "1234";
-
-            Building dormitoryToDelete = Dormitories.FirstOrDefault(d => d.Name == dormitoryNameToDelete);
-
-
-                // Удаляем студента из базы данных
-            _dormitoryRepository.Delete(dormitoryToDelete);
-
-                // Обновляем список студентов
             RefreshDormitories();
+            SelectDormitoryWindow selectDormitoryWindow = new SelectDormitoryWindow(Dormitories);
 
+            if (selectDormitoryWindow.ShowDialog() == true)
+            {
+                Building dormitoryToDelete = selectDormitoryWindow.SelectedDormitory;
+
+                if (dormitoryToDelete != null)
+                {
+                    _dormitoryRepository.Delete(dormitoryToDelete);
+                    RefreshDormitories();
+                }
+                else
+                {
+                    MessageBox.Show("Общежитие не выбрано.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+
+        }
+
+        private void DormitoryWindowButton_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                Building? dormitory = button.DataContext as Building;
+                if (dormitory != null)
+                {
+                    // Создаем универсальное окно с заголовком, содержащим название общежития
+                    Window1 universalWindow = new Window1(dormitory);
+                    universalWindow.Show();
+                }
+            }
         }
     }
 

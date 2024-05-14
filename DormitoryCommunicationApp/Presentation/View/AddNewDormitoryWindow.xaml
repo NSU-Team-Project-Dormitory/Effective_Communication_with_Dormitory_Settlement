@@ -13,6 +13,8 @@
         ResizeMode="NoResize">
     <Grid>
 
+
+
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
@@ -21,6 +23,8 @@
         <Border Background="#50b4c8"
         CornerRadius="20" Grid.ColumnSpan="2" Grid.RowSpan="3">
         </Border>
+
+        <Border Grid.Column="0" Grid.RowSpan="3" BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="15"  ></Border>
 
         <Grid Background="Transparent" x:Name="Toolbar" Grid.Row="0" Grid.Column="2" MouseDown="Toolbar_MouseDown">
             <StackPanel HorizontalAlignment="Right" Orientation="Horizontal"  Grid.Column="1">
@@ -58,6 +62,10 @@
                 </Border>
                 <Border CornerRadius="0 0 9 9" Background="White">
                     <TextBox Height="20" BorderThickness="0" Background="Transparent" x:Name="dormitoryContactInfo"></TextBox>
+                </Border>
+
+                <Border Margin="0 6 0 0" Background="#FF93D151" CornerRadius="9"  MinHeight="20">
+                    <Button Background="Transparent" BorderThickness="0" Content="Добавить адрес" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="0 0 0 0"  VerticalAlignment="Center"  Foreground="White" Click="Add_AddressButton_CLick"/>
                 </Border>
 
             </StackPanel>

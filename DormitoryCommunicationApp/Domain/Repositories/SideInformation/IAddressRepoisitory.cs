@@ -13,5 +13,7 @@ namespace Domain.Repositories.SideInformation
         public string Get (Address address);
 
         public List<Address> GetAll ();
+
+        public int GetID (Address address);
     }
 }

@@ -26,29 +26,25 @@ namespace Presentation.View
     /// </summary>
     public partial class AddNewDormitoryWindow : Window
     {
+
+        private Address _address;
         public string DormitoryName { get; private set; }
 
 
-        private IBuildingRepository _BuildingRepository;
+        private IAddressRepoisitory _addressRepository;
+
+        private IBuildingRepository _buildingRepository;
         public AddNewDormitoryWindow(IBuildingRepository BuildingRepoisitory)
         {
             InitializeComponent();
-            _BuildingRepository = BuildingRepository.GetRepository();
+            _addressRepository = AddressRepository.GetRepository();
+            _buildingRepository = BuildingRepository.GetRepository();
         }
         private void AddDormitory_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: Проверка наличия данных, обработка исключений и другие проверки
-
-            // Получаем данные о студенте из TextBox
-
 
             string name = dormitoryName.Text;
-
-            Address address = new Address();
-            string street = dormitoryAddress.Text;
-            address.Street = street;
-
-
+            
 
             int number;
             if (!int.TryParse(dormitoryFloorCount.Text, out number))
@@ -63,19 +59,27 @@ namespace Presentation.View
             contact.Email = " ";
 
 
-            if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(street) || number == null || string.IsNullOrWhiteSpace(contactNumber))
+            if (string.IsNullOrWhiteSpace(name)  || number == null || string.IsNullOrWhiteSpace(contactNumber))
             {
                 MessageBox.Show("Please enter all info correct", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
-            var newBuilding = new Building(name, address, contact, number);
+            var newBuilding = new Building(name, _address, contact, number);
 
-            // Добавляем студента в базу данных
-            _BuildingRepository.Add(newBuilding);
+            
+            _buildingRepository.Add(newBuilding);
 
-            // Закрываем окно добавления студента
             Close();
+        }
+
+        private void Add_AddressButton_CLick(object sender, RoutedEventArgs e)
+        {
+            AddNewAddressWindow addNewAddressWindow = new AddNewAddressWindow(_addressRepository);
+            addNewAddressWindow.ShowDialog();
+
+            _address = addNewAddressWindow.SelectedAddress;
+
         }
 
         private void Toolbar_MouseDown(object sender, MouseButtonEventArgs e)

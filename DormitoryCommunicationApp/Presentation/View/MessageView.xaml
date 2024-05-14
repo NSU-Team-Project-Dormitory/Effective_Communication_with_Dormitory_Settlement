@@ -21,6 +21,8 @@
                 CornerRadius="8 8 8 8" Grid.ColumnSpan="2" Grid.RowSpan="2">
         </Border>
 
+        <Border Grid.Column="0" Grid.RowSpan="2" BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="5"  ></Border>
+
         <TextBlock Grid.Row="0"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"

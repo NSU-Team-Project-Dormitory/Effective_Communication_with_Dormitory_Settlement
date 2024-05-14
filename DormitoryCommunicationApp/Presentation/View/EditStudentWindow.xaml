@@ -20,6 +20,7 @@
         <Border Background="#50b4c8"
         CornerRadius="20" Grid.ColumnSpan="2" Grid.RowSpan="2">
         </Border>
+        <Border Grid.Column="0" Grid.RowSpan="3" BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="16"  ></Border>
 
         <Grid Grid.Row="0" Background="Transparent">
 

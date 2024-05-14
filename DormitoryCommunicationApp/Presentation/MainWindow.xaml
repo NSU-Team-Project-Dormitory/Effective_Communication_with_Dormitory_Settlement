@@ -48,9 +48,9 @@
                     </StackPanel> 
              </Grid>
         </Border>
-        
+
         <Border Grid.Column="1" BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="8" Margin="1,0,0,0" Grid.RowSpan="2">
-        
+
         </Border>
         <Grid Background="Transparent" x:Name="Toolbar" Grid.Row="0" Grid.Column="1" MouseDown="Toolbar_MouseDown">
             <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
@@ -76,25 +76,28 @@
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel >
-                                    <Border MaxWidth="400"  Background="#FF93D151" CornerRadius="12 12 12 12" Margin="30 6 30 6" MinHeight="40">
-                                        <Button  Background="Transparent" Foreground="White" BorderThickness="0" Content="{Binding Path = Name}" ContentStringFormat="{}{0} Общежитие" FontSize="18" FontFamily="Arial Rounded MT Bold" Click="Database_Window_Click"></Button>
-
+                                    <Border MaxWidth="400"  Background="#FF93D151" CornerRadius="12 12 12 12" Margin="30 6 30 6" MinHeight="60" MinWidth="900">
+                                        <Button  Background="Transparent" Foreground="White" BorderThickness="0" Content="{Binding Path = Name}" ContentStringFormat="{}{0} Общежитие" FontSize="25" FontFamily="Arial Rounded MT Bold" Click="DormitoryWindowButton_Click"></Button>
                                     </Border>
                                 </StackPanel>
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
+
+                    <StackPanel VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Border VerticalAlignment="Bottom" MaxWidth="400"  Background="LightGray" CornerRadius="12 0 0  12" Margin="30 6 0 6" MinHeight="40">
+                            <Button  Background="Transparent" Foreground="White" BorderThickness="0" Content="Добавить общежитие" FontSize="18" FontFamily="Arial Rounded MT Bold" Click="Add_DormitoryButton_Click" Width="220"></Button>
+                        </Border>
+                        <Border VerticalAlignment="Bottom" MaxWidth="400"  Background="Red" CornerRadius="0 12 12 0" Margin="0 6 30 6" MinHeight="40">
+                            <Button  Background="Transparent" Foreground="White" BorderThickness="0" Content="Удалить общежитие" FontSize="18" FontFamily="Arial Rounded MT Bold" Click="DeleteDormitoryButton_Click" Width="220"></Button>
+                        </Border>
+                    </StackPanel>
                     
-                    <Border x:Name="AddDormitoryButtonBorder" MaxWidth="400"  Background="LightGray" CornerRadius="12 12 12 12" Margin="30 6 30 6" MinHeight="40">
-                        <Button  Background="Transparent" Foreground="White" BorderThickness="0" Content="Добавить общежитие" FontSize="18" FontFamily="Arial Rounded MT Bold" Click="Add_DormitoryButton_Click"></Button>
-
-                    </Border>
-
-                    <Button Content="Delete Dormitory" Click="DeleteDormitoryButton_Click"/>
 
 
 
-                </StackPanel>
+
+        </StackPanel>
             </Grid>
         </Border>
 

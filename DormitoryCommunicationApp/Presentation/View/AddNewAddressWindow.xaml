@@ -12,6 +12,7 @@
         Background="Transparent" 
         ResizeMode="NoResize">
     <Grid>
+        
 
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
@@ -22,6 +23,10 @@
         CornerRadius="20" Grid.ColumnSpan="2" Grid.RowSpan="3">
         </Border>
 
+        <Border  Grid.ColumnSpan="1" Grid.RowSpan="3" BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="15" Margin="1,0,0,0" >
+
+        </Border>
+
         <Grid Background="Transparent" x:Name="Toolbar" Grid.Row="0" Grid.Column="2" MouseDown="Toolbar_MouseDown">
             <StackPanel HorizontalAlignment="Right" Orientation="Horizontal"  Grid.Column="1">
                 <Button BorderThickness="0" Content="X" FontSize="12" Background="Transparent" Foreground="White" MinHeight="25" MinWidth="30" BorderBrush="{x:Null}" Click="Close_Window_Click"/>
@@ -29,17 +34,20 @@
         </Grid>
 
         <Grid Grid.Row="1" Background="Transparent">
-
-
-
-
             <StackPanel  Orientation="Vertical"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     Width="230">
 
                 <Border Margin="0 4 0 0" Background="#FF93D151" CornerRadius="9 9 0 0"  MinHeight="20" >
-                    <TextBlock Text="Улица, дом" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="10 0 0 0"  VerticalAlignment="Center"  Foreground="White"/>
+                    <TextBlock Text="Улица" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="10 0 0 0"  VerticalAlignment="Center"  Foreground="White"/>
+                </Border>
+ 
+                <Border CornerRadius="0 0 9 9" Background="White">
+                    <TextBox Height="20" BorderThickness="0" Background="Transparent" x:Name="addressHouseNumber"></TextBox>
+                </Border>
+                <Border Margin="0 4 0 0" Background="#FF93D151" CornerRadius="9 9 0 0"  MinHeight="20" >
+                    <TextBlock Text="Дом" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="10 0 0 0"  VerticalAlignment="Center"  Foreground="White"/>
                 </Border>
                 <Border CornerRadius="0 0 9 9" Background="White">
                     <TextBox Height="20" BorderThickness="0" Background="Transparent" x:Name="addressStreet"></TextBox>
@@ -47,6 +55,7 @@
                 <Border Margin="0 6 0 0" Background="#FF93D151" CornerRadius="9 9 0 0"  MinHeight="20">
                     <TextBlock Text="Город" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="10 0 0 0"  VerticalAlignment="Center"  Foreground="White"/>
                 </Border>
+                
                 <Border CornerRadius="0 0 9 9" Background="White">
                     <TextBox Height="20" BorderThickness="0" Background="Transparent" x:Name="addressCity"></TextBox>
                 </Border>

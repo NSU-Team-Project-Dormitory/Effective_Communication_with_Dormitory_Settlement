@@ -25,7 +25,7 @@ namespace Data.Repositories.SideInformation
 
             using ApplicationDbContext db = new();
             //Check if student already exists
-            bool checkIfExist = db.Students.Any(el => el.ID == address.ID);
+            bool checkIfExist = db.Addresses.Any(el => el.ID == address.ID);
 
             if (!checkIfExist)
             {
@@ -54,6 +54,16 @@ namespace Data.Repositories.SideInformation
         {
             throw new NotImplementedException();
         }
+
+        public int GetID(Address address)
+        {
+            using (ApplicationDbContext dbContext = new ApplicationDbContext())
+            {
+                var foundAddress = dbContext.Addresses.FirstOrDefault(a => a.Equals(address));
+                return foundAddress != null ? foundAddress.ID : -1; // Возвращаем идентификатор найденного адреса или -1, если адрес не найден
+            }
+        }
+
 
         public List<Address> GetAll()
         {

@@ -10,9 +10,21 @@
     <Compile Update="View\AddNewAddressWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\DormitoryWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SelectDormitoryWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="View\AddNewAddressWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DormitoryWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SelectDormitoryWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
