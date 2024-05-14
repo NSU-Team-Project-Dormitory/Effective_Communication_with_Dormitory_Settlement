@@ -1,6 +1,7 @@
 ﻿using Domain.Entities.SideInformation;
 using Domain.Entities.People;
 using Domain.Entities.People.Attribute;
+using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace Domain.Entities.App;
@@ -8,8 +9,8 @@ namespace Domain.Entities.App;
 
 public class User : Human
 {
-    public string? Password { get; set; }
-    public string? Login { get; set; }
+    public string Password { get; set; }
+    public string Login { get; set; }
 
     public User(string login, 
                 string password,
@@ -22,8 +23,10 @@ public class User : Human
                 Sex sex,
                 int id) : base(id, firstName,secondName,patronymicName,contactNumber,sex,dateOfBirth,address)
     {
-        Login = login ?? throw new NullReferenceException("Login is null");
-        Password = password ?? throw new NullReferenceException("Password is null");
+        //Login = login ?? throw new NullReferenceException("Login is null");
+        //Password = password ?? throw new NullReferenceException("Password is null");
+        Login = login;
+        Password = password;
     }
 
     public User() { }  

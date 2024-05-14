@@ -9,13 +9,17 @@ namespace Domain.Repositories.App.Role
 {
     public interface IStudentRepository
     {
-        public string Add(string login, string password, string name, string surname, string patronymic, int contactNumber, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup);
-        
-        public void Add(Student student);
+        public Boolean Add(int id, string login, string password, string name, string surname, string patronymic,
+                          int contactNumber, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup);
 
-        public string Update(Student oldStudent, string login, string password, string name, string surname, string patronymic, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup);
+        public Boolean Add(Student newStudent);
 
         public string Delete(Student student);
+
+        public List<Student> GetAll();
+
+        public string Update(Student oldStudent, string login, string password, string name, string surname,
+                     string patronymic, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup);
 
         public List<Student> Find(string name, string surname, string patronymic);
 
@@ -26,12 +30,6 @@ namespace Domain.Repositories.App.Role
         public Boolean CheckOut(Student student, Room room);
 
         public Boolean SwapStudents(Student student1, Student Student2);
-
-
-
-        public List<Student> GetAll();
-
-
 
     }
 }

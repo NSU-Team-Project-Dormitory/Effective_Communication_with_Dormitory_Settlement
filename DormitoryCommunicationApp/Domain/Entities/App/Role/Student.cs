@@ -41,12 +41,8 @@ public sealed class Student : User
         Rooms = rooms;
     }
 
-    public new string ToString
+    public override string ToString()
     {
-        get
-        {
-            string result = "Name: " + this.FirstName + "Surname: " + this.SecondName;
-            return result;
-        }
+        return $"Name: {FirstName} {SecondName}, Student Group: {StudentGroup?.ID}";
     }
 }

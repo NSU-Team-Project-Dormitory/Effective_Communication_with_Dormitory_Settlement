@@ -4,6 +4,7 @@ using Domain.Entities.Campus;
 using Domain.Entities.People.Attribute;
 using Domain.Entities.SideInformation;
 using Domain.Repositories.App.Role;
+using System.Xml.Linq;
 
 namespace Data.Repositories.App.Role
 {
@@ -19,76 +20,87 @@ namespace Data.Repositories.App.Role
 
 
 
-        public string Add(string login, string password, string name, string surname, string patronymic, int contactNumber, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup)
+        public Boolean Add(int id, string login, string password, string name, string surname, string patronymic,
+                          int contactNumber, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup)
         {
-            string result = "Already exist";
-
-            using (ApplicationDbContext db = new ApplicationDbContext ())
+            using (var db = new ApplicationDbContext())
             {
-                //Check if student already exists
                 bool checkIfExist = db.Students.Any(el => el.Login == login);
 
-                if (!checkIfExist) 
-                {
-                    Student newStudent = new()
-                    {
-                        Login = login,
-                        Password = password,
-                        FirstName = name,
-                        SecondName = surname,
-                        PatronymicName = patronymic,
-                        ContactNumber = contactNumber,
-                        DateOfBirth = dateOfBirth,
-                        Sex = sex,
-                        StudentGroup = studentGroup
-                    };
+                if (checkIfExist) return false;
 
-                    db.Students.Add(newStudent);
-                    db.SaveChanges();
-                    result = "Done";
-                }
-                
+
+                    var newStudent = new Student
+                {
+                    ID = id,
+                    Login = login,
+                    Password = password,
+                    FirstName = name,
+                    SecondName = surname,
+                    PatronymicName = patronymic,
+                    ContactNumber = contactNumber,
+                    DateOfBirth = dateOfBirth,
+                    Sex = sex,
+                    StudentGroup = studentGroup
+                };
+
+                db.Students.Add(newStudent);
+                db.SaveChanges();
+                return true;
             }
-            return result;
         }
 
-        public void Add(Student student)
+        public Boolean Add(Student newStudent)
         {
-            using (ApplicationDbContext db = new())
+            using (var db = new ApplicationDbContext())
             {
-                db.Students.Add(student);
+                var existingStudent = db.Students.FirstOrDefault(newStudent);
+                if (existingStudent != null)
+                    return false;
+
+                db.Students.Add(newStudent);
                 db.SaveChanges();
+                return true;
             }
         }
 
         public string Delete(Student student)
         {
-            string result = "This student doesn't exist";
-
-            using (ApplicationDbContext db = new())
+            using (var db = new ApplicationDbContext())
             {
                 db.Students.Remove(student);
                 db.SaveChanges();
-                result = "Done. Student: " + student.FirstName + "" + student.SecondName + " has been removed";
+                return $"Done. Student: {student.FirstName} {student.SecondName} has been removed";
             }
-            return result;
         }
 
         public List<Student> GetAll()
         {
-            using ApplicationDbContext dbContext = new ApplicationDbContext();
-            List<Student> result = new();
-            //var result = dbContext.Students.ToList();
-            return result;
+            using var dbContext = new ApplicationDbContext();
+            return dbContext.Students.ToList();
         }
-
-        public string Update(Student oldStudent, string login, string password, string name, string surname, string patronymic, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup)
+/*        public List<Student> GetAll()
         {
-            string result = "This student doesn't exist";
-
-            using (ApplicationDbContext db = new())
+            return null;
+*//*            List<Student> allStudents = new List<Student>();
+            using (var dbContext = new ApplicationDbContext())
             {
-                Student student = db.Students.FirstOrDefault(el => el.ID == oldStudent.ID);
+                foreach (var student in dbContext.Students)
+                {
+                    allStudents.Add(student);
+                }
+            }
+            return allStudents;*//*
+        }*/
+
+        public string Update(Student oldStudent, string login, string password, string name, string surname,
+                             string patronymic, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup)
+        {
+            using (var db = new ApplicationDbContext())
+            {
+                var student = db.Students.FirstOrDefault(el => el.ID == oldStudent.ID);
+                if (student == null)
+                    return "This student doesn't exist";
 
                 student.FirstName = name;
                 student.SecondName = surname;
@@ -98,11 +110,10 @@ namespace Data.Repositories.App.Role
                 student.PatronymicName = patronymic;
                 student.Sex = sex;
                 student.DateOfBirth = dateOfBirth;
-                    
+
                 db.SaveChanges();
-                result = "Done. Student " + student.FirstName + " " + student.SecondName + "hasbeen changed";
+                return $"Done. Student {student.FirstName} {student.SecondName} has been changed";
             }
-            return result;
         }
 
         public List<Student> Find(string name, string surname, string patronymic)
