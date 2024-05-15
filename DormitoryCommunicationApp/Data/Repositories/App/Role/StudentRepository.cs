@@ -20,7 +20,7 @@ namespace Data.Repositories.App.Role
 
 
 
-        public Boolean Add(int id, string login, string password, string name, string surname, string patronymic,
+        public Boolean Add(string login, string password, string name, string surname, string patronymic,
                           int contactNumber, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup)
         {
             using (var db = new ApplicationDbContext())
@@ -32,7 +32,6 @@ namespace Data.Repositories.App.Role
 
                     var newStudent = new Student
                 {
-                    ID = id,
                     Login = login,
                     Password = password,
                     FirstName = name,
@@ -54,9 +53,11 @@ namespace Data.Repositories.App.Role
         {
             using (var db = new ApplicationDbContext())
             {
-                var existingStudent = db.Students.FirstOrDefault(newStudent);
-                if (existingStudent != null)
+                bool checkIfExist = db.Students.Any(el => el.ID == newStudent.ID);
+                if (checkIfExist)
+                {
                     return false;
+                }
 
                 db.Students.Add(newStudent);
                 db.SaveChanges();
@@ -76,8 +77,13 @@ namespace Data.Repositories.App.Role
 
         public List<Student> GetAll()
         {
-            using var dbContext = new ApplicationDbContext();
-            return dbContext.Students.ToList();
+            //using var dbContext = new ApplicationDbContext();
+            //return dbContext.Students.ToList();
+
+            using(var db = new ApplicationDbContext()){
+                return db.Students.ToList();
+
+            }
         }
 /*        public List<Student> GetAll()
         {
@@ -179,6 +185,8 @@ namespace Data.Repositories.App.Role
         //returns success or fail
         public Boolean SwapStudents(Student student1, Student student2)
         {
+            return false;
+            /*
             using (ApplicationDbContext db = new())
             {
                 if (student1.Rooms.Count < 1)
@@ -202,7 +210,9 @@ namespace Data.Repositories.App.Role
                 return true;
             }
             return false;
+            */
         }
+        
 
 
     }

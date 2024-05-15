@@ -23,10 +23,10 @@ public class User : Human
                 Sex sex,
                 int id) : base(id, firstName,secondName,patronymicName,contactNumber,sex,dateOfBirth,address)
     {
-        //Login = login ?? throw new NullReferenceException("Login is null");
-        //Password = password ?? throw new NullReferenceException("Password is null");
-        Login = login;
-        Password = password;
+        Login = login ?? throw new NullReferenceException("Login is null");
+        Password = password ?? throw new NullReferenceException("Password is null");
+        //Login = login;
+        //Password = password;
     }
 
     public User() { }  

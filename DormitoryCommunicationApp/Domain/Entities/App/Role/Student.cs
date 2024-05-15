@@ -10,7 +10,8 @@ public sealed class Student : User
 {
 
     public StudentGroup? StudentGroup { get; set; }
-    public List<Room>? Rooms { get; set; }
+    //public List<Room>? Rooms { get; set; }
+    public Room? Room { get; set; }
 
 
     public Student() { }
@@ -24,7 +25,7 @@ public sealed class Student : User
                   DateTime dateOfBirth,
                   Sex sex,
                   int id,
-                  List<Room> rooms,
+                  Room room,
                   StudentGroup studentGroup) 
                             : base(login,
                                  password,
@@ -38,7 +39,7 @@ public sealed class Student : User
                                  id)
     {
         StudentGroup = studentGroup;
-        Rooms = rooms;
+        Room = room;
     }
 
     public override string ToString()

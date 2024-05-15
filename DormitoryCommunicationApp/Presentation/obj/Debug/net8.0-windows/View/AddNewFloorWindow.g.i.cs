@@ -77,7 +77,7 @@ namespace Presentation.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Presentation;V1.0.0.0;component/view/addnewfloorwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Presentation;component/view/addnewfloorwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\AddNewFloorWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

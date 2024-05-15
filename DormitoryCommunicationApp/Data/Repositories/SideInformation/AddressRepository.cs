@@ -26,7 +26,7 @@ namespace Data.Repositories.SideInformation
 
             using ApplicationDbContext db = new();
             //Check if student already exists
-            bool checkIfExist = db.Students.Any(el => el.ID == address.ID);
+            bool checkIfExist = db.Addresses.Any(el => el.ID == address.ID);
 
             if (!checkIfExist)
             {

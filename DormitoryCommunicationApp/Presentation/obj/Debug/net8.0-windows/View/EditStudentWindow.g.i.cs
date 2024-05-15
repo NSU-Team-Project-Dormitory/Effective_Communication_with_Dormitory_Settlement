@@ -101,7 +101,7 @@ namespace Presentation.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Presentation;V1.0.0.0;component/view/editstudentwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Presentation;component/view/editstudentwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\EditStudentWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

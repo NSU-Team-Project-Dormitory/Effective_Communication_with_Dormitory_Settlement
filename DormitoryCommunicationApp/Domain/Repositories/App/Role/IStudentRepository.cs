@@ -9,7 +9,7 @@ namespace Domain.Repositories.App.Role
 {
     public interface IStudentRepository
     {
-        public Boolean Add(int id, string login, string password, string name, string surname, string patronymic,
+        public Boolean Add(string login, string password, string name, string surname, string patronymic,
                           int contactNumber, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup);
 
         public Boolean Add(Student newStudent);
