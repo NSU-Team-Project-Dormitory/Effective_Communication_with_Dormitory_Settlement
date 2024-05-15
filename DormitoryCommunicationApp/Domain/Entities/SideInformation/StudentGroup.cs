@@ -5,7 +5,7 @@ namespace Domain.Entities.SideInformation;
 public class StudentGroup
 {
     public int ID { get; set; } 
-    public string? Faculty { get; }
+    public string Faculty { get; }
 
     StudentGroup() { }
     public StudentGroup(int id, string faculty)
@@ -14,3 +14,4 @@ public class StudentGroup
         Faculty = faculty;
     }
 }
+

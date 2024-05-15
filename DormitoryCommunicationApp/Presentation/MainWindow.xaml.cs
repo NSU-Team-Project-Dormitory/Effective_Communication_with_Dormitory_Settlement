@@ -25,6 +25,8 @@ namespace Presentation.View
 
         private IBuildingRepository _dormitoryRepository;
 
+        
+
         public List<Building> Dormitories { get; set; }
 
         public MainWindow()

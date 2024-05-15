@@ -9,7 +9,7 @@ public  class Floor
 
     public int ID { get; set;  }
 
-    public int Ad { get; set; }
+
     public virtual Building Dormitory { get; set; }
 
     public virtual List<Room> Rooms { get; }
@@ -18,12 +18,11 @@ public  class Floor
 
 
 
-    public Floor(string number, int height, int id, int ad)
+    public Floor(string number, int height, int id)
     {
-        Number = number ?? throw new NullReferenceException("Number is NUll");
+        Number = number ?? throw new NullReferenceException("Number is Null");
         Height = height;
         ID = id;
-        Ad = ad;
     }
 
     public override string ToString()

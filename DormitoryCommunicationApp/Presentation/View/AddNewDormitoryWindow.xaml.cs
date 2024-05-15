@@ -59,7 +59,7 @@ namespace Presentation.View
             contact.Email = " ";
 
 
-            if (string.IsNullOrWhiteSpace(name)  || number == null || string.IsNullOrWhiteSpace(contactNumber))
+            if (string.IsNullOrWhiteSpace(name) || _address == null || number == null || string.IsNullOrWhiteSpace(contactNumber))
             {
                 MessageBox.Show("Please enter all info correct", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;

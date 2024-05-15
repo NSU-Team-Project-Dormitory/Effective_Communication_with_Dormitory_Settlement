@@ -54,9 +54,10 @@
                                 <GridViewColumn Header="Last Name" DisplayMemberBinding="{Binding LastName}" />
                                 <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}" />
                                 <GridViewColumn Header="Patronymic" DisplayMemberBinding="{Binding Patronymic}" />
-                                <GridViewColumn Header="Faculty" DisplayMemberBinding="{Binding Faculty}" />
-                                <GridViewColumn Header="Study Group" DisplayMemberBinding="{Binding StudyGroup}" />
-                                <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}" />
+                                <GridViewColumn Header="StudentGroupID" DisplayMemberBinding="{Binding StudentGroupID}" />
+                                <GridViewColumn Header="RoomID" DisplayMemberBinding="{Binding RoomID}" />
+                                <GridViewColumn Header="Contact Number" DisplayMemberBinding="{Binding ContactNumber}" />
+                                <GridViewColumn Header="Login" DisplayMemberBinding="{Binding Login}" />
                             </GridView>
                         </ListView.View>
                     </ListView>

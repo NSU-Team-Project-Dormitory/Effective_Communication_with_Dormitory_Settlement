@@ -101,7 +101,7 @@ namespace Presentation.View
             Students = _studentRepository.GetAll();
             AllStudentsView.ItemsSource = null;
             AllStudentsView.Items.Clear();
-            AllStudentsView.ItemsSource = Dormitories;
+            AllStudentsView.ItemsSource = Students;
             AllStudentsView.Items.Refresh();
         }
 

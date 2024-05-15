@@ -13,11 +13,25 @@
         ResizeMode="CanResizeWithGrip">
     <Grid>
 
-        <Border Background="#50b4c8" CornerRadius="8 8 0 8" Grid.ColumnSpan="2" Grid.RowSpan="2"></Border>
-        <Border Grid.Column="1" BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="8" Margin="1,0,0,0" Grid.RowSpan="2"></Border>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="58"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
 
-        <TextBlock Text="{Binding DormitoryName}" MinHeight="30" MinWidth="200" Background="Red" Margin="30" FontFamily="Times New Roman" Foreground="White" FontSize="40"/>
+        <Border Background="#50b4c8" CornerRadius="8 8 0 8" Grid.RowSpan="3"/>
+        <Border BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="8" Margin="1,0,0,0" Grid.RowSpan="3"/>
 
+
+        <Border Background="#FF93D151" CornerRadius="20" Margin="10" MinHeight="40" Grid.Row="1">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Arial Rounded MT Bold" Foreground="White" FontSize="25" Margin="5">
+                <TextBlock.Text>
+                    <MultiBinding StringFormat="{}{0} Общежитие">
+                        <Binding Path="DormitoryName"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+        </Border>
     </Grid>
 </Window>

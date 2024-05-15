@@ -45,12 +45,7 @@
                 <Border CornerRadius="0 0 9 9" Background="White">
                     <TextBox Height="20" BorderThickness="0" Background="Transparent" x:Name="dormitoryName"></TextBox>
                 </Border>
-                <Border Margin="0 6 0 0" Background="#FF93D151" CornerRadius="9 9 0 0"  MinHeight="20">
-                    <TextBlock Text="Адрес" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="10 0 0 0"  VerticalAlignment="Center"  Foreground="White"/>
-                </Border>
-                <Border CornerRadius="0 0 9 9" Background="White">
-                    <TextBox Height="20" BorderThickness="0" Background="Transparent" x:Name="dormitoryAddress"></TextBox>
-                </Border>
+                
                 <Border Margin="0 6 0 0" Background="#FF93D151" CornerRadius="9 9 0 0"  MinHeight="20">
                     <TextBlock Text="Количество этажей" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="10 0 0 0"  VerticalAlignment="Center"  Foreground="White"/>
                 </Border>
@@ -64,7 +59,7 @@
                     <TextBox Height="20" BorderThickness="0" Background="Transparent" x:Name="dormitoryContactInfo"></TextBox>
                 </Border>
 
-                <Border Margin="0 6 0 0" Background="#FF93D151" CornerRadius="9"  MinHeight="20">
+                <Border Margin="0 6 0 0" Background="#FF93D151" CornerRadius="9"  MinHeight="30">
                     <Button Background="Transparent" BorderThickness="0" Content="Добавить адрес" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="0 0 0 0"  VerticalAlignment="Center"  Foreground="White" Click="Add_AddressButton_CLick"/>
                 </Border>
 

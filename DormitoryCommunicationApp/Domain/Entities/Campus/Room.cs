@@ -7,7 +7,7 @@ namespace Domain.Entities.Campus;
 
 public class Room 
 {
-    public string? ID { get; set; }
+    public int ID { get; set; }
     public string Number { get; set; }
 
     public int Capacity { get; set; }
@@ -19,7 +19,7 @@ public class Room
         Students = new List<Student>();
     }
 
-    public Room (string number, string id, int capacity)
+    public Room (string number, int id, int capacity)
     {
         Number = number;
         ID = id;
