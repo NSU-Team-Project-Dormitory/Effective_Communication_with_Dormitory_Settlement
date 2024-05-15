@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Domain.Entities.Campus;
 
 namespace Presentation.View
 {
@@ -19,9 +20,17 @@ namespace Presentation.View
     /// </summary>
     public partial class DormitoryWindow : Window
     {
-        public DormitoryWindow()
+        private Building dormitory;
+        public string DormitoryName { get; set; }
+        public DormitoryWindow(Building dormitory)
         {
             InitializeComponent();
+            this.dormitory = dormitory;
+            DataContext = this;
+
+            DormitoryName = dormitory.Name;
         }
+
+        
     }
 }

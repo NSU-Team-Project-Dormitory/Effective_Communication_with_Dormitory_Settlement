@@ -14,6 +14,5 @@ namespace Domain.Repositories.SideInformation
 
         public List<Address> GetAll ();
 
-        public int GetID (Address address);
     }
 }

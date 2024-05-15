@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Presentation.View"
         mc:Ignorable="d"
-        Title="DormitoryWindow" Height="450" Width="800">
+        Title="DormitoryWindow" Height="450" Width="800"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent" 
+        ResizeMode="CanResizeWithGrip">
     <Grid>
-        
+
+        <Border Background="#50b4c8" CornerRadius="8 8 0 8" Grid.ColumnSpan="2" Grid.RowSpan="2"></Border>
+        <Border Grid.Column="1" BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="8" Margin="1,0,0,0" Grid.RowSpan="2"></Border>
+
+
+        <TextBlock Text="{Binding DormitoryName}" MinHeight="30" MinWidth="200" Background="Red" Margin="30" FontFamily="Times New Roman" Foreground="White" FontSize="40"/>
+
     </Grid>
 </Window>

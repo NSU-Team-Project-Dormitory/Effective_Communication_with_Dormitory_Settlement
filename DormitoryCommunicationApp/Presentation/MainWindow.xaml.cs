@@ -130,7 +130,7 @@ namespace Presentation.View
                 if (dormitory != null)
                 {
                     // Создаем универсальное окно с заголовком, содержащим название общежития
-                    Window1 universalWindow = new Window1(dormitory);
+                    DormitoryWindow universalWindow = new DormitoryWindow(dormitory);
                     universalWindow.Show();
                 }
             }
