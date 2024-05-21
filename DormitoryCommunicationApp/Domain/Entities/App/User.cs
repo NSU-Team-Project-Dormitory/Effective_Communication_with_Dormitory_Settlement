@@ -17,7 +17,7 @@ public class User : Human
                 string patronymicName,
                 Address address,
                 DateTime dateOfBirth,
-                String sex,
+                string sex,
                 int id) : base(id, firstName,secondName,patronymicName,sex,dateOfBirth,address)
     {
         Login = login ?? throw new NullReferenceException("Login is null");

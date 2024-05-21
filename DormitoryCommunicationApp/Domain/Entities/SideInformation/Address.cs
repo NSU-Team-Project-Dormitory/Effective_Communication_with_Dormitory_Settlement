@@ -17,7 +17,7 @@ public class Address
 
     public Address() { }
 
-    public Address(string street, string houseNumber, string? city, string? region, string? postalCode, string? country)
+    public Address(string street, string houseNumber, string? city, string? region, string? postalCode, string? country, int buildingID)
     {
         Street = street;
         HouseNumber = houseNumber;
@@ -25,6 +25,7 @@ public class Address
         Region = region;
         PostalCode = postalCode;
         Country = country;
+        BuildingID = buildingID;
     }
 
 

@@ -9,7 +9,7 @@ public class Student : User
 {
     public virtual StudentGroup? StudentGroup { get; set; }
 
-    public virtual Room Room { get; set; }
+    public virtual Room? Room { get; set; }
 
     public int ContactNumber {  get; set; }
 
@@ -21,7 +21,7 @@ public class Student : User
                   string patronymic,
                   Address address,
                   DateTime dateOfBirth,
-                  String sex,
+                  string sex,
                   Room room,
                   int id,
                   int contactNumber,

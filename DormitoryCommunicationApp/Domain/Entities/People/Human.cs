@@ -9,7 +9,7 @@ public class Human
     public string?  FirstName { get; set; }
     public string?  SecondName { get; set; }
     public string? PatronymicName {  get; set; }
-    public String Sex { get; set; }
+    public string Sex { get; set; }
     public DateTime DateOfBirth { get; set; }
 
     public virtual Address? Address { get; set; }
@@ -21,7 +21,7 @@ public class Human
         string firstName,
         string secondName,
         string? patronymicName,
-        String sex,
+        string sex,
         DateTime dateOfBirth,
         Address address
         )
