@@ -103,7 +103,7 @@ namespace Data
             bool isAdded = appContext._studentRepository.Add(newStudent);
             appContext._studentRepository.Add(newStudent2);
             appContext._studentRepository.Add(newStudent3);
-            if (false)
+            if (isAdded)
             {
                 Console.WriteLine("Student added successfully!");
             }
@@ -120,16 +120,17 @@ namespace Data
                 Console.WriteLine($"Student ID: {student.ID}, Name: {student.FirstName} {student.SecondName}");
             }
 
-            /*
+            
 
             // Example of deleting a student
             // Assuming studentToDelete is an existing Student object
-            var deleteResult = appContext._studentRepository.Delete(newStudent2);
-            Console.WriteLine(deleteResult);
+            
+            //var deleteResult = appContext._studentRepository.Delete(newStudent2);
+            //Console.WriteLine(deleteResult);
 
             // Example of updating a student
             // Assuming studentToUpdate is an existing Student object
-            var updateResult = appContext._studentRepository.Update(newStudent3, "newlogin", "newpassword", "New", "Name", "NewPatronymic", DateTime.Now, Sex.Female, new StudentGroup(14, "YES4"));
+            var updateResult = appContext._studentRepository.Update(newStudent3, "newlogin", "newpassword", "New", "Name", "NewPatronymic", Sex.Female, new StudentGroup(14, "YES4"));
             Console.WriteLine(updateResult);
 
             // Example of finding students by name
@@ -138,8 +139,14 @@ namespace Data
             {
                 Console.WriteLine($"Found Student: {foundStudent.FirstName} {foundStudent.SecondName}");
             }
-            */
-            
+
+            // Example of retrieving all students
+            var allStudents2 = appContext._studentRepository.GetAll();
+            foreach (var student in allStudents2)
+            {
+                Console.WriteLine($"Student ID: {student.ID}, Name: {student.FirstName} {student.SecondName}");
+            }
+
 
 
             /*

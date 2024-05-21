@@ -19,7 +19,7 @@ namespace Domain.Repositories.App.Role
         public List<Student> GetAll();
 
         public string Update(Student oldStudent, string login, string password, string name, string surname,
-                     string patronymic, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup);
+                     string patronymic, Sex sex, StudentGroup studentGroup);
 
         public List<Student> Find(string name, string surname, string patronymic);
 

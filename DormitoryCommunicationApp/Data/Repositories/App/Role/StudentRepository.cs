@@ -53,7 +53,7 @@ namespace Data.Repositories.App.Role
         {
             using (var db = new ApplicationDbContext())
             {
-                bool checkIfExist = db.Students.Any(el => el.ID == newStudent.ID);
+                bool checkIfExist = db.Students.Any(el => el.Login == newStudent.Login);
                 if (checkIfExist)
                 {
                     return false;
@@ -100,11 +100,11 @@ namespace Data.Repositories.App.Role
         }*/
 
         public string Update(Student oldStudent, string login, string password, string name, string surname,
-                             string patronymic, DateTime dateOfBirth, Sex sex, StudentGroup studentGroup)
+                             string patronymic, Sex sex, StudentGroup studentGroup)
         {
             using (var db = new ApplicationDbContext())
             {
-                var student = db.Students.FirstOrDefault(el => el.ID == oldStudent.ID);
+                var student = db.Students.FirstOrDefault(el => el.Login == oldStudent.Login);
                 if (student == null)
                     return "This student doesn't exist";
 
@@ -115,7 +115,6 @@ namespace Data.Repositories.App.Role
                 student.Password = password;
                 student.PatronymicName = patronymic;
                 student.Sex = sex;
-                student.DateOfBirth = dateOfBirth;
 
                 db.SaveChanges();
                 return $"Done. Student {student.FirstName} {student.SecondName} has been changed";
@@ -184,33 +183,26 @@ namespace Data.Repositories.App.Role
         
         //returns success or fail
         public Boolean SwapStudents(Student student1, Student student2)
-        {
-            return false;
-            /*
+        {          
             using (ApplicationDbContext db = new())
             {
-                if (student1.Rooms.Count < 1)
+                if (student1.Room == null)
                 {
                     Console.WriteLine("Student:" + student1 + "does not have a room");
                     return false;
                 }
-                if (student2.Rooms.Count < 1)
+                if (student2.Room == null)
                 {
                     Console.WriteLine("Student:" + student2 + "does not have a room");
                     return false;
                 }
-                student1.Rooms.Add(student2.Rooms[0]);
-                student2.Rooms.Add(student1.Rooms[0]);
-
-                student1.Rooms.Remove(student1.Rooms[0]);
-                student2.Rooms.Remove(student2.Rooms[0]);
-
+                var tempRoom = student1.Room;
+                student1.Room = student2.Room;
+                student2.Room = tempRoom;
 
                 db.SaveChanges();
                 return true;
             }
-            return false;
-            */
         }
         
 
