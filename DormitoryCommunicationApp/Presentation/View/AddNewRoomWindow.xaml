@@ -60,7 +60,7 @@
             </StackPanel>
         </Grid>
         <Border Background="#FF93D151" CornerRadius="20 20 20 20" Margin="2 2 2 2" MinHeight="30" Grid.Row="1">
-            <Button Background="Transparent" Foreground="White" BorderThickness="0" Content="Добавить этаж"  FontFamily="Arial Rounded MT Bold" FontSize="18"></Button>
+            <Button Background="Transparent" Foreground="White" BorderThickness="0" Content="Добавить комнату"  FontFamily="Arial Rounded MT Bold" FontSize="18" Click="Button_Click"></Button>
         </Border>
     </Grid>
 </Window>

@@ -14,53 +14,56 @@
     <Grid>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
+
         <Border Background="#50b4c8"
-        CornerRadius="20" Grid.ColumnSpan="2" Grid.RowSpan="2">
+                CornerRadius="20" Grid.ColumnSpan="2" Grid.RowSpan="3">
         </Border>
 
-        <Border Grid.Column="0" Grid.RowSpan="3" BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="16"  ></Border>
+        <Border Grid.Column="0" Grid.RowSpan="3" BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="16"></Border>
 
-        <Grid Grid.Row="0" Background="Transparent">
+        <Grid Background="Transparent" x:Name="Toolbar" Grid.Row="0" MouseDown="Toolbar_MouseDown">
+            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+                <Button BorderThickness="0" Content="X" FontSize="12" Background="Transparent" Foreground="White" MinHeight="25" MinWidth="30" BorderBrush="{x:Null}" Click="Close_Window_Click"/>
+            </StackPanel>
+        </Grid>
 
-            <StackPanel  Orientation="Vertical"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Width="230">
+        <Grid Grid.Row="1" Background="Transparent">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Width="230">
 
-                <Border Margin="0 4 0 0" Background="#FF93D151" CornerRadius="9 9 0 0"  MinHeight="20" >
-                    <TextBlock Text="Этаж" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="10 0 0 0"  VerticalAlignment="Center"  Foreground="White"/>
+                <Border Margin="0 4 0 0" Background="#FF93D151" CornerRadius="9 9 0 0" MinHeight="20">
+                    <TextBlock Text="Этаж" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="10 0 0 0" VerticalAlignment="Center" Foreground="White"/>
                 </Border>
                 <Border CornerRadius="0 0 9 9" Background="White">
                     <TextBox Height="20" BorderThickness="0" Background="Transparent" x:Name="roomFloor"></TextBox>
                 </Border>
-                <Border Margin="0 6 0 0" Background="#FF93D151" CornerRadius="9 9 0 0"  MinHeight="20">
-                    <TextBlock Text="Номер комнаты" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="10 0 0 0"  VerticalAlignment="Center"  Foreground="White"/>
+                <Border Margin="0 6 0 0" Background="#FF93D151" CornerRadius="9 9 0 0" MinHeight="20">
+                    <TextBlock Text="Номер комнаты" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="10 0 0 0" VerticalAlignment="Center" Foreground="White"/>
                 </Border>
                 <Border CornerRadius="0 0 0 0" Background="White">
                     <TextBox Height="20" BorderThickness="0" Background="Transparent" x:Name="roomNumber"></TextBox>
                 </Border>
-                <Border Margin="0 0 0 0" Background="#FF93D151"  MinHeight="20">
-                    <TextBlock Text="Большая или маленькая" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="10 0 0 0"  VerticalAlignment="Center"  Foreground="White"/>
+                <Border Margin="0 0 0 0" Background="#FF93D151" MinHeight="20">
+                    <TextBlock Text="Большая или маленькая" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="10 0 0 0" VerticalAlignment="Center" Foreground="White"/>
                 </Border>
 
-                <ComboBox Background="Transparent"  Foreground="Transparent" BorderBrush="{x:Null}"></ComboBox>
+                <ComboBox Background="Transparent" Foreground="Transparent" BorderBrush="{x:Null}"></ComboBox>
 
-                <Border Margin="0 6 0 0" Background="#FF93D151" CornerRadius="9 9 0 0"  MinHeight="20">
-                    <TextBlock Text="Вместимость" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="10 0 0 0"  VerticalAlignment="Center"  Foreground="White"/>
+                <Border Margin="0 6 0 0" Background="#FF93D151" CornerRadius="9 9 0 0" MinHeight="20">
+                    <TextBlock Text="Вместимость" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Margin="10 0 0 0" VerticalAlignment="Center" Foreground="White"/>
                 </Border>
 
                 <Border CornerRadius="0 0 9 9" Background="White">
                     <TextBox Height="20" BorderThickness="0" Background="Transparent" x:Name="roomCapacity"></TextBox>
                 </Border>
 
-
             </StackPanel>
         </Grid>
-        <Border Background="#FF93D151" CornerRadius="20 20 20 20" Margin="2 2 2 2" MinHeight="30" Grid.Row="1">
-            <Button Background="Transparent" Foreground="White" BorderThickness="0" Content="Добавить этаж"  FontFamily="Arial Rounded MT Bold" FontSize="18"></Button>
+        <Border Background="#FF93D151" CornerRadius="20 20 20 20" Margin="2 2 2 2" MinHeight="30" Grid.Row="2">
+            <Button Background="Transparent" Foreground="White" BorderThickness="0" Content="Добавить этаж" FontFamily="Arial Rounded MT Bold" FontSize="18"></Button>
         </Border>
     </Grid>
 </Window>
