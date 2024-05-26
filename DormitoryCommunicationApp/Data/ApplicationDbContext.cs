@@ -23,6 +23,7 @@ namespace Data
     {
         private IStudentRepository _studentRepository;
         private IAddressRepoisitory _addressRepoisitory;
+        private IBuildingRepository _buildingRepository;
 
 
         public ApplicationDbContext()
@@ -32,16 +33,21 @@ namespace Data
             Database.EnsureCreated();
             _studentRepository = StudentRepository.GetRepository();
             _addressRepoisitory = AddressRepository.GetRepository();
+            _buildingRepository = BuildingRepository.GetRepository();
 
         }
 
         static void Main()
         {
+            /*
             ApplicationDbContext appContext = new ApplicationDbContext();
 
-            var address = new Address("street", "number", "city", "region", "postal code", "country", 1);
+            //var address = new Address("street", "1", "city", "region", "postal code", "country");
             //appContext._addressRepoisitory.Add(address);
-            var tempRoom = new Room("1", 1,1);
+            Address address = null;
+            //            Floor tempFloor = new Floor("0", 1, 1);
+            appContext._buildingRepository.GetAll();
+            Room tempRoom = new Room("-1", -1, 9999);
 
             var newStudent = new Student
             {
@@ -125,7 +131,7 @@ namespace Data
             {
                 Console.WriteLine($"Student ID: {student.ID}, Name: {student.FirstName} {student.SecondName}");
             }
-            
+            */
 
 
 

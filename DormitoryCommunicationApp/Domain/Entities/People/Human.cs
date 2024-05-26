@@ -23,7 +23,7 @@ public class Human
         string? patronymicName,
         string sex,
         DateTime dateOfBirth,
-        Address address
+        Address? address
         )
     {
         ID = id;

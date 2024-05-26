@@ -22,7 +22,7 @@ public class Student : User
                   Address address,
                   DateTime dateOfBirth,
                   string sex,
-                  Room room,
+                  Room? room,
                   int id,
                   int contactNumber,
                   StudentGroup studentGroup) 
