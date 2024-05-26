@@ -3,28 +3,108 @@
   "WorkspaceRootPath": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\selectdormitorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\selectdormitorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\editstudentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\editstudentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\editroomwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\editroomwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\studentinfowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\studentinfowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\editdormitorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\editdormitorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\messageview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\messageview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\studentinfowindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\studentinfowindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\studentinfowindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\studentinfowindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\findstudentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\findstudentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\addnewstudentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\addnewstudentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\data\\repositories\\app\\role\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|solutionrelative:data\\repositories\\app\\role\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB8F71B1-A9CB-4A41-B06C-729693E25A0F}|Domain\\Domain.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\domain\\repositories\\app\\role\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB8F71B1-A9CB-4A41-B06C-729693E25A0F}|Domain\\Domain.csproj|solutionrelative:domain\\repositories\\app\\role\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\findstudentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\findstudentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\databasemanage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\databasemanage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\databasemanage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\databasemanage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\editstudentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\editstudentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\editstudentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\editstudentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\viewmodel\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\viewmodel\\datamanagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\viewmodel\\datamanagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\addnewstudentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\addnewstudentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\messageview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\messageview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\editroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\editroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\editroomwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\editroomwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\selectdormitorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\selectdormitorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\editdormitorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\editdormitorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\addnewroomwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\addnewroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\addnewroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\addnewstudentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\addnewstudentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\addnewfloorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -67,36 +143,8 @@
       "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\editdormitorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\editroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\editroomwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\selectdormitorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\selectdormitorywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\messageview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\messageview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\addnewfloorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\addnewfloorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\databasemanage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\databasemanage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\databasemanage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\databasemanage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\data\\repositories\\app\\role\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85165A90-822C-45DE-855F-639A19D9EAAC}|Data\\Data.csproj|solutionrelative:data\\repositories\\app\\role\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB8F71B1-A9CB-4A41-B06C-729693E25A0F}|Domain\\Domain.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\domain\\entities\\app\\role\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -109,10 +157,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\presentation\\view\\addnewaddresswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{396116E5-A922-4C47-B3E7-5B5C98D66744}|Presentation\\Presentation.csproj|solutionrelative:presentation\\view\\addnewaddresswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB8F71B1-A9CB-4A41-B06C-729693E25A0F}|Domain\\Domain.csproj|c:\\users\\kozor\\documents\\study\\nsu\\2nd course\\dormitories\\dormitorycommunicationapp\\domain\\repositories\\app\\role\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB8F71B1-A9CB-4A41-B06C-729693E25A0F}|Domain\\Domain.csproj|solutionrelative:domain\\repositories\\app\\role\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,20 +166,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 7,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAAAAIUAAAAOAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAIUAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T20:14:47.925Z",
               "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentInfoWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\StudentInfoWindow.xaml",
+              "RelativeDocumentMoniker": "Presentation\\View\\StudentInfoWindow.xaml",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\StudentInfoWindow.xaml",
+              "RelativeToolTip": "Presentation\\View\\StudentInfoWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-26T18:07:49.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentInfoWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\StudentInfoWindow.xaml",
+              "RelativeDocumentMoniker": "Presentation\\View\\StudentInfoWindow.xaml",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\StudentInfoWindow.xaml",
+              "RelativeToolTip": "Presentation\\View\\StudentInfoWindow.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-26T18:07:42.38Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -147,72 +216,151 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EditRoomWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditRoomWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Presentation\\View\\EditRoomWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditRoomWindow.xaml.cs",
-              "RelativeToolTip": "Presentation\\View\\EditRoomWindow.xaml.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAwwCUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T14:33:23.873Z",
+              "DocumentIndex": 3,
+              "Title": "MessageView.xaml",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\MessageView.xaml",
+              "RelativeDocumentMoniker": "Presentation\\View\\MessageView.xaml",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\MessageView.xaml",
+              "RelativeToolTip": "Presentation\\View\\MessageView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-26T14:07:33.539Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EditStudentWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditStudentWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Presentation\\View\\EditStudentWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditStudentWindow.xaml.cs",
-              "RelativeToolTip": "Presentation\\View\\EditStudentWindow.xaml.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACQAAAAJAAAA",
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Presentation\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\AssemblyInfo.cs",
+              "RelativeToolTip": "Presentation\\AssemblyInfo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T14:17:52.147Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EditDormitoryWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditDormitoryWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Presentation\\View\\EditDormitoryWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditDormitoryWindow.xaml.cs",
-              "RelativeToolTip": "Presentation\\View\\EditDormitoryWindow.xaml.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T14:36:38.319Z",
+              "WhenOpened": "2024-05-26T17:47:24.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SelectDormitoryWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\SelectDormitoryWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Presentation\\View\\SelectDormitoryWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\SelectDormitoryWindow.xaml.cs",
-              "RelativeToolTip": "Presentation\\View\\SelectDormitoryWindow.xaml.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAC8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T14:18:00.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddNewStudentWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewStudentWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Presentation\\View\\AddNewStudentWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewStudentWindow.xaml.cs",
-              "RelativeToolTip": "Presentation\\View\\AddNewStudentWindow.xaml.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAwwBkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T02:58:55.553Z",
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Presentation\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\MainWindow.xaml",
+              "RelativeToolTip": "Presentation\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-26T17:47:27.525Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "StudentInfoWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\StudentInfoWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\View\\StudentInfoWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\StudentInfoWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\View\\StudentInfoWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T18:06:02.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FindStudentWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\FindStudentWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\View\\FindStudentWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\FindStudentWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\View\\FindStudentWindow.xaml.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T17:51:57.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddNewStudentWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewStudentWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\View\\AddNewStudentWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewStudentWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\View\\AddNewStudentWindow.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T02:58:55.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IStudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Domain\\Repositories\\App\\Role\\IStudentRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Repositories\\App\\Role\\IStudentRepository.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Domain\\Repositories\\App\\Role\\IStudentRepository.cs",
+              "RelativeToolTip": "Domain\\Repositories\\App\\Role\\IStudentRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:15:23.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Data\\Repositories\\App\\Role\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Repositories\\App\\Role\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Data\\Repositories\\App\\Role\\StudentRepository.cs",
+              "RelativeToolTip": "Data\\Repositories\\App\\Role\\StudentRepository.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAApwG0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T20:14:53.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FindStudentWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\FindStudentWindow.xaml",
+              "RelativeDocumentMoniker": "Presentation\\View\\FindStudentWindow.xaml",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\FindStudentWindow.xaml",
+              "RelativeToolTip": "Presentation\\View\\FindStudentWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-26T17:51:49.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DataBaseManage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\DataBaseManage.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\View\\DataBaseManage.xaml.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\DataBaseManage.xaml.cs",
+              "RelativeToolTip": "Presentation\\View\\DataBaseManage.xaml.cs",
+              "ViewState": "AQIAANsAAAAAAAAAAAAkwPUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T02:59:07.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DataBaseManage.xaml",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\DataBaseManage.xaml",
+              "RelativeDocumentMoniker": "Presentation\\View\\DataBaseManage.xaml",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\DataBaseManage.xaml",
+              "RelativeToolTip": "Presentation\\View\\DataBaseManage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-26T14:21:43.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EditStudentWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditStudentWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\View\\EditStudentWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditStudentWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\View\\EditStudentWindow.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T14:17:52.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "EditStudentWindow.xaml",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditStudentWindow.xaml",
               "RelativeDocumentMoniker": "Presentation\\View\\EditStudentWindow.xaml",
@@ -223,7 +371,125 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\MainWindow.xaml.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T17:47:30.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\App.xaml",
+              "RelativeDocumentMoniker": "Presentation\\App.xaml",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\App.xaml",
+              "RelativeToolTip": "Presentation\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-26T17:47:21.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\ViewModel\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Presentation\\ViewModel\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\ViewModel\\RelayCommand.cs",
+              "RelativeToolTip": "Presentation\\ViewModel\\RelayCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T17:47:18.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DataManageVM.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\ViewModel\\DataManageVM.cs",
+              "RelativeDocumentMoniker": "Presentation\\ViewModel\\DataManageVM.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\ViewModel\\DataManageVM.cs",
+              "RelativeToolTip": "Presentation\\ViewModel\\DataManageVM.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T17:47:16.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AddNewStudentWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewStudentWindow.xaml",
+              "RelativeDocumentMoniker": "Presentation\\View\\AddNewStudentWindow.xaml",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewStudentWindow.xaml",
+              "RelativeToolTip": "Presentation\\View\\AddNewStudentWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-26T14:22:11.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MessageView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\MessageView.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\View\\MessageView.xaml.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\MessageView.xaml.cs",
+              "RelativeToolTip": "Presentation\\View\\MessageView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T17:39:38.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EditRoomWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditRoomWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\View\\EditRoomWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditRoomWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\View\\EditRoomWindow.xaml.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAwwCUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T14:33:23.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EditRoomWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditRoomWindow.xaml",
+              "RelativeDocumentMoniker": "Presentation\\View\\EditRoomWindow.xaml",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditRoomWindow.xaml",
+              "RelativeToolTip": "Presentation\\View\\EditRoomWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-26T14:21:35.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SelectDormitoryWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\SelectDormitoryWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\View\\SelectDormitoryWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\SelectDormitoryWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\View\\SelectDormitoryWindow.xaml.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T14:18:00.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EditDormitoryWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditDormitoryWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\View\\EditDormitoryWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditDormitoryWindow.xaml.cs",
+              "RelativeToolTip": "Presentation\\View\\EditDormitoryWindow.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T14:36:38.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "AddNewRoomWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewRoomWindow.xaml.cs",
               "RelativeDocumentMoniker": "Presentation\\View\\AddNewRoomWindow.xaml.cs",
@@ -235,7 +501,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 27,
               "Title": "AddNewRoomWindow.xaml",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewRoomWindow.xaml",
               "RelativeDocumentMoniker": "Presentation\\View\\AddNewRoomWindow.xaml",
@@ -246,18 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AddNewStudentWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewStudentWindow.xaml",
-              "RelativeDocumentMoniker": "Presentation\\View\\AddNewStudentWindow.xaml",
-              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewStudentWindow.xaml",
-              "RelativeToolTip": "Presentation\\View\\AddNewStudentWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-26T14:22:11.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 28,
               "Title": "AddNewFloorWindow.xaml",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewFloorWindow.xaml",
               "RelativeDocumentMoniker": "Presentation\\View\\AddNewFloorWindow.xaml",
@@ -268,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 29,
               "Title": "AddNewDormitoryWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewDormitoryWindow.xaml.cs",
               "RelativeDocumentMoniker": "Presentation\\View\\AddNewDormitoryWindow.xaml.cs",
@@ -280,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 30,
               "Title": "AddNewDormitoryWindow.xaml",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewDormitoryWindow.xaml",
               "RelativeDocumentMoniker": "Presentation\\View\\AddNewDormitoryWindow.xaml",
@@ -291,7 +546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 31,
               "Title": "AddNewAddressWindow.xaml",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewAddressWindow.xaml",
               "RelativeDocumentMoniker": "Presentation\\View\\AddNewAddressWindow.xaml",
@@ -302,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 32,
               "Title": "EditFloorWindow.xaml",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditFloorWindow.xaml",
               "RelativeDocumentMoniker": "Presentation\\View\\EditFloorWindow.xaml",
@@ -313,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 33,
               "Title": "DormitoryWindow.xaml",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\DormitoryWindow.xaml",
               "RelativeDocumentMoniker": "Presentation\\View\\DormitoryWindow.xaml",
@@ -324,7 +579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 34,
               "Title": "EditDormitoryWindow.xaml",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditDormitoryWindow.xaml",
               "RelativeDocumentMoniker": "Presentation\\View\\EditDormitoryWindow.xaml",
@@ -335,40 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EditRoomWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditRoomWindow.xaml",
-              "RelativeDocumentMoniker": "Presentation\\View\\EditRoomWindow.xaml",
-              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\EditRoomWindow.xaml",
-              "RelativeToolTip": "Presentation\\View\\EditRoomWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-26T14:21:35.354Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SelectDormitoryWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\SelectDormitoryWindow.xaml",
-              "RelativeDocumentMoniker": "Presentation\\View\\SelectDormitoryWindow.xaml",
-              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\SelectDormitoryWindow.xaml",
-              "RelativeToolTip": "Presentation\\View\\SelectDormitoryWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-26T12:13:04.832Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "MessageView.xaml",
-              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\MessageView.xaml",
-              "RelativeDocumentMoniker": "Presentation\\View\\MessageView.xaml",
-              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\MessageView.xaml",
-              "RelativeToolTip": "Presentation\\View\\MessageView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-26T14:07:33.539Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 35,
               "Title": "AddNewFloorWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewFloorWindow.xaml.cs",
               "RelativeDocumentMoniker": "Presentation\\View\\AddNewFloorWindow.xaml.cs",
@@ -380,30 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "DataBaseManage.xaml",
-              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\DataBaseManage.xaml",
-              "RelativeDocumentMoniker": "Presentation\\View\\DataBaseManage.xaml",
-              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\DataBaseManage.xaml",
-              "RelativeToolTip": "Presentation\\View\\DataBaseManage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-26T14:21:43.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DataBaseManage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\DataBaseManage.xaml.cs",
-              "RelativeDocumentMoniker": "Presentation\\View\\DataBaseManage.xaml.cs",
-              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\DataBaseManage.xaml.cs",
-              "RelativeToolTip": "Presentation\\View\\DataBaseManage.xaml.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAHgAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T02:59:07.135Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 36,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Domain\\Entities\\App\\Role\\Student.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\App\\Role\\Student.cs",
@@ -415,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 38,
               "Title": "AddNewAddressWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Presentation\\View\\AddNewAddressWindow.xaml.cs",
               "RelativeDocumentMoniker": "Presentation\\View\\AddNewAddressWindow.xaml.cs",
@@ -427,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 37,
               "Title": "Address.cs",
               "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Domain\\Entities\\SideInformation\\Address.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\SideInformation\\Address.cs",
@@ -436,30 +635,6 @@
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T20:19:03.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "StudentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Data\\Repositories\\App\\Role\\StudentRepository.cs",
-              "RelativeDocumentMoniker": "Data\\Repositories\\App\\Role\\StudentRepository.cs",
-              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Data\\Repositories\\App\\Role\\StudentRepository.cs",
-              "RelativeToolTip": "Data\\Repositories\\App\\Role\\StudentRepository.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAApwD0AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T20:14:53.987Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "IStudentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Domain\\Repositories\\App\\Role\\IStudentRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\Repositories\\App\\Role\\IStudentRepository.cs",
-              "ToolTip": "C:\\Users\\kozor\\Documents\\Study\\NSU\\2nd course\\Dormitories\\DormitoryCommunicationApp\\Domain\\Repositories\\App\\Role\\IStudentRepository.cs",
-              "RelativeToolTip": "Domain\\Repositories\\App\\Role\\IStudentRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T20:15:23.19Z"
             }
           ]
         }

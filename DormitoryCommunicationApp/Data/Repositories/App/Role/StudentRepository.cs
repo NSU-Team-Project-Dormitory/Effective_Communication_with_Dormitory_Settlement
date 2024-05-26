@@ -105,13 +105,13 @@ namespace Data.Repositories.App.Role
             }
         }
 
-        public List<Student> Find(string name, string surname, string patronymic)
+        public Student Find(string name, string surname, string patronymic)
         {
             using (ApplicationDbContext db = new())
             {
-                var students = db.Students.Where(el => name.Equals(el.FirstName)
-                && surname.Equals(el.SecondName) && patronymic.Equals(el.PatronymicName)).ToList();
-                return students;
+                var student = db.Students.FirstOrDefault(el => name.Equals(el.FirstName)
+                && surname.Equals(el.SecondName) && patronymic.Equals(el.PatronymicName));
+                return student;
             }
         }
 

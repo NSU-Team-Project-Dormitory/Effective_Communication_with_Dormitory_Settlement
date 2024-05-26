@@ -150,3 +150,7 @@ C:\Users\kozor\Documents\Study\NSU\2nd course\Dormitories\DormitoryCommunication
 C:\Users\kozor\Documents\Study\NSU\2nd course\Dormitories\DormitoryCommunicationApp\Presentation\obj\Debug\net7.0-windows\Presentation.pdb
 C:\Users\kozor\Documents\Study\NSU\2nd course\Dormitories\DormitoryCommunicationApp\Presentation\obj\Debug\net7.0-windows\Presentation.genruntimeconfig.cache
 C:\Users\kozor\Documents\Study\NSU\2nd course\Dormitories\DormitoryCommunicationApp\Presentation\obj\Debug\net7.0-windows\ref\Presentation.dll
+C:\Users\kozor\Documents\Study\NSU\2nd course\Dormitories\DormitoryCommunicationApp\Presentation\obj\Debug\net7.0-windows\View\FindStudentWindow.g.cs
+C:\Users\kozor\Documents\Study\NSU\2nd course\Dormitories\DormitoryCommunicationApp\Presentation\obj\Debug\net7.0-windows\View\FindStudentWindow.baml
+C:\Users\kozor\Documents\Study\NSU\2nd course\Dormitories\DormitoryCommunicationApp\Presentation\obj\Debug\net7.0-windows\View\StudentInfoWindow.g.cs
+C:\Users\kozor\Documents\Study\NSU\2nd course\Dormitories\DormitoryCommunicationApp\Presentation\obj\Debug\net7.0-windows\View\StudentInfoWindow.baml
