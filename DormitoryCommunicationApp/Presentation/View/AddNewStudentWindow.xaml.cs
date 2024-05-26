@@ -24,5 +24,18 @@ namespace Presentation.View
             InitializeComponent();
         }
 
+        private void Toolbar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
+
+        private void Close_Window_Click(Object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
     }
 }
