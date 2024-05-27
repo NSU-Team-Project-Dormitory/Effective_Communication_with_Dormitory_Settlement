@@ -20,7 +20,7 @@ namespace Domain.Repositories.App.Role
         public string Update(Student oldStudent, string login, string password, string name, string surname,
                      string patronymic, string sex, StudentGroup studentGroup);
 
-        public List<Student> Find(string name, string surname, string patronymic);
+        public Student Find(string name, string surname, string patronymic);
 
         public List<Student> Find(string surname);
 
@@ -29,6 +29,8 @@ namespace Domain.Repositories.App.Role
         public Boolean CheckOut(Student student, Room room);
 
         public Boolean SwapStudents(Student student1, Student Student2);
+
+        public void Nothing();
 
     }
 }

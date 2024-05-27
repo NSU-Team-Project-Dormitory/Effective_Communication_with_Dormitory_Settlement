@@ -17,9 +17,11 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
+        
         <Border Background="#50b4c8"
         CornerRadius="20" Grid.ColumnSpan="2" Grid.RowSpan="2">
         </Border>
+        
 
         <Border Grid.Column="0" Grid.RowSpan="3" BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="16"  ></Border>
 
@@ -60,7 +62,7 @@
             </StackPanel>
         </Grid>
         <Border Background="#FF93D151" CornerRadius="20 20 20 20" Margin="2 2 2 2" MinHeight="30" Grid.Row="1">
-            <Button Background="Transparent" Foreground="White" BorderThickness="0" Content="Добавить этаж"  FontFamily="Arial Rounded MT Bold" FontSize="18"></Button>
+            <Button Background="Transparent" Foreground="White" BorderThickness="0" Content="Добавить комнату"  FontFamily="Arial Rounded MT Bold" FontSize="18" Click="Button_Click"></Button>
         </Border>
     </Grid>
 </Window>

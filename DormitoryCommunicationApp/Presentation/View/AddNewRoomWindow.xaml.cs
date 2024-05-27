@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Entities.Campus;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,20 @@ namespace Presentation.View
     /// </summary>
     public partial class AddNewRoomWindow : Window
     {
-        public AddNewRoomWindow()
+        private Building dormitory;
+        public string DormitoryName { get; set; }
+
+        public AddNewRoomWindow(Building dormitory)
         {
             InitializeComponent();
+            this.dormitory = dormitory;
+            DataContext = this;
+            DormitoryName = dormitory.Name;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

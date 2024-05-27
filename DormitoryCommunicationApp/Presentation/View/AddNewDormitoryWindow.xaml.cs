@@ -96,5 +96,10 @@ namespace Presentation.View
             Close();
 
         }
+
+        private void dormitoryName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
