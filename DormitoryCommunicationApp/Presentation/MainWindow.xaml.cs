@@ -20,28 +20,25 @@ namespace Presentation.View
     /// </summary>
     public partial class MainWindow : Window
     {
-
         public static ItemsControl AllDormitoriesView;
-
         private IBuildingRepository _dormitoryRepository;
-
-        
+        private IStudentRepository _studentRepository;
 
         public List<Building> Dormitories { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
-
             AllDormitoriesView = ViewAllDormitories;
-
-
             _dormitoryRepository = BuildingRepository.GetRepository();
-
+            _studentRepository = StudentRepository.GetRepository();
             RefreshDormitories();
-
             DataContext = this;
+        }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Maximized;
         }
 
         private void RefreshDormitories()
@@ -58,17 +55,18 @@ namespace Presentation.View
             this.WindowState = WindowState.Minimized;
         }
 
-        private void Close_Window_Click(Object sender, RoutedEventArgs e)
+        private void Close_Window_Click(object sender, RoutedEventArgs e)
         {
-          Environment.Exit(0);
+            Environment.Exit(0);
         }
 
         private void Normalize_Window_Clock(object sender, RoutedEventArgs e)
-        { 
-            if(this.WindowState == WindowState.Normal)
+        {
+            if (this.WindowState == WindowState.Normal)
             {
                 this.WindowState = WindowState.Maximized;
-            } else if(this.WindowState == WindowState.Maximized)
+            }
+            else if (this.WindowState == WindowState.Maximized)
             {
                 this.WindowState = WindowState.Normal;
             }
@@ -76,40 +74,33 @@ namespace Presentation.View
 
         private void Toolbar_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (e.ChangedButton == MouseButton.Left) {
+            if (e.ChangedButton == MouseButton.Left)
+            {
                 this.DragMove();
             }
         }
 
-
         private void Database_Window_Click(object sender, RoutedEventArgs e)
-        {  
-            DataBaseManage dataBaseManage = new DataBaseManage();  
+        {
+            DataBaseManage dataBaseManage = new DataBaseManage();
             dataBaseManage.Show();
             Hide();
-
         }
 
         private void Add_DormitoryButton_Click(object sender, RoutedEventArgs e)
         {
             AddNewDormitoryWindow addNewDormitoryWindow = new AddNewDormitoryWindow(_dormitoryRepository);
             addNewDormitoryWindow.ShowDialog();
-
             RefreshDormitories();
         }
 
-
-
         private void DeleteDormitoryButton_Click(object sender, RoutedEventArgs e)
         {
-
             RefreshDormitories();
             SelectDormitoryWindow selectDormitoryWindow = new SelectDormitoryWindow(Dormitories);
-
             if (selectDormitoryWindow.ShowDialog() == true)
             {
                 Building dormitoryToDelete = selectDormitoryWindow.SelectedDormitory;
-
                 if (dormitoryToDelete != null)
                 {
                     _dormitoryRepository.Delete(dormitoryToDelete);
@@ -120,7 +111,6 @@ namespace Presentation.View
                     MessageBox.Show("Общежитие не выбрано.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-
         }
 
         private void DormitoryWindowButton_Click(object sender, RoutedEventArgs e)
@@ -128,16 +118,19 @@ namespace Presentation.View
             Button button = sender as Button;
             if (button != null)
             {
-                Building? dormitory = button.DataContext as Building;
+                Building dormitory = button.DataContext as Building;
                 if (dormitory != null)
                 {
-                    // Создаем универсальное окно с заголовком, содержащим название общежития
                     DormitoryWindow universalWindow = new DormitoryWindow(dormitory);
                     universalWindow.Show();
                 }
             }
         }
+
+        private void FindStudentButton_Click(object sender, RoutedEventArgs e)
+        {
+            FindStudentWindow findStudentWindow = new FindStudentWindow(_studentRepository);
+            findStudentWindow.Show();
+        }
     }
-
-
 }

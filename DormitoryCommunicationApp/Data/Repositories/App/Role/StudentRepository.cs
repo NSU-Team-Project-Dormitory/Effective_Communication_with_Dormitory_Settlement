@@ -189,6 +189,14 @@ namespace Data.Repositories.App.Role
             }
         }
 
+        public void Nothing()
+        {
+            using (ApplicationDbContext db = new())
+            {
+                db.SaveChanges();
+            }
+        }
+
 
 
     }

@@ -39,7 +39,7 @@ namespace Data
 
         static void Main()
         {
-            /*
+            
             ApplicationDbContext appContext = new ApplicationDbContext();
 
             //var address = new Address("street", "1", "city", "region", "postal code", "country");
@@ -47,8 +47,10 @@ namespace Data
             Address address = null;
             //            Floor tempFloor = new Floor("0", 1, 1);
             appContext._buildingRepository.GetAll();
-            Room tempRoom = new Room("-1", -1, 9999);
-
+            Room tempRoom = new Room("-1", -1, 9999, 1756);
+            StudentGroup group = new StudentGroup(1, "YES");
+            appContext._studentRepository.Nothing();
+            
             var newStudent = new Student
             {
                 Login = "john.doe",
@@ -120,18 +122,15 @@ namespace Data
             var updateResult = appContext._studentRepository.Update(newStudent3, "newlogin", "newpassword", "New", "Name", "NewPatronymic", "Female", new StudentGroup(14, "YES4"));
             Console.WriteLine(updateResult);
 
-            var foundStudents = appContext._studentRepository.Find("John", "Doe", "Smith");
-            foreach (var foundStudent in foundStudents)
-            {
-                Console.WriteLine($"Found Student: {foundStudent.FirstName} {foundStudent.SecondName}");
-            }
+            var foundStudent = appContext._studentRepository.Find("John", "Doe", "Smith");
+            Console.WriteLine($"Found Student: {foundStudent.FirstName} {foundStudent.SecondName}");
 
             var allStudents2 = appContext._studentRepository.GetAll();
             foreach (var student in allStudents2)
             {
                 Console.WriteLine($"Student ID: {student.ID}, Name: {student.FirstName} {student.SecondName}");
             }
-            */
+            
 
 
 

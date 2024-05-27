@@ -30,6 +30,8 @@ namespace Domain.Repositories.App.Role
 
         public Boolean SwapStudents(Student student1, Student Student2);
 
+        public void Nothing();
+
     }
 }
 

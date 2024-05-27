@@ -4,11 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Presentation"
- 
         mc:Ignorable="d"
         Title="MainWindow" 
         Height="1080" 
-         Width="1920"
+        Width="1920"
         MinHeight="500"
         MinWidth="960"
         Name="ResponsiveMainWindow"
@@ -16,7 +15,8 @@
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         Background="Transparent" 
-        ResizeMode="CanResizeWithGrip">
+        ResizeMode="CanResizeWithGrip"
+        Loaded="Window_Loaded">
     <Grid x:Name="mainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="35"/>
@@ -27,31 +27,28 @@
             <ColumnDefinition Width="349*"/>
         </Grid.ColumnDefinitions>
 
-
-
         <Border Background="#50b4c8" CornerRadius="8 8 0 8" Grid.ColumnSpan="2" Grid.RowSpan="2">
-
-            
         </Border>
 
         <Border Grid.Column="0" BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="8" Margin="0,0,1,0" Grid.RowSpan="2">
             <Grid Background="Transparent">
                 <StackPanel VerticalAlignment="Top" Orientation="Vertical">
-                    <Border Background="#FF7CA94B" CornerRadius="0 20 20 0" Margin="0 3 2 3" MinHeight="40" >
-                        <TextBlock  Foreground="White"  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Отделы" Background="Transparent" FontSize="20" FontFamily="Arial Rounded MT Bold" ></TextBlock>
+                    <Border Background="#FF7CA94B" CornerRadius="0 20 20 0" Margin="0 3 2 3" MinHeight="40">
+                        <TextBlock Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Отделы" Background="Transparent" FontSize="20" FontFamily="Arial Rounded MT Bold"></TextBlock>
                     </Border>
                     <Border Background="#FF93D151" CornerRadius="12 0 0 12" Margin="2 0 0 2" MinHeight="30">
-                        <Button Background="Transparent" Foreground="White" BorderThickness="0" Content="База Данных"  FontFamily="Arial Rounded MT Bold" Click="Database_Window_Click"></Button>
-
+                        <Button Background="Transparent" Foreground="White" BorderThickness="0" Content="База Данных" FontFamily="Arial Rounded MT Bold" Click="Database_Window_Click"></Button>
                     </Border>
-
-                    </StackPanel> 
-             </Grid>
+                    <Border Background="#FF93D151" CornerRadius="12 0 0 12" Margin="2 0 0 2" MinHeight="30" VerticalAlignment="Bottom">
+                        <Button Background="Transparent" Foreground="White" BorderThickness="0" Content="Найти студента" FontFamily="Arial Rounded MT Bold" Click="FindStudentButton_Click"></Button>
+                    </Border>
+                </StackPanel>
+            </Grid>
         </Border>
 
         <Border Grid.Column="1" BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="8" Margin="1,0,0,0" Grid.RowSpan="2">
-
         </Border>
+
         <Grid Background="Transparent" x:Name="Toolbar" Grid.Row="0" Grid.Column="1" MouseDown="Toolbar_MouseDown">
             <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
                 <Button BorderThickness="0" Content="-" FontSize="16" Background="Transparent" Foreground="White" MinHeight="35" MinWidth="50" BorderBrush="{x:Null}" Click="Hide_Window_Click"/>
@@ -61,23 +58,21 @@
         </Grid>
 
         <Border Grid.Column="1" BorderThickness="0" BorderBrush="#3e9bad" CornerRadius="8" Margin="10,0,10,10" Grid.Row="2">
-            <Grid Background="Transparent" >
+            <Grid Background="Transparent">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Border Background="#FF7CA94B" CornerRadius="20 20 20 20" Margin="30 0 30 5" MinHeight="50" Grid.Row="0" >
-                    <TextBlock  Foreground="White"  VerticalAlignment="Center" HorizontalAlignment="Center" Text="Общежития" Background="Transparent" FontSize="30" FontFamily="Arial Rounded MT Bold" ></TextBlock>
+                <Border Background="#FF7CA94B" CornerRadius="20 20 20 20" Margin="30 0 30 5" MinHeight="50" Grid.Row="0">
+                    <TextBlock Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Общежития" Background="Transparent" FontSize="30" FontFamily="Arial Rounded MT Bold"></TextBlock>
                 </Border>
                 <StackPanel VerticalAlignment="Top" Orientation="Vertical" x:Name="DormitoryStackPanel" Grid.Row="1">
-
-
                     <ItemsControl x:Name="ViewAllDormitories" ItemsSource="{Binding Dormitories}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel >
-                                    <Border MaxWidth="400"  Background="#FF93D151" CornerRadius="12 12 12 12" Margin="30 6 30 6" MinHeight="60" MinWidth="900">
-                                        <Button  Background="Transparent" Foreground="White" BorderThickness="0" Content="{Binding Path = Name}" ContentStringFormat="{}{0} Общежитие" FontSize="25" FontFamily="Arial Rounded MT Bold" Click="DormitoryWindowButton_Click"></Button>
+                                <StackPanel>
+                                    <Border MaxWidth="400" Background="#FF93D151" CornerRadius="12 12 12 12" Margin="30 6 30 6" MinHeight="60" MinWidth="900">
+                                        <Button Background="Transparent" Foreground="White" BorderThickness="0" Content="{Binding Path = Name}" ContentStringFormat="{}{0} Общежитие" FontSize="25" FontFamily="Arial Rounded MT Bold" Click="DormitoryWindowButton_Click"></Button>
                                     </Border>
                                 </StackPanel>
                             </DataTemplate>
@@ -85,30 +80,15 @@
                     </ItemsControl>
 
                     <StackPanel VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Border VerticalAlignment="Bottom" MaxWidth="400"  Background="LightGray" CornerRadius="12 0 0  12" Margin="30 6 0 6" MinHeight="40">
-                            <Button  Background="Transparent" Foreground="White" BorderThickness="0" Content="Добавить общежитие" FontSize="18" FontFamily="Arial Rounded MT Bold" Click="Add_DormitoryButton_Click" Width="220"></Button>
+                        <Border VerticalAlignment="Bottom" MaxWidth="400" Background="LightGray" CornerRadius="12 0 0 12" Margin="30 6 0 6" MinHeight="40">
+                            <Button Background="Transparent" Foreground="White" BorderThickness="0" Content="Добавить общежитие" FontSize="18" FontFamily="Arial Rounded MT Bold" Click="Add_DormitoryButton_Click" Width="220"></Button>
                         </Border>
-                        <Border VerticalAlignment="Bottom" MaxWidth="400"  Background="Red" CornerRadius="0 12 12 0" Margin="0 6 30 6" MinHeight="40">
-                            <Button  Background="Transparent" Foreground="White" BorderThickness="0" Content="Удалить общежитие" FontSize="18" FontFamily="Arial Rounded MT Bold" Click="DeleteDormitoryButton_Click" Width="220"></Button>
+                        <Border VerticalAlignment="Bottom" MaxWidth="400" Background="Red" CornerRadius="0 12 12 0" Margin="0 6 30 6" MinHeight="40">
+                            <Button Background="Transparent" Foreground="White" BorderThickness="0" Content="Удалить общежитие" FontSize="18" FontFamily="Arial Rounded MT Bold" Click="DeleteDormitoryButton_Click" Width="220"></Button>
                         </Border>
                     </StackPanel>
-                    
-
-
-
-
-        </StackPanel>
+                </StackPanel>
             </Grid>
         </Border>
-
-
     </Grid>
-
-
-
-
-
 </Window>
-
-    
-  

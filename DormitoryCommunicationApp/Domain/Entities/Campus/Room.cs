@@ -19,11 +19,12 @@ public class Room
         Students = new List<Student>();
     }
 
-    public Room (string number, int id, int capacity)
+    public Room (string number, int id, int capacity, int floorID )
     {
         Number = number;
         ID = id;
         Capacity = capacity;
+        FloorID = floorID;
         Students = new List<Student>();    
     }
 
