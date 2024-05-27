@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using Domain.Entities.Campus;
 
 namespace Presentation.View
@@ -22,15 +11,33 @@ namespace Presentation.View
     {
         private Building dormitory;
         public string DormitoryName { get; set; }
+
         public DormitoryWindow(Building dormitory)
         {
             InitializeComponent();
             this.dormitory = dormitory;
             DataContext = this;
-
             DormitoryName = dormitory.Name;
         }
 
-        
+        private void Close_Window_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Toolbar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
+
+
+        private void AddNewRoomButton_Click(object sender, RoutedEventArgs e)
+        {
+            AddNewRoomWindow addNewRoomWindow = new AddNewRoomWindow(dormitory);
+            addNewRoomWindow.Show();
+        }
     }
 }
