@@ -12,21 +12,19 @@
         Background="Transparent" 
         ResizeMode="CanResizeWithGrip">
     <Grid>
-
         <Grid.RowDefinitions>
             <RowDefinition Height="35"/>
             <RowDefinition Height="58"/>
             <RowDefinition/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-        <Border Background="#50b4c8" CornerRadius="8 8 0 8" Grid.RowSpan="3"/>
-        <Border BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="8" Margin="1,0,0,0" Grid.RowSpan="3"/>
+        <Border Background="#50b4c8" CornerRadius="8 8 0 8" Grid.RowSpan="4"/>
+        <Border BorderThickness="6" BorderBrush="#3e9bad" CornerRadius="8" Margin="1,0,0,0" Grid.RowSpan="4"/>
 
-        <Grid Background="Transparent" x:Name="Toolbar" Grid.Row="0" MouseDown="Toolbar_MouseDown">
-            <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-                <Button BorderThickness="0" Content="X" FontSize="12" Background="Transparent" Foreground="White" MinHeight="25" MinWidth="30" BorderBrush="{x:Null}" Click="Close_Window_Click"/>
-            </StackPanel>
-        </Grid>
+        <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button BorderThickness="0" Content="X" FontSize="12" Background="Transparent" Foreground="White" MinHeight="25" MinWidth="30" BorderBrush="{x:Null}" Click="Close_Window_Click"/>
+        </StackPanel>
 
         <Border Background="#FF93D151" CornerRadius="20" Margin="10" MinHeight="40" Grid.Row="1">
             <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Arial Rounded MT Bold" Foreground="White" FontSize="25" Margin="5">
@@ -37,9 +35,23 @@
                 </TextBlock.Text>
             </TextBlock>
         </Border>
-        <Border Background="#FF93D151" CornerRadius="20 20 20 20" Margin="100 10 100 300" MinHeight="30" Grid.Row="2">
-            <Button Content="Добавить новую комнату" Width="150" Height="30" Grid.Row="2" VerticalAlignment="Top" Margin="10" Click="AddNewRoomButton_Click" Background="#FF93D151" Foreground="White" FontFamily="Arial Rounded MT Bold" BorderThickness="0"/>
-        </Border>
 
+        <Button Grid.Row="3" Margin="10,0,10,10" Foreground="White" BorderThickness="0" Content="Добавить новую комнату" FontFamily="Arial Rounded MT Bold" FontSize="18" Click="AddNewRoomButton_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Name="border" Background="#FF93D151" CornerRadius="20" Padding="10,5">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="#FF76A442"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="#FF5E8B36"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </Window>

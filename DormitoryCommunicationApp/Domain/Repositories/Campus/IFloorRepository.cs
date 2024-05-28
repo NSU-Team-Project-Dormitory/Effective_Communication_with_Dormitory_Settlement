@@ -6,8 +6,11 @@ namespace Domain.Repositories.Campus
     {
 
         public string Add(Floor floor);
+
         public string Update(Floor oldFloor, string newNumber, int newHeight, Building newBuilding);
+        
         public string Delete(Floor floor);
+        
         public List<Floor> GetAll();
 
         public string GetStudentBYRoomNumber (int roomNumber);

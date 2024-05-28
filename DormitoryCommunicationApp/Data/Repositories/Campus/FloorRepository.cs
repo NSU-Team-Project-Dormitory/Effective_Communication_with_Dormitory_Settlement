@@ -4,6 +4,7 @@ using Data.Repositories.App.Role;
 using Domain.Entities.Campus;
 using Domain.Entities.SideInformation;
 using Domain.Repositories.Campus;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 
 namespace Data.Repositories.Campus
@@ -12,23 +13,30 @@ namespace Data.Repositories.Campus
     {
         public string Add(Floor floor)
         {
-            string result = "Already exist";
+            //string result = "Already exist";
 
             using (ApplicationDbContext db = new ApplicationDbContext())
             {
                 //Check if student already exists
-                bool checkIfExist = db.Dormitories.Any(el => el.ID == floor.ID);
+                //bool checkIfExist = db.Dormitories.Any(el => el.ID == floor.ID);
 
-                //Вопрос, является ли это плохой практикой, что если будет здание, а не репозиторий? Нужен ли guid, для того чтобы отличать общежития с одним именем, но разным адресом например?
-
-                if (!checkIfExist)
+                var existingFloor = db.Floors.FirstOrDefault(r => r.Number == floor.Number && r.Dormitory == floor.Dormitory);
+                if (existingFloor != null)
                 {
-                    db.Floors.Add(floor);
-                    db.SaveChanges();
-                    result = "Done";
+                    return "Room already exists";
                 }
+                db.Floors.Add(floor);
+                db.SaveChanges();
+                return "Done";
+                /*                if (!checkIfExist)
+                                {
+                                    db.Floors.Add(floor);
+                                    db.SaveChanges();
+                                    result = "Done";
+                                }
+                            }
+                return result;*/
             }
-            return result;
         }
 
         public string Delete(Floor floor)

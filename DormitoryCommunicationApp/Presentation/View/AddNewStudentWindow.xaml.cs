@@ -1,22 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+using Data.Repositories.App.Role;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using Domain.Entities.App.Role;
+using Domain.Entities.Campus;
+using Domain.Entities.SideInformation;
+using Domain.Repositories.App.Role;
 
 namespace Presentation.View
 {
-    /// <summary>
-    /// Логика взаимодействия для AddNewStudentWindow.xaml
-    /// </summary>
     public partial class AddNewStudentWindow : Window
     {
         public AddNewStudentWindow()
@@ -37,5 +29,57 @@ namespace Presentation.View
             Close();
         }
 
+        private void AddStudent_Click(object sender, RoutedEventArgs e)
+        {
+            // Собираем данные из полей
+            string firstName = studentFirstName.Text;
+            string secondName = studentSecondName.Text;
+            string patronymic = studentPatronymic.Text;
+            string faculty = studentFaculty.Text;
+            int studyGroup = 0;
+            int contactNumber;
+
+            // Валидация контактного номера
+            if (!int.TryParse(studentContactNumber.Text, out contactNumber))
+            {
+                MessageBox.Show("Пожалуйста, введите корректный контактный номер.");
+                return;
+            }
+            if (!int.TryParse(studentStudyGroup.Text, out contactNumber))
+            {
+                MessageBox.Show("Пожалуйста, введите корректный контактный номер.");
+                return;
+            }
+
+            // Создаем объект StudentGroup (может потребоваться изменить этот код в зависимости от вашей реализации)
+            //StudentGroup group = new StudentGroup(1, "YES");
+
+            StudentGroup studentGroup = new StudentGroup (studyGroup, "Faculcy");
+
+            // Создаем объект Student
+            Student newStudent = new Student
+            {
+                FirstName = firstName,
+                SecondName = secondName,
+                PatronymicName = patronymic,
+                //Faculty = faculty,
+                ContactNumber = contactNumber,
+                StudentGroup = studentGroup
+            };
+
+            // Вызываем репозиторий для добавления студента
+            IStudentRepository studentRepository = StudentRepository.GetRepository();
+            bool success = studentRepository.Add(newStudent);
+
+            if (success)
+            {
+                MessageBox.Show("Студент успешно добавлен!");
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Ошибка при добавлении студента. Возможно, студент с таким контактным номером уже существует.");
+            }
+        }
     }
 }

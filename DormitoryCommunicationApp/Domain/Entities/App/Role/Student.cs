@@ -20,7 +20,7 @@ public class Student : User
                   string surname,
                   string patronymic,
                   Address address,
-                  DateTime dateOfBirth,
+                  DateTime? dateOfBirth,
                   string sex,
                   Room? room,
                   int id,

@@ -1,25 +1,31 @@
-﻿
-using System.Security.Cryptography;
+﻿using System.Linq;
 using Domain.Entities.Campus;
 using Domain.Repositories.Campus;
-
+using Microsoft.EntityFrameworkCore;
 
 namespace Data.Repositories.Campus
 {
     public class RoomRepository : IRoomRepository
     {
+        private static RoomRepository? roomRepository = null;
+        private RoomRepository() { }
+        public static RoomRepository GetRepository()
+        {
+            return roomRepository ??= new RoomRepository();
+        }
+
         public string Add(string number, int capacity, Floor floor)
         {
-            string result = "Already exist";
-
             using (ApplicationDbContext db = new ApplicationDbContext())
             {
-                //Check if student already exists
-                bool checkIfExist = false;
+                // Check if room already exists
+                var existingRoom = db.Rooms.FirstOrDefault(r => r.Number == number && r.Floor.ID == floor.ID);
+                if (existingRoom != null)
+                {
+                    return "Room already exists";
+                }
 
-                //Need to reealise condition if room already exists
-
-                if (!checkIfExist)
+                try
                 {
                     Room newRoom = new()
                     {
@@ -30,57 +36,76 @@ namespace Data.Repositories.Campus
 
                     db.Rooms.Add(newRoom);
                     db.SaveChanges();
-                    result = "Done";
                 }
-                return result;
+                catch (DbUpdateException ex)
+                {
+                    // Log exception details or rethrow with more information
+                    throw new Exception($"An error occurred while adding the room: {ex.Message}", ex);
+                }
+
+                return "Done";
             }
         }
 
-
-
         public string Delete(Room room)
         {
-            string result = "This room doesn't exist";
-
             using (ApplicationDbContext db = new())
             {
-                db.Rooms.Remove(room);
-                db.SaveChanges();
-                result = "Done. Room: " + room.Number + " has been removed";
+                var existingRoom = db.Rooms.FirstOrDefault(r => r.ID == room.ID);
+                if (existingRoom == null)
+                {
+                    return "This room doesn't exist";
+                }
+
+                try
+                {
+                    db.Rooms.Remove(existingRoom);
+                    db.SaveChanges();
+                }
+                catch (DbUpdateException ex)
+                {
+                    // Log exception details or rethrow with more information
+                    throw new Exception($"An error occurred while deleting the room: {ex.Message}", ex);
+                }
+
+                return $"Done. Room: {room.Number} has been removed";
             }
-            return result;
         }
 
         public string Update(Room oldRoom, string number, int capacity, Floor floor)
         {
-            string result = "This room doesn't exist";
-
             using (ApplicationDbContext db = new())
             {
-                Room room = db.Rooms.FirstOrDefault(el => el.ID == oldRoom.ID);
+                var room = db.Rooms.FirstOrDefault(r => r.ID == oldRoom.ID);
+                if (room == null)
+                {
+                    return "This room doesn't exist";
+                }
 
-                room.Number = number;
-                room.Capacity = capacity;
-                room.Floor = floor;
+                try
+                {
+                    room.Number = number;
+                    room.Capacity = capacity;
+                    room.Floor = floor;
 
+                    db.SaveChanges();
+                }
+                catch (DbUpdateException ex)
+                {
+                    // Log exception details or rethrow with more information
+                    throw new Exception($"An error occurred while updating the room: {ex.Message}", ex);
+                }
 
-
-                db.SaveChanges();
-                result = "Done. Room " + oldRoom.Number + " has been changed";
+                return $"Done. Room {oldRoom.Number} has been changed";
             }
-            return result;
         }
 
         public List<Room> GetAll()
         {
-            using (ApplicationDbContext dbContext = new ApplicationDbContext())
+            using (ApplicationDbContext db = new())
             {
-                var result = dbContext.Rooms.ToList();
-                return result;
+                return db.Rooms.ToList();
             }
         }
-
     }
 }
-
-

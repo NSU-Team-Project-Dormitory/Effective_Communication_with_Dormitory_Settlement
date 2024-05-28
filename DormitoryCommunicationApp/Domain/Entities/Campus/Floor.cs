@@ -18,11 +18,14 @@ public  class Floor
 
 
 
-    public Floor(string number, int height, int id)
+    public Floor(string number, Building dormitory /*, int height, int id */)
     {
         Number = number ?? throw new NullReferenceException("Number is Null");
+        Dormitory = dormitory ?? throw new NullReferenceException("Dormitory is Null");
+        /*
         Height = height;
         ID = id;
+        */
     }
 
     public override string ToString()

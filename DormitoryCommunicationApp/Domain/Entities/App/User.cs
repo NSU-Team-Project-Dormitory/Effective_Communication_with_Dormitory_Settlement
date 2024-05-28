@@ -16,7 +16,7 @@ public class User : Human
                 string secondName,
                 string patronymicName,
                 Address address,
-                DateTime dateOfBirth,
+                DateTime? dateOfBirth,
                 string sex,
                 int id) : base(id, firstName,secondName,patronymicName,sex,dateOfBirth,address)
     {

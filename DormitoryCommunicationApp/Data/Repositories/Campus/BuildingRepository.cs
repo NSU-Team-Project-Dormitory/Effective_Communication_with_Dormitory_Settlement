@@ -1,9 +1,8 @@
-﻿
-using Data.Repositories.SideInformation;
-using Domain.Entities.App.Role;
+﻿using System.Linq;
 using Domain.Entities.Campus;
 using Domain.Entities.SideInformation;
 using Domain.Repositories.Campus;
+using Microsoft.EntityFrameworkCore;
 
 namespace Data.Repositories.Campus
 {
@@ -18,70 +17,90 @@ namespace Data.Repositories.Campus
 
         public string Add(Building building)
         {
-            string result = "Already exist";
-
             using (ApplicationDbContext db = new ApplicationDbContext())
             {
-                //Check if student already exists
-                bool checkIfExist = db.Dormitories.Any(el => el.Name == building.Name);
-
-                //Вопрос, является ли это плохой практикой, что если будет здание, а не репозиторий? Нужен ли guid, для того чтобы отличать общежития с одним именем, но разным адресом например?
-
-                if (!checkIfExist)
+                // Check if building already exists
+                var existingBuilding = db.Dormitories.FirstOrDefault(b => b.Name == building.Name);
+                if (existingBuilding != null)
                 {
-                    
+                    return "Building already exists";
+                }
+
+                try
+                {
                     db.Dormitories.Add(building);
                     db.SaveChanges();
-                    result = "Done";
                 }
-                return result;
+                catch (DbUpdateException ex)
+                {
+                    // Log exception details or rethrow with more information
+                    throw new Exception($"An error occurred while adding the building: {ex.Message}", ex);
+                }
+
+                return "Done";
             }
         }
 
         public string Delete(Building building)
         {
-            string result = "This dormitory doesn't exist";
-
             using (ApplicationDbContext db = new())
             {
-                db.Dormitories.Remove(building);
-                db.SaveChanges();
-                result = "Done. Dormitory: " + building.Name + " has been removed";
+                var existingBuilding = db.Dormitories.FirstOrDefault(b => b.ID == building.ID);
+                if (existingBuilding == null)
+                {
+                    return "This building doesn't exist";
+                }
+
+                try
+                {
+                    db.Dormitories.Remove(existingBuilding);
+                    db.SaveChanges();
+                }
+                catch (DbUpdateException ex)
+                {
+                    // Log exception details or rethrow with more information
+                    throw new Exception($"An error occurred while deleting the building: {ex.Message}", ex);
+                }
+
+                return $"Done. Building: {building.Name} has been removed";
             }
-            return result;
         }
 
-        public string Update(Building oldbBuilding, string name, Address address, Contact contact, int floorsCount)
+        public string Update(Building oldBuilding, string name, Address address, Contact contact, int floorsCount)
         {
-            string result = "This dormitory doesn't exist";
-
             using (ApplicationDbContext db = new())
             {
-                Building dormitory = db.Dormitories.FirstOrDefault(el => el.ID == oldbBuilding.ID);
+                var building = db.Dormitories.FirstOrDefault(b => b.ID == oldBuilding.ID);
+                if (building == null)
+                {
+                    return "This building doesn't exist";
+                }
 
-                dormitory.Name = name;
-                dormitory.Address = address;
-                dormitory.Contact = contact;
-                dormitory.FloorsCount = floorsCount;
+                try
+                {
+                    building.Name = name;
+                    building.Address = address;
+                    building.Contact = contact;
+                    building.FloorsCount = floorsCount;
 
+                    db.SaveChanges();
+                }
+                catch (DbUpdateException ex)
+                {
+                    // Log exception details or rethrow with more information
+                    throw new Exception($"An error occurred while updating the building: {ex.Message}", ex);
+                }
 
-
-                db.SaveChanges();
-                result = "Done. Dormitory " + dormitory.Name+ " hasbeen changed";
+                return $"Done. Building {oldBuilding.Name} has been changed";
             }
-            return result;
         }
 
         public List<Building> GetAll()
         {
-            using (ApplicationDbContext dbContext = new ApplicationDbContext())
+            using (ApplicationDbContext dbContext = new())
             {
-                var result = dbContext.Dormitories.ToList();
-                return result;
+                return dbContext.Dormitories.ToList();
             }
         }
-
-
-
     }
 }

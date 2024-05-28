@@ -47,7 +47,7 @@ namespace Data
             Address address = null;
             //            Floor tempFloor = new Floor("0", 1, 1);
             appContext._buildingRepository.GetAll();
-            Room tempRoom = new Room("-1", -1, 9999, 1756);
+            Room tempRoom = new Room("-1", 9999, 1756);
             StudentGroup group = new StudentGroup(1, "YES");
             appContext._studentRepository.Nothing();
             
