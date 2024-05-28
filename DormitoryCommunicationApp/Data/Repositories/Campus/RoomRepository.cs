@@ -1,4 +1,5 @@
 ﻿
+using System.Drawing;
 using System.Security.Cryptography;
 using Domain.Entities.Campus;
 using Domain.Repositories.Campus;
@@ -8,19 +9,26 @@ namespace Data.Repositories.Campus
 {
     public class RoomRepository : IRoomRepository
     {
+        private static RoomRepository? roomRepository = null;
+        private RoomRepository() { }
+        public static RoomRepository GetRepository()
+        {
+            return roomRepository ??= new RoomRepository();
+        }
+
         public string Add(string number, int capacity, Floor floor)
         {
             string result = "Already exist";
 
             using (ApplicationDbContext db = new ApplicationDbContext())
             {
-                //Check if student already exists
-                bool checkIfExist = false;
-
-                //Need to reealise condition if room already exists
-
-                if (!checkIfExist)
+                
+                var existingRoom = db.Rooms.FirstOrDefault(r => r.Number == number && r.Floor.ID == floor.ID);
+                if (existingRoom != null)
                 {
+                    return "Room already exists";
+                }
+
                     Room newRoom = new()
                     {
                         Number = number,
@@ -31,7 +39,7 @@ namespace Data.Repositories.Campus
                     db.Rooms.Add(newRoom);
                     db.SaveChanges();
                     result = "Done";
-                }
+               
                 return result;
             }
         }
@@ -69,6 +77,15 @@ namespace Data.Repositories.Campus
                 result = "Done. Room " + oldRoom.Number + " has been changed";
             }
             return result;
+        }
+
+        public Room GetRoom(string number, int floorID)
+        {
+            using (ApplicationDbContext db = new())
+            {
+                var existingRoom = db.Rooms.FirstOrDefault(r => r.Number == number && r.Floor.ID == floorID);
+                return existingRoom;
+            }
         }
 
         public List<Room> GetAll()

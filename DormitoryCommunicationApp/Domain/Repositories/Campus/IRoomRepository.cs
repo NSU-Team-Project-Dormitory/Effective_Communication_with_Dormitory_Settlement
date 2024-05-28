@@ -10,6 +10,9 @@ namespace Domain.Repositories.Campus
 
         public string Update(Room oldRoom, string number, int capacity, Floor floor);
 
+        public Room GetRoom(string number, int floorID);
+
+
         public List<Room> GetAll();
 
 

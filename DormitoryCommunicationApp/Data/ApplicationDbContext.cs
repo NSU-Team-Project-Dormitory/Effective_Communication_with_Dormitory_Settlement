@@ -24,6 +24,8 @@ namespace Data
         private IStudentRepository _studentRepository;
         private IAddressRepoisitory _addressRepoisitory;
         private IBuildingRepository _buildingRepository;
+        private IRoomRepository _roomRepository;
+        private IStudentGroupRepository _studentGroupRepository;
 
 
         public ApplicationDbContext()
@@ -34,6 +36,7 @@ namespace Data
             _studentRepository = StudentRepository.GetRepository();
             _addressRepoisitory = AddressRepository.GetRepository();
             _buildingRepository = BuildingRepository.GetRepository();
+            _roomRepository = RoomRepository.GetRepository();
 
         }
 
@@ -47,24 +50,28 @@ namespace Data
             Address address = null;
             //            Floor tempFloor = new Floor("0", 1, 1);
             appContext._buildingRepository.GetAll();
-            Room tempRoom = new Room("-1", -1, 9999, 1756);
-            StudentGroup group = new StudentGroup(1, "YES");
+            Room tempRoom = new Room("-1", 9999, 1756);
+
+            //Room tempRoom2 = new Room("-1", 9999, 1756);
+            //StudentGroup group = appContext._studentGroupRepository.GetGroup(1, "Faculcy");
             appContext._studentRepository.Nothing();
-            
+
             var newStudent = new Student
             {
-                Login = "john.doe",
+                Login = "i.ivanov",
                 Password = "password",
-                FirstName = "John",
-                SecondName = "Doe",
-                PatronymicName = "Smith",
+                FirstName = "Иван",
+                SecondName = "Иванов",
+                PatronymicName = "Иванович",
                 ContactNumber = 1234567890,
                 DateOfBirth = DateTime.UtcNow,
                 Address = address,
-                Sex = "Male",
+                Sex = "Мужской",
                 Room = tempRoom,
-                StudentGroup = new StudentGroup(1, "YES")
+                StudentGroup = new StudentGroup(22217, "ФИТ")
             };
+            Room tempRoom2 = appContext._roomRepository.GetRoom("-1", 1756);
+
             var newStudent2 = new Student
             {
                 Login = "john.doe2",
@@ -75,8 +82,8 @@ namespace Data
                 ContactNumber = 1234567890,
                 DateOfBirth = DateTime.UtcNow,
                 Sex = "Male",
-                Room = tempRoom,
-                StudentGroup = new StudentGroup(12, "YES2")
+                Room = tempRoom2,
+                StudentGroup = new StudentGroup(155, "YES")
             };
             var newStudent3 = new Student
             {
@@ -88,22 +95,22 @@ namespace Data
                 ContactNumber = 1234567890,
                 DateOfBirth = DateTime.UtcNow,
                 Sex = "Male",
-                Room = tempRoom,
-                StudentGroup = new StudentGroup(13, "YES3")
+                Room = tempRoom2,
+                StudentGroup = new StudentGroup(15, "YES")
             };
 
             // Add the new student
             bool isAdded = appContext._studentRepository.Add(newStudent);
             appContext._studentRepository.Add(newStudent2);
             appContext._studentRepository.Add(newStudent3);
-            if (isAdded)
+            /*if (isAdded)
             {
                 Console.WriteLine("Student added successfully!");
             }
             else
             {
                 Console.WriteLine("Failed to add student. Student already exists.");
-            }
+            }*/
 
 
             // Example of retrieving all students
@@ -119,11 +126,11 @@ namespace Data
             //var deleteResult = appContext._studentRepository.Delete(newStudent2);
             //Console.WriteLine(deleteResult);
 
-            var updateResult = appContext._studentRepository.Update(newStudent3, "newlogin", "newpassword", "New", "Name", "NewPatronymic", "Female", new StudentGroup(14, "YES4"));
+/*            var updateResult = appContext._studentRepository.Update(newStudent3, "newlogin", "newpassword", "New", "Name", "NewPatronymic", "Female", new StudentGroup(14, "YES4"));
             Console.WriteLine(updateResult);
 
             var foundStudent = appContext._studentRepository.Find("John", "Doe", "Smith");
-            Console.WriteLine($"Found Student: {foundStudent.FirstName} {foundStudent.SecondName}");
+            Console.WriteLine($"Found Student: {foundStudent.FirstName} {foundStudent.SecondName}");*/
 
             var allStudents2 = appContext._studentRepository.GetAll();
             foreach (var student in allStudents2)
@@ -162,6 +169,8 @@ namespace Data
         public DbSet<Floor> Floors { get; set; }
 
         public DbSet<Room> Rooms { get; set; }
+
+        public DbSet<StudentGroup> StudentGroup { get; set; }
 
         public DbSet<StudentAccomodation> StudentAccomodations { get; set; }
 

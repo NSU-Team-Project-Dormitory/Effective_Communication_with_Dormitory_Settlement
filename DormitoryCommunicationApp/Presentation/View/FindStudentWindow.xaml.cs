@@ -42,6 +42,7 @@ namespace Presentation.View
             if (student != null)
             {
                 ShowStudentInfo(student);
+                Close();
             }
             else
             {
