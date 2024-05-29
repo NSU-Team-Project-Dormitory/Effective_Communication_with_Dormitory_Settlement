@@ -21,10 +21,12 @@ namespace Presentation.View
     public partial class SelectDormitoryWindow : Window
     {
         public Building SelectedDormitory { get; private set; }
+        public List<Building> Dormitories { get; set; }
 
         public SelectDormitoryWindow(List<Building> dormitories)
         {
             InitializeComponent();
+
 
             // Заполняем список общежитий
             dormitoriesListBox.ItemsSource = dormitories;

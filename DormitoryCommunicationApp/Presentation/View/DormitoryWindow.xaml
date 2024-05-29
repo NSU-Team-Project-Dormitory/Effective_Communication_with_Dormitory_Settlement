@@ -32,6 +32,32 @@
                     </MultiBinding>
                 </TextBlock.Text>
             </TextBlock>
+            
+            
         </Border>
+
+        <Grid Grid.Row="2" x:Name="studentsGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Background="Transparent" CornerRadius="10" Margin="10" MinHeight="40" Grid.Row="1" BorderBrush="#FF93D151" BorderThickness="5">
+                <ListView x:Name="ViewAllStudents" ItemsSource="{Binding Students}" FontSize="20" >
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Last Name" DisplayMemberBinding="{Binding LastName}" />
+                            <GridViewColumn Header="First Name" DisplayMemberBinding="{Binding FirstName}" />
+                            <GridViewColumn Header="Patronymic" DisplayMemberBinding="{Binding Patronymic}" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Border>
+
+        </Grid>
+        
+        
+        
+        
     </Grid>
 </Window>
