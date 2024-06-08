@@ -1,0 +1,24 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Walls -->
+  <rect x="0" y="0" width="800" height="600" fill="white" stroke="black" stroke-width="10"/>
+  
+  <!-- Room outlines (for visual representation) -->
+  <rect x="50" y="50" width="200" height="100" stroke="black" fill="none" stroke-width="5"/>
+  <rect x="50" y="200" width="200" height="100" stroke="black" fill="none" stroke-width="5"/>
+  <rect x="50" y="350" width="200" height="100" stroke="black" fill="none" stroke-width="5"/>
+  <rect x="300" y="50" width="200" height="100" stroke="black" fill="none" stroke-width="5"/>
+  <rect x="300" y="200" width="200" height="100" stroke="black" fill="none" stroke-width="5"/>
+  <rect x="300" y="350" width="200" height="100" stroke="black" fill="none" stroke-width="5"/>
+  
+  <!-- Hallway -->
+  <rect x="50" y="500" width="450" height="50" stroke="black" fill="none" stroke-width="5"/>
+  
+  <!-- Interactive polygons for rooms -->
+  <polygon points="50,50 250,50 250,150 50,150" class="interactive"/>
+  <polygon points="50,200 250,200 250,300 50,300" class="interactive"/>
+  <polygon points="50,350 250,350 250,450 50,450" class="interactive"/>
+  <polygon points="300,50 500,50 500,150 300,150" class="interactive"/>
+  <polygon points="300,200 500,200 500,300 300,300" class="interactive"/>
+  <polygon points="300,350 500,350 500,450 300,450" class="interactive"/>
+</svg>
+

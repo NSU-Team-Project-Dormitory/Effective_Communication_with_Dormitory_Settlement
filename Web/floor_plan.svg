@@ -1,0 +1,13 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Room 1 -->
+  <rect x="50" y="50" width="200" height="150" stroke="black" fill="transparent" />
+  <!-- Room 2 -->
+  <rect x="300" y="50" width="200" height="150" stroke="black" fill="transparent" />
+  <!-- Room 3 -->
+  <rect x="50" y="250" width="200" height="150" stroke="black" fill="transparent" />
+  <!-- Room 4 -->
+  <rect x="300" y="250" width="200" height="150" stroke="black" fill="transparent" />
+  <!-- Hallway -->
+  <rect x="50" y="450" width="450" height="100" stroke="black" fill="transparent" />
+</svg>
+
