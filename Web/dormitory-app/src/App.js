@@ -1,13 +1,13 @@
 // src/App.js
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import './App.css';
 
 const App = () => {
   const [svgContent, setSvgContent] = useState('');
   const [rooms, setRooms] = useState([]);
-  const [selectedRoom, setSelectedRoom] = useState(null);
+  const svgContainerRef = useRef(null);
 
   const handleFileUpload = (e) => {
     const file = e.target.files[0];
@@ -18,30 +18,44 @@ const App = () => {
     reader.readAsText(file);
   };
 
-  const handleSvgClick = (e) => {
-    if (e.target.tagName === 'rect' || e.target.tagName === 'path') {
-      const roomId = e.target.id;
-      const roomNumber = prompt('Enter room number:', e.target.dataset.roomNumber || '');
+  const handleRoomClick = (e) => {
+    const target = e.target.closest('rect, path');
+    if (!target) return;
+
+    const roomId = target.id || `room-${Math.random().toString(36).substr(2, 9)}`;
+    target.id = roomId;
+    const existingRoom = rooms.find(room => room.id === roomId);
+
+    if (existingRoom) {
+      alert(`Room Number: ${existingRoom.number}`);
+    } else {
+      const roomNumber = prompt('Enter room number:', '');
       if (roomNumber) {
-        e.target.dataset.roomNumber = roomNumber;
-        setRooms((prevRooms) => [...prevRooms, { id: roomId, number: roomNumber }]);
+        target.dataset.roomNumber = roomNumber;
+        target.classList.add('selected');
+        const newRoom = { id: roomId, number: roomNumber, element: target.outerHTML };
+        setRooms([...rooms, newRoom]);
       }
     }
   };
 
   const handleSave = () => {
-    // Save the rooms data to the server
     axios.post('/api/rooms', rooms)
       .then(response => alert('Rooms saved successfully!'))
       .catch(error => alert('Error saving rooms.'));
   };
 
   useEffect(() => {
-    if (svgContent) {
-      const svgElement = document.getElementById('svg-element');
-      svgElement.addEventListener('click', handleSvgClick);
+    if (svgContainerRef.current) {
+      const svgElements = svgContainerRef.current.querySelectorAll('rect, path');
+      svgElements.forEach(elem => {
+        elem.style.cursor = 'pointer';
+        elem.addEventListener('click', handleRoomClick);
+      });
       return () => {
-        svgElement.removeEventListener('click', handleSvgClick);
+        svgElements.forEach(elem => {
+          elem.removeEventListener('click', handleRoomClick);
+        });
       };
     }
   }, [svgContent]);
@@ -50,15 +64,10 @@ const App = () => {
     <div className="App">
       <h1>Dormitory Room Planner</h1>
       <input type="file" accept=".svg" onChange={handleFileUpload} />
-      {svgContent && <div dangerouslySetInnerHTML={{ __html: svgContent }} id="svg-element" />}
-      <button onClick={handleSave}>Save Room Data</button>
-      {selectedRoom && (
-        <div>
-          <h2>Room Information</h2>
-          <p>Room ID: {selectedRoom.id}</p>
-          <p>Room Number: {selectedRoom.number}</p>
-        </div>
+      {svgContent && (
+        <div ref={svgContainerRef} dangerouslySetInnerHTML={{ __html: svgContent }} className="svg-container" />
       )}
+      <button onClick={handleSave}>Save Room Data</button>
     </div>
   );
 };
